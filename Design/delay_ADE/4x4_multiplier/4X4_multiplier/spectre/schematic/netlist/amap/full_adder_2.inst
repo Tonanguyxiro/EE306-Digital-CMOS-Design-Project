@@ -1,0 +1,9 @@
+HEADER
+"PSFversion" "1.00"
+"I2n I1n I0n" "nand2"
+"I4n I3n" "xor2"
+"Av" ":1v"
+"Bv" ":2v"
+"Cv" ":3v"
+"Cinv" ":4v"
+"Sv" ":5v"

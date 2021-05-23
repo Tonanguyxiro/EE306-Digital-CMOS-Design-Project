@@ -1,0 +1,44 @@
+HEADER
+"PSFversion" "1.00"
+"simulator" "spectre"
+"version" "13.1.1.205.isr10"
+"date" "7:42:28 PM, Sun May 23, 2021"
+"design" "// Generated for: spectre"
+"analysis type" "info.subckts"
+"analysis name" "subckts"
+"analysis description" "Circuit Information"
+"xVecSorted" "unknown"
+"tolerance.relative" 0.00100000
+TYPE
+"subckt" STRUCT(
+"subckt_params" STRING *
+"subckt_terminals" STRING *
+) PROP(
+"key" "sub"
+)
+VALUE
+"xor2" "subckt" (
+""
+"A B Out vdd! 0"
+)
+"half_adder_2" "subckt" (
+""
+"A B C S vdd! 0"
+)
+"and2" "subckt" (
+""
+"A B Out 0 vdd!"
+)
+"nplusres" "subckt" (
+""
+""
+)
+"full_adder_2" "subckt" (
+""
+"A B C Cin S 0 vdd!"
+)
+"nand2" "subckt" (
+""
+"A B Out 0 vdd!"
+)
+END

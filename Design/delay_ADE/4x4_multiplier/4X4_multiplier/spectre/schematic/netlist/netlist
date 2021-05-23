@@ -1,0 +1,118 @@
+
+// Library name: multiplier
+// Cell name: nand2
+// View name: schematic
+subckt nand2 A B Out
+    MN1 (net9 B 0 0) nmos1 w=3.2u l=180.0n as=1.92e-12 ad=1.92e-12 ps=7.6u \
+        pd=7.6u m=(1)*(1)
+    MN0 (Out A net9 0) nmos1 w=3.2u l=180.0n as=1.92e-12 ad=1.92e-12 \
+        ps=7.6u pd=7.6u m=(1)*(1)
+    MP1 (Out B vdd! vdd!) pmos1 w=4u l=180.0n as=2.4e-12 ad=2.4e-12 \
+        ps=9.2u pd=9.2u m=(1)*(1)
+    MP0 (Out A vdd! vdd!) pmos1 w=4u l=180.0n as=2.4e-12 ad=2.4e-12 \
+        ps=9.2u pd=9.2u m=(1)*(1)
+ends nand2
+// End of subcircuit definition.
+
+// Library name: multiplier
+// Cell name: xor2
+// View name: schematic
+subckt xor2 A B Out
+    MP5 (Bi B vdd! vdd!) pmos1 w=4u l=180.0n as=2.4e-12 ad=2.4e-12 ps=9.2u \
+        pd=9.2u m=(1)*(1)
+    MP4 (Ai A vdd! vdd!) pmos1 w=4u l=180.0n as=2.4e-12 ad=2.4e-12 ps=9.2u \
+        pd=9.2u m=(1)*(1)
+    MP3 (Out A net022 vdd!) pmos1 w=4u l=180.0n as=2.4e-12 ad=2.4e-12 \
+        ps=9.2u pd=9.2u m=(1)*(1)
+    MP2 (net022 Bi vdd! vdd!) pmos1 w=4u l=180.0n as=2.4e-12 ad=2.4e-12 \
+        ps=9.2u pd=9.2u m=(1)*(1)
+    MP0 (net8 Ai vdd! vdd!) pmos1 w=4u l=180.0n as=2.4e-12 ad=2.4e-12 \
+        ps=9.2u pd=9.2u m=(1)*(1)
+    MP1 (Out B net8 vdd!) pmos1 w=4u l=180.0n as=2.4e-12 ad=2.4e-12 \
+        ps=9.2u pd=9.2u m=(1)*(1)
+    MN5 (Bi B 0 0) nmos1 w=1.6u l=180.0n as=9.6e-13 ad=9.6e-13 ps=4.4u \
+        pd=4.4u m=(1)*(1)
+    MN4 (Ai A 0 0) nmos1 w=1.6u l=180.0n as=9.6e-13 ad=9.6e-13 ps=4.4u \
+        pd=4.4u m=(1)*(1)
+    MN3 (net17 B 0 0) nmos1 w=1.6u l=180.0n as=9.6e-13 ad=9.6e-13 ps=4.4u \
+        pd=4.4u m=(1)*(1)
+    MN2 (Out A net17 0) nmos1 w=1.6u l=180.0n as=9.6e-13 ad=9.6e-13 \
+        ps=4.4u pd=4.4u m=(1)*(1)
+    MN1 (net32 Bi 0 0) nmos1 w=1.6u l=180.0n as=9.6e-13 ad=9.6e-13 ps=4.4u \
+        pd=4.4u m=(1)*(1)
+    MN0 (Out Ai net32 0) nmos1 w=1.6u l=180.0n as=9.6e-13 ad=9.6e-13 \
+        ps=4.4u pd=4.4u m=(1)*(1)
+ends xor2
+// End of subcircuit definition.
+
+// Library name: multiplier
+// Cell name: full_adder_2
+// View name: schematic
+subckt full_adder_2 A B C Cin S
+    I2 (net3 Cin net6) nand2
+    I1 (net1 net6 C) nand2
+    I0 (A B net1) nand2
+    I4 (A B net3) xor2
+    I3 (net3 Cin S) xor2
+ends full_adder_2
+// End of subcircuit definition.
+
+// Library name: multiplier
+// Cell name: and2
+// View name: schematic
+subckt and2 A B Out
+    MN2 (Out net013 0 0) nmos1 w=1.6u l=180.0n as=9.6e-13 ad=9.6e-13 \
+        ps=4.4u pd=4.4u m=(1)*(1)
+    MN1 (net9 B 0 0) nmos1 w=3.2u l=180.0n as=1.92e-12 ad=1.92e-12 ps=7.6u \
+        pd=7.6u m=(1)*(1)
+    MN0 (net013 A net9 0) nmos1 w=3.2u l=180.0n as=1.92e-12 ad=1.92e-12 \
+        ps=7.6u pd=7.6u m=(1)*(1)
+    MP2 (Out net013 vdd! vdd!) pmos1 w=4u l=180.0n as=2.4e-12 ad=2.4e-12 \
+        ps=9.2u pd=9.2u m=(1)*(1)
+    MP1 (net013 B vdd! vdd!) pmos1 w=4u l=180.0n as=2.4e-12 ad=2.4e-12 \
+        ps=9.2u pd=9.2u m=(1)*(1)
+    MP0 (net013 A vdd! vdd!) pmos1 w=4u l=180.0n as=2.4e-12 ad=2.4e-12 \
+        ps=9.2u pd=9.2u m=(1)*(1)
+ends and2
+// End of subcircuit definition.
+
+// Library name: multiplier
+// Cell name: half_adder_2
+// View name: schematic
+subckt half_adder_2 A B C S
+    I1 (A B S) xor2
+    I3 (A B C) and2
+ends half_adder_2
+// End of subcircuit definition.
+
+// Library name: multiplier
+// Cell name: 4X4_multiplier
+// View name: schematic
+I11 (net078 net0100 net1 net5 Z4) full_adder_2
+I10 (net8 net17 net15 net1 Z5) full_adder_2
+I9 (net13 net16 Z7 net15 Z6) full_adder_2
+I4 (net090 net19 net16 net21 net17) full_adder_2
+I3 (net087 net54 net21 net26 net0100) full_adder_2
+I2 (net28 net29 net26 net45 net44) full_adder_2
+I1 (net095 net34 net31 net35 net32) full_adder_2
+I0 (net38 net39 net55 net31 net29) full_adder_2
+I8 (net075 net44 net5 Z3) half_adder_2
+I7 (net47 net32 net45 Z2) half_adder_2
+I6 (net0115 net0127 net35 Z1) half_adder_2
+I5 (net55 net093 net19 net54) half_adder_2
+I27 (Y3 X3 net13) and2
+I26 (Y3 X2 net8) and2
+I25 (Y3 X0 net075) and2
+I24 (Y3 X1 net078) and2
+I23 (Y2 X1 net28) and2
+I22 (Y2 X0 net47) and2
+I21 (Y2 X2 net087) and2
+I20 (Y2 X3 net090) and2
+I19 (Y1 X3 net093) and2
+I18 (Y1 X2 net38) and2
+I17 (Y1 X0 net0115) and2
+I16 (Y1 X1 net095) and2
+I15 (Y0 X0 Z0) and2
+I14 (Y0 X1 net0127) and2
+I13 (Y0 X2 net34) and2
+I12 (Y0 X3 net39) and2

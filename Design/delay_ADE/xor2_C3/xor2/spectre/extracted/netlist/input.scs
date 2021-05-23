@@ -1,0 +1,87 @@
+// Generated for: spectre
+// Generated on: May 21 19:47:37 2021
+// Design library name: multiplier
+// Design cell name: xor2
+// Design view name: extracted
+simulator lang=spectre
+global 0
+include "/home/SME_VLSI/VLSI_57/306cadence/test_files/2_XOR_C3.input"
+include "/home/SME_VLSI/306cadence/assuraTech/oa_2014/gpdk/../models/gpdk.scs" section=NN
+
+// Library name: multiplier
+// Cell name: xor2
+// View name: extracted
+\+35 (9 11) capacitor c=1.75817e-17
+\+34 (6 11) capacitor c=6.5631e-17
+\+33 (6 8) capacitor c=7.2e-17
+\+32 (gnd! 11) capacitor c=2.16654e-15
+\+31 (gnd! 10) capacitor c=5.91682e-16
+\+30 (gnd! 8) capacitor c=5.91682e-16
+\+29 (gnd! 6) capacitor c=4.92032e-15
+\+28 (Out 11) capacitor c=8.10342e-16
+\+27 (Out 10) capacitor c=5.42222e-16
+\+26 (Out 9) capacitor c=1.39958e-15
+\+25 (Out 8) capacitor c=5.42222e-16
+\+24 (Out 7) capacitor c=1.35725e-15
+\+23 (Out 6) capacitor c=7.94842e-16
+\+22 (Out gnd!) capacitor c=1.18033e-15
+\+21 (B 11) capacitor c=5.65687e-15
+\+20 (B 9) capacitor c=7.03125e-17
+\+19 (B 7) capacitor c=2.52492e-17
+\+18 (B 6) capacitor c=7.81994e-16
+\+17 (B gnd!) capacitor c=2.44355e-15
+\+16 (B Out) capacitor c=3.30111e-15
+\+15 (A 11) capacitor c=3.22429e-16
+\+14 (A 9) capacitor c=1.66667e-17
+\+13 (A 8) capacitor c=4.6932e-17
+\+12 (A 7) capacitor c=1.04917e-17
+\+11 (A 6) capacitor c=6.47877e-15
+\+10 (A gnd!) capacitor c=2.62866e-15
+\+9 (A Out) capacitor c=5.61743e-15
+\+8 (A B) capacitor c=7.7375e-16
+\+7 (vdd! 11) capacitor c=2.32131e-15
+\+6 (vdd! 9) capacitor c=1.42339e-15
+\+5 (vdd! 7) capacitor c=1.42256e-15
+\+4 (vdd! 6) capacitor c=2.25259e-15
+\+3 (vdd! gnd!) capacitor c=5.01926e-16
+\+2 (vdd! Out) capacitor c=3.64089e-16
+\+1 (vdd! B) capacitor c=3.25102e-15
+\+0 (vdd! A) capacitor c=3.64531e-16
+\+47 (vdd! B 11 vdd!) pmos1 w=4e-06 l=1.8e-07 as=2.16e-12 ad=2.16e-12 \
+        ps=5.08e-06 pd=5.08e-06 m=(1)*(1)
+\+46 (vdd! 11 9 vdd!) pmos1 w=4e-06 l=1.8e-07 as=1.26e-12 ad=2.16e-12 \
+        ps=6.3e-07 pd=5.08e-06 m=(1)*(1)
+\+45 (9 A Out vdd!) pmos1 w=4e-06 l=1.8e-07 as=2.16e-12 ad=1.26e-12 \
+        ps=5.08e-06 pd=6.3e-07 m=(1)*(1)
+\+44 (Out B 7 vdd!) pmos1 w=4e-06 l=1.8e-07 as=1.26e-12 ad=2.16e-12 \
+        ps=6.3e-07 pd=5.08e-06 m=(1)*(1)
+\+43 (7 6 vdd! vdd!) pmos1 w=4e-06 l=1.8e-07 as=2.16e-12 ad=1.26e-12 \
+        ps=5.08e-06 pd=6.3e-07 m=(1)*(1)
+\+42 (6 A vdd! vdd!) pmos1 w=4e-06 l=1.8e-07 as=2.16e-12 ad=2.16e-12 \
+        ps=5.08e-06 pd=5.08e-06 m=(1)*(1)
+\+41 (gnd! B 11 gnd!) nmos1 w=1.6e-06 l=1.8e-07 as=8.64e-13 ad=8.64e-13 \
+        ps=2.68e-06 pd=2.68e-06 m=(1)*(1)
+\+40 (gnd! 11 10 gnd!) nmos1 w=1.6e-06 l=1.8e-07 as=5.04e-13 ad=8.64e-13 \
+        ps=6.3e-07 pd=2.68e-06 m=(1)*(1)
+\+39 (10 6 Out gnd!) nmos1 w=1.6e-06 l=1.8e-07 as=8.64e-13 ad=5.04e-13 \
+        ps=2.68e-06 pd=6.3e-07 m=(1)*(1)
+\+38 (Out A 8 gnd!) nmos1 w=1.6e-06 l=1.8e-07 as=5e-13 ad=8.64e-13 \
+        ps=6.25e-07 pd=2.68e-06 m=(1)*(1)
+\+37 (8 B gnd! gnd!) nmos1 w=1.6e-06 l=1.8e-07 as=8.72e-13 ad=5e-13 \
+        ps=2.69e-06 pd=6.25e-07 m=(1)*(1)
+\+36 (6 A gnd! gnd!) nmos1 w=1.6e-06 l=1.8e-07 as=8.64e-13 ad=8.64e-13 \
+        ps=2.68e-06 pd=2.68e-06 m=(1)*(1)
+simulatorOptions options reltol=1e-3 vabstol=1e-6 iabstol=1e-12 temp=27 \
+    tnom=27 scalem=1.0 scale=1.0 gmin=1e-12 rforce=1 maxnotes=5 maxwarns=5 \
+    digits=5 cols=80 pivrel=1e-3 sensfile="../psf/sens.output" \
+    checklimitdest=psf 
+tran tran stop=30n write="spectre.ic" writefinal="spectre.fc" \
+    annotate=status maxiters=5 
+finalTimeOP info what=oppoint where=rawfile
+modelParameter info what=models where=rawfile
+element info what=inst where=rawfile
+outputParameter info what=output where=rawfile
+designParamVals info what=parameters where=rawfile
+primitives info what=primitives where=rawfile
+subckts info what=subckts  where=rawfile
+saveOptions options save=allpub

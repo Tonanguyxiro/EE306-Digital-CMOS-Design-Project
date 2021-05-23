@@ -1,0 +1,8 @@
+CADENCE IHNL01076
+
+multiplier nand2 schematic cds0
+multiplier xor2 schematic cds1
+multiplier full_adder_2 schematic cds2
+multiplier and2 schematic cds3
+multiplier half_adder_2 schematic cds4
+multiplier 4X4_multiplier schematic cds5

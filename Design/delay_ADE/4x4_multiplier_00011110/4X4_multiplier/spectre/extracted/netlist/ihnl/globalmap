@@ -1,0 +1,8 @@
+CADENCE IHNL01070
+$model
+multiplier/4X4_multiplier/extracted multiplier_4X4_multiplier_extracted
+$endmodel
+$net
+$endnet
+$param
+$endparam

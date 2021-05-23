@@ -1,0 +1,10 @@
+HEADER
+"PSFversion" "1.00"
+"design" "(\"multiplier\" \"nand2\" \"extracted\" \"\")"
+"simulator" "spectre"
+"temperature" "27"
+"host" ""
+"date" "May 21 19:38:40 2021"
+"title" ""
+"analysisList" "()"
+END

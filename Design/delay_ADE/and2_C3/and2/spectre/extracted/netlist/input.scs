@@ -1,0 +1,53 @@
+// Generated for: spectre
+// Generated on: May 21 19:33:31 2021
+// Design library name: multiplier
+// Design cell name: and2
+// Design view name: extracted
+simulator lang=spectre
+global 0
+include "/home/SME_VLSI/VLSI_57/306cadence/test_files/2_AND_C3.input"
+include "/home/SME_VLSI/306cadence/assuraTech/oa_2014/gpdk/../models/gpdk.scs" section=NN
+
+// Library name: multiplier
+// Cell name: and2
+// View name: extracted
+\+13 (gnd! 6) capacitor c=2.30566e-15
+\+12 (Out 6) capacitor c=5.69639e-15
+\+11 (Out gnd!) capacitor c=1.18912e-15
+\+10 (B 6) capacitor c=3.69268e-15
+\+9 (B gnd!) capacitor c=8.90725e-16
+\+8 (B Out) capacitor c=6.14586e-17
+\+7 (A 6) capacitor c=3.47072e-15
+\+6 (A gnd!) capacitor c=5.94929e-16
+\+5 (A B) capacitor c=3.74772e-16
+\+4 (vdd! 6) capacitor c=3.18384e-15
+\+3 (vdd! gnd!) capacitor c=2.41478e-16
+\+2 (vdd! Out) capacitor c=1.17566e-15
+\+1 (vdd! B) capacitor c=7.23032e-16
+\+0 (vdd! A) capacitor c=7.19807e-16
+\+19 (Out 6 vdd! vdd!) pmos1 w=4e-06 l=1.8e-07 as=2.16e-12 ad=2.16e-12 \
+        ps=5.08e-06 pd=5.08e-06 m=(1)*(1)
+\+18 (vdd! B 6 vdd!) pmos1 w=4e-06 l=1.8e-07 as=1.26e-12 ad=2.16e-12 \
+        ps=6.3e-07 pd=5.08e-06 m=(1)*(1)
+\+17 (6 A vdd! vdd!) pmos1 w=4e-06 l=1.8e-07 as=2.16e-12 ad=1.26e-12 \
+        ps=5.08e-06 pd=6.3e-07 m=(1)*(1)
+\+16 (Out 6 gnd! gnd!) nmos1 w=1.6e-06 l=1.8e-07 as=8.64e-13 ad=8.64e-13 \
+        ps=2.68e-06 pd=2.68e-06 m=(1)*(1)
+\+15 (gnd! B 7 gnd!) nmos1 w=3.2e-06 l=1.8e-07 as=1.008e-12 ad=1.728e-12 \
+        ps=6.3e-07 pd=4.28e-06 m=(1)*(1)
+\+14 (7 A 6 gnd!) nmos1 w=3.2e-06 l=1.8e-07 as=1.728e-12 ad=1.008e-12 \
+        ps=4.28e-06 pd=6.3e-07 m=(1)*(1)
+simulatorOptions options reltol=1e-3 vabstol=1e-6 iabstol=1e-12 temp=27 \
+    tnom=27 scalem=1.0 scale=1.0 gmin=1e-12 rforce=1 maxnotes=5 maxwarns=5 \
+    digits=5 cols=80 pivrel=1e-3 sensfile="../psf/sens.output" \
+    checklimitdest=psf 
+tran tran stop=10n write="spectre.ic" writefinal="spectre.fc" \
+    annotate=status maxiters=5 
+finalTimeOP info what=oppoint where=rawfile
+modelParameter info what=models where=rawfile
+element info what=inst where=rawfile
+outputParameter info what=output where=rawfile
+designParamVals info what=parameters where=rawfile
+primitives info what=primitives where=rawfile
+subckts info what=subckts  where=rawfile
+saveOptions options save=allpub

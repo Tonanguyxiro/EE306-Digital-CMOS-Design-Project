@@ -1,0 +1,32 @@
+
+// Library name: multiplier
+// Cell name: 4X4_multiplier
+// View name: schematic
+I11 (net078 net0100 net1 net5 Z4) full_adder_2
+I10 (net8 net17 net15 net1 Z5) full_adder_2
+I9 (net13 net16 Z7 net15 Z6) full_adder_2
+I4 (net090 net19 net16 net21 net17) full_adder_2
+I3 (net087 net54 net21 net26 net0100) full_adder_2
+I2 (net28 net29 net26 net45 net44) full_adder_2
+I1 (net095 net34 net31 net35 net32) full_adder_2
+I0 (net38 net39 net55 net31 net29) full_adder_2
+I8 (net075 net44 net5 Z3) half_adder_2
+I7 (net47 net32 net45 Z2) half_adder_2
+I6 (net0115 net0127 net35 Z1) half_adder_2
+I5 (net55 net093 net19 net54) half_adder_2
+I27 (Y3 X3 net13) and2
+I26 (Y3 X2 net8) and2
+I25 (Y3 X0 net075) and2
+I24 (Y3 X1 net078) and2
+I23 (Y2 X1 net28) and2
+I22 (Y2 X0 net47) and2
+I21 (Y2 X2 net087) and2
+I20 (Y2 X3 net090) and2
+I19 (Y1 X3 net093) and2
+I18 (Y1 X2 net38) and2
+I17 (Y1 X0 net0115) and2
+I16 (Y1 X1 net095) and2
+I15 (Y0 X0 Z0) and2
+I14 (Y0 X1 net0127) and2
+I13 (Y0 X2 net34) and2
+I12 (Y0 X3 net39) and2

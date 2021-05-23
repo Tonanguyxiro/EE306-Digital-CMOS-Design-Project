@@ -1,0 +1,5 @@
+
+// Library name: multiplier
+// Cell name: half_adder_2
+// View name: schematic
+subckt half_adder_2 A B C S

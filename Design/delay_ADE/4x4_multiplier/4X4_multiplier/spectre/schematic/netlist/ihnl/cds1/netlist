@@ -1,0 +1,26 @@
+    MP5 (Bi B vdd! vdd!) pmos1 w=4u l=180.0n as=2.4e-12 ad=2.4e-12 ps=9.2u \
+        pd=9.2u m=(1)*(1)
+    MP4 (Ai A vdd! vdd!) pmos1 w=4u l=180.0n as=2.4e-12 ad=2.4e-12 ps=9.2u \
+        pd=9.2u m=(1)*(1)
+    MP3 (Out A net022 vdd!) pmos1 w=4u l=180.0n as=2.4e-12 ad=2.4e-12 \
+        ps=9.2u pd=9.2u m=(1)*(1)
+    MP2 (net022 Bi vdd! vdd!) pmos1 w=4u l=180.0n as=2.4e-12 ad=2.4e-12 \
+        ps=9.2u pd=9.2u m=(1)*(1)
+    MP0 (net8 Ai vdd! vdd!) pmos1 w=4u l=180.0n as=2.4e-12 ad=2.4e-12 \
+        ps=9.2u pd=9.2u m=(1)*(1)
+    MP1 (Out B net8 vdd!) pmos1 w=4u l=180.0n as=2.4e-12 ad=2.4e-12 \
+        ps=9.2u pd=9.2u m=(1)*(1)
+    MN5 (Bi B 0 0) nmos1 w=1.6u l=180.0n as=9.6e-13 ad=9.6e-13 ps=4.4u \
+        pd=4.4u m=(1)*(1)
+    MN4 (Ai A 0 0) nmos1 w=1.6u l=180.0n as=9.6e-13 ad=9.6e-13 ps=4.4u \
+        pd=4.4u m=(1)*(1)
+    MN3 (net17 B 0 0) nmos1 w=1.6u l=180.0n as=9.6e-13 ad=9.6e-13 ps=4.4u \
+        pd=4.4u m=(1)*(1)
+    MN2 (Out A net17 0) nmos1 w=1.6u l=180.0n as=9.6e-13 ad=9.6e-13 \
+        ps=4.4u pd=4.4u m=(1)*(1)
+    MN1 (net32 Bi 0 0) nmos1 w=1.6u l=180.0n as=9.6e-13 ad=9.6e-13 ps=4.4u \
+        pd=4.4u m=(1)*(1)
+    MN0 (Out Ai net32 0) nmos1 w=1.6u l=180.0n as=9.6e-13 ad=9.6e-13 \
+        ps=4.4u pd=4.4u m=(1)*(1)
+ends xor2
+// End of subcircuit definition.

@@ -1,0 +1,21 @@
+
+// Library name: multiplier
+// Cell name: nand2
+// View name: extracted
+\+8 (Out gnd!) capacitor c=6.31275e-16
+\+7 (B gnd!) capacitor c=1.09572e-15
+\+6 (B Out) capacitor c=3.33082e-15
+\+5 (A gnd!) capacitor c=5.82727e-16
+\+4 (A Out) capacitor c=3.77172e-15
+\+3 (A B) capacitor c=3.5106e-16
+\+2 (vdd! Out) capacitor c=2.81485e-15
+\+1 (vdd! B) capacitor c=6.61574e-16
+\+0 (vdd! A) capacitor c=6.95233e-16
+\+12 (vdd! B Out vdd!) pmos1 w=4e-06 l=1.8e-07 as=1.26e-12 ad=2.16e-12 \
+        ps=6.3e-07 pd=5.08e-06 m=(1)*(1)
+\+11 (Out A vdd! vdd!) pmos1 w=4e-06 l=1.8e-07 as=2.16e-12 ad=1.26e-12 \
+        ps=5.08e-06 pd=6.3e-07 m=(1)*(1)
+\+10 (gnd! B 6 gnd!) nmos1 w=3.2e-06 l=1.8e-07 as=1.008e-12 ad=1.728e-12 \
+        ps=6.3e-07 pd=4.28e-06 m=(1)*(1)
+\+9 (6 A Out gnd!) nmos1 w=3.2e-06 l=1.8e-07 as=1.728e-12 ad=1.008e-12 \
+        ps=4.28e-06 pd=6.3e-07 m=(1)*(1)

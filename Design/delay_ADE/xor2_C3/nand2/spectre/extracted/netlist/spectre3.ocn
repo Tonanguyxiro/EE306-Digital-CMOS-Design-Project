@@ -1,0 +1,16 @@
+simulator( 'spectre )
+design(	 "/home/SME_VLSI/VLSI_57/simulation/delay/nand2_C3/nand2/spectre/extracted/netlist/netlist")
+resultsDir( "/home/SME_VLSI/VLSI_57/simulation/delay/nand2_C3/nand2/spectre/extracted" )
+modelFile( 
+    '("/home/SME_VLSI/306cadence/assuraTech/oa_2014/gpdk/../models/gpdk.scs" "NN")
+)
+analysis('tran ?stop "30n"  )
+envOption(
+	'analysisOrder  list("tran") 
+)
+temp( 27 ) 
+run()
+modelFile( 
+    '("/home/SME_VLSI/306cadence/assuraTech/oa_2014/gpdk/../models/gpdk.scs" "NN")
+)
+run()

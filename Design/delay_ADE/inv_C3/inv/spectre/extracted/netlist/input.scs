@@ -1,0 +1,36 @@
+// Generated for: spectre
+// Generated on: May 21 15:21:15 2021
+// Design library name: multiplier
+// Design cell name: inv
+// Design view name: extracted
+simulator lang=spectre
+global 0
+include "/home/SME_VLSI/VLSI_57/306cadence/test_files/1_input_C3.input"
+include "/home/SME_VLSI/306cadence/assuraTech/oa_2014/gpdk/../models/gpdk.scs" section=NN
+
+// Library name: multiplier
+// Cell name: inv
+// View name: extracted
+\+4 (Out gnd!) capacitor c=1.01738e-15
+\+3 (A gnd!) capacitor c=1.1311e-15
+\+2 (A Out) capacitor c=6.12398e-15
+\+1 (vdd! Out) capacitor c=1.17788e-15
+\+0 (vdd! A) capacitor c=3.89136e-16
+\+6 (Out A vdd! vdd!) pmos1 w=4e-06 l=1.8e-07 as=2.16e-12 ad=2.16e-12 \
+        ps=5.08e-06 pd=5.08e-06 m=(1)*(1)
+\+5 (Out A gnd! gnd!) nmos1 w=1.6e-06 l=1.8e-07 as=8.64e-13 ad=8.64e-13 \
+        ps=2.68e-06 pd=2.68e-06 m=(1)*(1)
+simulatorOptions options reltol=1e-3 vabstol=1e-6 iabstol=1e-12 temp=27 \
+    tnom=27 scalem=1.0 scale=1.0 gmin=1e-12 rforce=1 maxnotes=5 maxwarns=5 \
+    digits=5 cols=80 pivrel=1e-3 sensfile="../psf/sens.output" \
+    checklimitdest=psf 
+tran tran stop=30n write="spectre.ic" writefinal="spectre.fc" \
+    annotate=status maxiters=5 
+finalTimeOP info what=oppoint where=rawfile
+modelParameter info what=models where=rawfile
+element info what=inst where=rawfile
+outputParameter info what=output where=rawfile
+designParamVals info what=parameters where=rawfile
+primitives info what=primitives where=rawfile
+subckts info what=subckts  where=rawfile
+saveOptions options save=allpub

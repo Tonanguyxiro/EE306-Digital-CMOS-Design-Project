@@ -1,0 +1,7 @@
+// Generated for: spectre
+// Generated on: May 23 20:18:01 2021
+// Design library name: multiplier
+// Design cell name: 4X4_multiplier
+// Design view name: extracted
+simulator lang=spectre
+global 0

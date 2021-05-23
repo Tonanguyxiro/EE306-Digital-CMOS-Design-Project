@@ -1,0 +1,24 @@
+( ( nil
+  version "2.1"
+  mapType "incremental"
+  blockName "nand2"
+  repList "spectre cmos_sch cmos.sch schematic veriloga"
+  stopList "spectre"
+  hierDelim "."
+  netlistDir "/home/SME_VLSI/VLSI_57/simulation/delay/nand2_C3/nand2/spectre/extracted/netlist"
+ )
+( instViewTable
+ )
+( net
+ )
+( inst
+ )
+( model
+( "multiplier/nand2/extracted" "nand2" )
+ )
+( term
+ )
+( param
+ )
+( "nand2" "ihnl/cds0/map" )
+ )

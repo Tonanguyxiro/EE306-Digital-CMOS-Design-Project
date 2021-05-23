@@ -1,0 +1,261 @@
+
+Cadence (R) Virtuoso (R) Spectre (R) Circuit Simulator
+Version 13.1.1.205.isr10 64bit -- 23 Jul 2014
+Copyright (C) 1989-2014 Cadence Design Systems, Inc. All rights reserved worldwide. Cadence, Virtuoso and Spectre are registered trademarks of Cadence Design Systems, Inc. All others are the property of their respective holders.
+
+Includes RSA BSAFE(R) Cryptographic or Security Protocol Software from RSA Security, Inc.
+
+User: VLSI_57   Host: serveric3   HostID: 140A347E   PID: 190103
+Memory  available: 11.1227 GB  physical: 135.2177 GB
+CPU Type: Intel(R) Xeon(R) CPU E5-2630 v4 @ 2.20GHz
+          Processor PhysicalID CoreID Frequency Load
+              0         0        0     1200.0    37.0
+              1         0        1     2201.0    42.3
+              2         0        2     1200.0    30.4
+              3         0        3     1200.0    19.8
+              4         0        4     1200.0    13.4
+              5         0        8     1200.0     9.6
+              6         0        9     2201.0     7.4
+              7         0        10     1200.0     6.3
+              8         0        11     1200.0     5.7
+              9         0        12     1200.0     5.3
+             10         1        0     1200.0    35.1
+             11         1        1     2201.0    41.7
+             12         1        2     2201.0    29.4
+             13         1        3     1200.0    19.1
+             14         1        4     1200.0    12.7
+             15         1        8     1200.0     9.1
+             16         1        9     1200.0     7.2
+             17         1        10     1200.0     6.2
+             18         1        11     1200.0     5.8
+             19         1        12     1200.0     5.1
+             20         0        0     1200.0     8.3
+             21         0        1     1200.0     8.9
+             22         0        2     1200.0     7.8
+             23         0        3     1200.0     6.2
+             24         0        4     2201.0     4.3
+             25         0        8     1200.0     3.0
+             26         0        9     1200.0     2.4
+             27         0        10     1200.0     1.7
+             28         0        11     1200.0     1.4
+             29         0        12     1200.0     1.5
+             30         1        0     1200.0     9.0
+             31         1        1     1200.0     8.9
+             32         1        2     1200.0     7.7
+             33         1        3     1200.0     6.1
+             34         1        4     1200.0     4.3
+             35         1        8     1200.0     3.0
+             36         1        9     1200.0     2.1
+             37         1        10     1200.0     1.6
+             38         1        11     1200.0     1.3
+             39         1        12     1200.0     1.2
+
+
+Simulating `input.scs' on serveric3 at 7:45:44 PM, Fri May 21, 2021 (process id: 190103).
+Current working directory: /home/SME_VLSI/VLSI_57/simulation/delay/xor2_C2/xor2/spectre/extracted/netlist
+Command line:
+    /home/eda_tools/Cadence/MMSIM1311ISR10/tools/bin/spectre -64  \
+        input.scs +escchars +log ../psf/spectre.out +inter=mpsc  \
+        +mpssession=spectre2_51432_8 -format psfxl -raw ../psf  \
+        +lqtimeout 900 -maxw 5 -maxn 5
+spectre pid = 190103
+
+Loading /home/eda_tools/Cadence/MMSIM1311ISR10/tools.lnx86/cmi/lib/64bit/5.0/libinfineon_sh.so ...
+Loading /home/eda_tools/Cadence/MMSIM1311ISR10/tools.lnx86/cmi/lib/64bit/5.0/libphilips_o_sh.so ...
+Loading /home/eda_tools/Cadence/MMSIM1311ISR10/tools.lnx86/cmi/lib/64bit/5.0/libphilips_sh.so ...
+Loading /home/eda_tools/Cadence/MMSIM1311ISR10/tools.lnx86/cmi/lib/64bit/5.0/libsparam_sh.so ...
+Loading /home/eda_tools/Cadence/MMSIM1311ISR10/tools.lnx86/cmi/lib/64bit/5.0/libstmodels_sh.so ...
+Reading file:  /home/SME_VLSI/VLSI_57/simulation/delay/xor2_C2/xor2/spectre/extracted/netlist/input.scs
+Reading file:  /home/eda_tools/Cadence/MMSIM1311ISR10/tools.lnx86/spectre/etc/configs/spectre.cfg
+Reading file:  /home/SME_VLSI/VLSI_57/306cadence/test_files/2_XOR_C2.input
+Reading file:  /home/SME_VLSI/306cadence/assuraTech/oa_2014/models/gpdk.scs
+Reading file:  /home/SME_VLSI/306cadence/assuraTech/oa_2014/models/nmos1.scs
+Reading file:  /home/SME_VLSI/306cadence/assuraTech/oa_2014/models/pmos1.scs
+Reading file:  /home/SME_VLSI/306cadence/assuraTech/oa_2014/models/resistor.scs
+Reading file:  /home/SME_VLSI/306cadence/assuraTech/oa_2014/models/diode.scs
+Reading file:  /home/SME_VLSI/306cadence/assuraTech/oa_2014/models/bipolar.scs
+Time for NDB Parsing: CPU = 69.99 ms, elapsed = 117.825 ms.
+Time accumulated: CPU = 95.985 ms, elapsed = 117.83 ms.
+Peak resident memory used = 38.8 Mbytes.
+
+Reading link:  /home/eda_tools/Cadence/MMSIM1311ISR10/tools.lnx86/spectre/etc/ahdl/discipline.h
+Reading file:  /home/eda_tools/Cadence/MMSIM1311ISR10/tools.lnx86/spectre/etc/ahdl/disciplines.vams
+Reading link:  /home/eda_tools/Cadence/MMSIM1311ISR10/tools.lnx86/spectre/etc/ahdl/constants.h
+Reading file:  /home/eda_tools/Cadence/MMSIM1311ISR10/tools.lnx86/spectre/etc/ahdl/constants.vams
+Time for Elaboration: CPU = 25.995 ms, elapsed = 26.1409 ms.
+Time accumulated: CPU = 122.98 ms, elapsed = 144.16 ms.
+Peak resident memory used = 43.6 Mbytes.
+
+Time for EDB Visiting: CPU = 1 ms, elapsed = 719.07 us.
+Time accumulated: CPU = 123.98 ms, elapsed = 145.058 ms.
+Peak resident memory used = 44.1 Mbytes.
+
+
+Warning from spectre during initial setup.
+    WARNING (SPECTRE-8059): `ca': `current' No such output parameter, terminal, or internal node name.
+    WARNING (SPECTRE-8287): Ignoring invalid item `ca:current' in save statement.
+
+
+Global user options:
+             reltol = 0.001
+            vabstol = 1e-06
+            iabstol = 1e-12
+               temp = 27
+               tnom = 27
+             scalem = 1
+              scale = 1
+               gmin = 1e-12
+             rforce = 1
+           maxnotes = 5
+           maxwarns = 5
+             digits = 5
+               cols = 80
+             pivrel = 0.001
+           sensfile = ../psf/sens.output
+     checklimitdest = psf
+               save = allpub
+               tnom = 27
+             scalem = 1
+              scale = 1
+
+Circuit inventory:
+              nodes 11
+            bsim3v3 12    
+          capacitor 37    
+            vsource 4     
+
+Analysis and control statement inventory:
+               info 7     
+               tran 1     
+
+Output statements:
+             .probe 0     
+           .measure 0     
+               save 2     
+
+Time for parsing: CPU = 3 ms, elapsed = 170.826 ms.
+Time accumulated: CPU = 126.98 ms, elapsed = 316.042 ms.
+Peak resident memory used = 45 Mbytes.
+
+~~~~~~~~~~~~~~~~~~~~~~
+Pre-Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~
+Entering remote command mode using MPSC service (spectre, ipi, v0.0, spectre2_51432_8, ).
+
+Warning from spectre.
+    WARNING (SPECTRE-16707): Only tran supports psfxl format, result of other analyses will be in psfbin format.
+
+
+************************************************
+Transient Analysis `tran': time = (0 s -> 10 ns)
+************************************************
+DC simulation time: CPU = 2 ms, elapsed = 1.64986 ms.
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 10 ns
+    step = 10 ps
+    maxstep = 200 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   4       (current)
+                 save   11      (voltage)
+                 others 1       
+
+    tran: time = 310 ps       (3.1 %), step = 160 ps        (1.6 %)
+    tran: time = 910 ps       (9.1 %), step = 200 ps          (2 %)
+    tran: time = 1.31 ns     (13.1 %), step = 200 ps          (2 %)
+    tran: time = 1.91 ns     (19.1 %), step = 200 ps          (2 %)
+
+Notice from spectre at time = 2 ns during transient analysis `tran'.
+    Found trapezoidal ringing on node v3:p.
+
+    tran: time = 2.26 ns     (22.6 %), step = 14.75 ps     (148 m%)
+    tran: time = 2.798 ns      (28 %), step = 78.03 ps     (780 m%)
+    tran: time = 3.362 ns    (33.6 %), step = 154.9 ps     (1.55 %)
+    tran: time = 3.94 ns     (39.4 %), step = 200 ps          (2 %)
+
+Notice from spectre at time = 4.1702 ns during transient analysis `tran'.
+    Found trapezoidal ringing on node v0:p.
+Notice from spectre at time = 4.2 ns during transient analysis `tran'.
+    Found trapezoidal ringing on node v0:p.
+
+    tran: time = 4.265 ns    (42.7 %), step = 23.98 ps     (240 m%)
+    tran: time = 4.776 ns    (47.8 %), step = 77.89 ps     (779 m%)
+    tran: time = 5.341 ns    (53.4 %), step = 123 ps       (1.23 %)
+    tran: time = 5.913 ns    (59.1 %), step = 200 ps          (2 %)
+    tran: time = 6.313 ns    (63.1 %), step = 200 ps          (2 %)
+    tran: time = 6.774 ns    (67.7 %), step = 200 ps          (2 %)
+    tran: time = 7.374 ns    (73.7 %), step = 200 ps          (2 %)
+
+Notice from spectre at time = 7.57449 ns during transient analysis `tran'.
+    Found trapezoidal ringing on node v1:p.
+Notice from spectre at time = 7.77449 ns during transient analysis `tran'.
+    Found trapezoidal ringing on node v1:p.
+        Further occurrences of this notice will be suppressed.
+
+    tran: time = 7.774 ns    (77.7 %), step = 200 ps          (2 %)
+    tran: time = 8.374 ns    (83.7 %), step = 200 ps          (2 %)
+    tran: time = 8.774 ns    (87.7 %), step = 200 ps          (2 %)
+    tran: time = 9.374 ns    (93.7 %), step = 200 ps          (2 %)
+    tran: time = 9.774 ns    (97.7 %), step = 200 ps          (2 %)
+Number of accepted tran steps =             117
+
+Notice from spectre during transient analysis `tran'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   Parasitics slow down simulation. To speed up, consider
+          add +parasitics on command line
+          add ++parasitics on command line
+   -   To further speed up simulation, consider
+          add ++aps on command line
+          add +cktpreset=sampled on command line for ADC/DAC simulation
+          add +cktpreset=pll on command line for PLL simulation
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Initial condition solution time: CPU = 2 ms, elapsed = 1.75095 ms.
+Intrinsic tran analysis time:    CPU = 26.996 ms, elapsed = 105.431 ms.
+Total time required for tran analysis `tran': CPU = 32.995 ms, elapsed = 111.472 ms.
+Time accumulated: CPU = 162.974 ms, elapsed = 2.82245 s.
+Peak resident memory used = 46.8 Mbytes.
+
+
+Notice from spectre.
+    12 notices suppressed.
+
+finalTimeOP: writing operating point information to rawfile.
+modelParameter: writing model parameter values to rawfile.
+element: writing instance parameter values to rawfile.
+outputParameter: writing output parameter values to rawfile.
+designParamVals: writing netlist parameters to rawfile.
+primitives: writing primitives to rawfile.
+subckts: writing subcircuits to rawfile.
+
+Aggregate audit (7:46:36 PM, Fri May 21, 2021):
+Time used: CPU = 236 ms, elapsed = 51.5 s, util. = 458e-03%.
+Time spent in licensing: elapsed = 60.2 ms.
+Peak memory used = 47.3 Mbytes.
+Simulation started at: 7:45:44 PM, Fri May 21, 2021, ended at: 7:46:36 PM, Fri May 21, 2021, with elapsed time (wall clock): 51.5 s.
+spectre completes with 0 errors, 3 warnings, and 7 notices.

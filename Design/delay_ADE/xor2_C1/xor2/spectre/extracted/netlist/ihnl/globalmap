@@ -1,0 +1,8 @@
+CADENCE IHNL01070
+$model
+multiplier/xor2/extracted xor2
+$endmodel
+$net
+$endnet
+$param
+$endparam

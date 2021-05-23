@@ -1,0 +1,14 @@
+    MN2 (Out net013 0 0) nmos1 w=1.6u l=180.0n as=9.6e-13 ad=9.6e-13 \
+        ps=4.4u pd=4.4u m=(1)*(1)
+    MN1 (net9 B 0 0) nmos1 w=3.2u l=180.0n as=1.92e-12 ad=1.92e-12 ps=7.6u \
+        pd=7.6u m=(1)*(1)
+    MN0 (net013 A net9 0) nmos1 w=3.2u l=180.0n as=1.92e-12 ad=1.92e-12 \
+        ps=7.6u pd=7.6u m=(1)*(1)
+    MP2 (Out net013 vdd! vdd!) pmos1 w=4u l=180.0n as=2.4e-12 ad=2.4e-12 \
+        ps=9.2u pd=9.2u m=(1)*(1)
+    MP1 (net013 B vdd! vdd!) pmos1 w=4u l=180.0n as=2.4e-12 ad=2.4e-12 \
+        ps=9.2u pd=9.2u m=(1)*(1)
+    MP0 (net013 A vdd! vdd!) pmos1 w=4u l=180.0n as=2.4e-12 ad=2.4e-12 \
+        ps=9.2u pd=9.2u m=(1)*(1)
+ends and2
+// End of subcircuit definition.

@@ -1,0 +1,8 @@
+CADENCE IHNL01070
+$model
+multiplier/nand2/extracted nand2
+$endmodel
+$net
+$endnet
+$param
+$endparam

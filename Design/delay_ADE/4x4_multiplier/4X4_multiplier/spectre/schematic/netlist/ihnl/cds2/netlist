@@ -1,0 +1,7 @@
+    I2 (net3 Cin net6) nand2
+    I1 (net1 net6 C) nand2
+    I0 (A B net1) nand2
+    I4 (A B net3) xor2
+    I3 (net3 Cin S) xor2
+ends full_adder_2
+// End of subcircuit definition.

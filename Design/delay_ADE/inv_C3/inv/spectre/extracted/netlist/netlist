@@ -1,0 +1,13 @@
+
+// Library name: multiplier
+// Cell name: inv
+// View name: extracted
+\+4 (Out gnd!) capacitor c=1.01738e-15
+\+3 (A gnd!) capacitor c=1.1311e-15
+\+2 (A Out) capacitor c=6.12398e-15
+\+1 (vdd! Out) capacitor c=1.17788e-15
+\+0 (vdd! A) capacitor c=3.89136e-16
+\+6 (Out A vdd! vdd!) pmos1 w=4e-06 l=1.8e-07 as=2.16e-12 ad=2.16e-12 \
+        ps=5.08e-06 pd=5.08e-06 m=(1)*(1)
+\+5 (Out A gnd! gnd!) nmos1 w=1.6e-06 l=1.8e-07 as=8.64e-13 ad=8.64e-13 \
+        ps=2.68e-06 pd=2.68e-06 m=(1)*(1)

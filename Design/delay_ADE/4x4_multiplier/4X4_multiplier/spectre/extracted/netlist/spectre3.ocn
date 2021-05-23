@@ -1,0 +1,30 @@
+simulator( 'spectre )
+design(	 "/home/SME_VLSI/VLSI_57/simulation/delay/4x4_multiplier/4X4_multiplier/spectre/extracted/netlist/netlist")
+resultsDir( "/home/SME_VLSI/VLSI_57/simulation/delay/4x4_multiplier/4X4_multiplier/spectre/extracted" )
+modelFile( 
+    '("/home/SME_VLSI/306cadence/assuraTech/oa_2014/gpdk/../models/gpdk.scs" "NN")
+)
+analysis('tran ?stop "30n"  )
+envOption(
+	'analysisOrder  list("tran") 
+)
+temp( 27 ) 
+run()
+resultsDir( "/home/SME_VLSI/VLSI_57/simulation/delay/4x4_multiplier_11100001/4X4_multiplier/spectre/extracted" )
+modelFile( 
+    '("/home/SME_VLSI/306cadence/assuraTech/oa_2014/gpdk/../models/gpdk.scs" "NN")
+)
+run()
+modelFile( 
+    '("/home/SME_VLSI/306cadence/assuraTech/oa_2014/gpdk/../models/gpdk.scs" "NN")
+)
+run()
+modelFile( 
+    '("/home/SME_VLSI/306cadence/assuraTech/oa_2014/gpdk/../models/gpdk.scs" "NN")
+)
+run()
+resultsDir( "/home/SME_VLSI/VLSI_57/simulation/delay/4x4_multiplier_00011110/4X4_multiplier/spectre/extracted" )
+modelFile( 
+    '("/home/SME_VLSI/306cadence/assuraTech/oa_2014/gpdk/../models/gpdk.scs" "NN")
+)
+run()

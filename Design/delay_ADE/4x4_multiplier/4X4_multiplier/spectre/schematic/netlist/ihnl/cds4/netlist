@@ -1,0 +1,4 @@
+    I1 (A B S) xor2
+    I3 (A B C) and2
+ends half_adder_2
+// End of subcircuit definition.
