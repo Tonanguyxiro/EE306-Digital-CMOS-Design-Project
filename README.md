@@ -33,20 +33,7 @@ Some important reference files are put here, for example, I have simplify the de
 
 ### Design of Basic Gates
 
-<center>
-  <figure>
-    <img src="Design/Design_figures/inv_schematic.png" style="zoom:30%;" />
-    <img src="Design/Design_figures/inv_layout.png" style="zoom:30%;" />
-  <figure>
-<center>
-
-
-
-
-
 ### Design of Adders
-
-
 
 ### Design of the multiplier
 
