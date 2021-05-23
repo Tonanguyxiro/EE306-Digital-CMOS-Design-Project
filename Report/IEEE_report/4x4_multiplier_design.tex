@@ -10,9 +10,10 @@
 \usepackage{float}
 \usepackage{subfigure}
 \usepackage{subfig}
-\graphicspath{{../figures/}}
+% \graphicspath{{../figures/}{../../Design/Design_figures}}
+\graphicspath{{../figures}{../../Design/Design_figures}{../../Design/simulation/trans_result}}
 
-
+ 
 \def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
     T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
 \begin{document}
@@ -241,7 +242,7 @@ A half adder is a conbination of a AND Gate and a XOR Gate, each of their input 
 
 % Explain the circuit structure and operation of the full adder that is used in multiplier design. Provide the circuit schematic in the report. Provide the sizes (both width and length in micrometers) of all the transistors.
 
-As shown in Fig \ref{Schematic of Full Adder}, a full adder is a combination of XOR Gates and NAND gates, the structure here is simplified from the classical design in which a full adder contians two half adder and AND Gate, so 
+As shown in Fig \ref{Schematic of Full Adder}, a full adder is a combination of XOR Gates and NAND gates, the structure here is simplified from the classical design in which a full adder contains two half adder and AND Gate, so we can save a lot of area.
 
 \begin{figure}[H]
     \centering
@@ -265,9 +266,25 @@ As shown in Fig \ref{Schematic of Full Adder}, a full adder is a combination of 
 
 \subsection{Schemetic}
 
+The schematic of the multiplier is shown in Fig \ref{4X4_Multiplier_schematic}, it has contians many full adders half adders and and gates. we connect them together as the design shown before.
 
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.9\linewidth]{4X4_Multiplier_schematic.png}
+    \caption{Schematic of $4 \times 4$ bit multiplier}
+    \label{4X4_Multiplier_schematic}
+\end{figure}
 
 \subsection{Layout}
+
+In the layout, we use the low level layer as wire to reduce the delay time. We use poly, metal1, metal2, and some metal3 as the connection wire between each components.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.9\linewidth]{4X4_Multiplier_layout.png}
+    \caption{Layout of $4 \times 4$ bit multiplier}
+    \label{4X4_Multiplier_layout}
+\end{figure}
 
 \section{Varication and benckmark of the multiplier}
 \label{test}
@@ -278,9 +295,11 @@ After we finish the design of the multiplier we need to test the performance of 
 
 \subsection{Area of the Layout}
 
+As we tested, the area of the layout is \textbf{((-11.2, -95)(53.2, 2)), 6246.8$\mu m^2$}
+
 \subsection{propagation delay}
 
-Here we will compare the post-layout delay measurements with the schematic level delay measurement 50f F cap is attached to the output.
+Here we will compare the post-layout delay measurements with the schematic level delay measurement 50f F cap is attached to the output. We apply two set of input to the multiplier so we can get the transfer data of all output. The first set is $0000 \times 1111 = 11100001$ and the second set is $0010 \times 1111 = 00011110$. As we measure, the maxmun down-to-up delay is \textbf{1ns} and uo-to-down delay is \textbf{0.75ns}, the plots are shown in Appendix.
 
 \section{Conclusion}
 
@@ -290,5 +309,117 @@ In this project, we experience the procedure of Top to Down design and Down to T
 % \input{tutorial.tex}
 
 \input{reference.tex}
+
+
+\newpage
+\section{Appendix}
+
+\subsection{Delay of basic Gates}
+
+% -------------------------------------------------------------
+\subsubsection{Inverter}
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.9\linewidth]{inv_C1.png}
+    \caption{Delay of Inverter with output capacitance 15f F}
+\end{figure}
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.9\linewidth]{inv_C2.png}
+    \caption{Delay of Inverter with output capacitance 120f F}
+\end{figure}
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.9\linewidth]{inv_C3.png}
+    \caption{Delay of Inverter with output capacitance 960f F}
+\end{figure}
+% -------------------------------------------------------------
+\subsubsection{NAND Gate}
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.9\linewidth]{nand2_C1.png}
+    \caption{Delay of NAND Gate with output capacitance 15f F}
+\end{figure}
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.9\linewidth]{nand2_C2.png}
+    \caption{Delay of NAND Gate with output capacitance 120f F}
+\end{figure}
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.9\linewidth]{nand2_C3.png}
+    \caption{Delay of NAND Gate with output capacitance 960f F}
+\end{figure}
+% -------------------------------------------------------------
+\subsubsection{AND Gate}
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.9\linewidth]{and2_C1.png}
+    \caption{Delay of AND Gate with output capacitance 15f F}
+\end{figure}
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.9\linewidth]{and2_C2.png}
+    \caption{Delay of AND Gate with output capacitance 120f F}
+\end{figure}
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.9\linewidth]{and2_C3.png}
+    \caption{Delay of AND Gate with output capacitance 960f F}
+\end{figure}
+% -------------------------------------------------------------
+\subsubsection{XOR Gate}
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.9\linewidth]{xor2_C1.png}
+    \caption{Delay of XOR Gate with output capacitance 15f F}
+\end{figure}
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.9\linewidth]{xor2_C2.png}
+    \caption{Delay of XOR Gate with output capacitance 120f F}
+\end{figure}
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.9\linewidth]{xor2_C3.png}
+    \caption{Delay of XOR Gate with output capacitance 960f F}
+\end{figure}
+% -------------------------------------------------------------
+
+\subsection{Delay of the multiplier}
+
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.9\linewidth]{mul_11100001_up_all.png}
+    \caption{Low to high delay of 11100001}
+\end{figure}
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.9\linewidth]{mul_11100001_down_all.png}
+    \caption{High to low delay of 11100001}
+\end{figure}
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.9\linewidth]{mul_00011110_up_all.png}
+    \caption{Low to high delay of 00011110}
+\end{figure}
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.9\linewidth]{mul_00011110_down_all.png}
+    \caption{High to low delay of 00011110}
+\end{figure}
+
 
 \end{document}
