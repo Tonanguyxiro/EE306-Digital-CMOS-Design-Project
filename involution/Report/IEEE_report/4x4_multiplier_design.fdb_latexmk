@@ -1,9 +1,9 @@
 # Fdb version 3
-["xdvipdfmx"] 1622059798 "/Users/tongyuan/Documents/Study/S6_Spring_2021/CMOS Design/Project/ee306-digital-cmos-design-project/involution/Report/IEEE_report/4x4_multiplier_design.xdv" "/Users/tongyuan/Documents/Study/S6_Spring_2021/CMOS Design/Project/ee306-digital-cmos-design-project/involution/Report/IEEE_report/4x4_multiplier_design.pdf" "/Users/tongyuan/Documents/Study/S6_Spring_2021/CMOS Design/Project/ee306-digital-cmos-design-project/involution/Report/IEEE_report/4x4_multiplier_design" 1622059808
-  "/Users/tongyuan/Documents/Study/S6_Spring_2021/CMOS Design/Project/ee306-digital-cmos-design-project/involution/Report/IEEE_report/4x4_multiplier_design.xdv" 1622059798 120956 6ac5bd7890081685bc911292afbb78a6 "xelatex"
+["xdvipdfmx"] 1622060829 "/Users/tongyuan/Documents/Study/S6_Spring_2021/CMOS Design/Project/ee306-digital-cmos-design-project/involution/Report/IEEE_report/4x4_multiplier_design.xdv" "/Users/tongyuan/Documents/Study/S6_Spring_2021/CMOS Design/Project/ee306-digital-cmos-design-project/involution/Report/IEEE_report/4x4_multiplier_design.pdf" "/Users/tongyuan/Documents/Study/S6_Spring_2021/CMOS Design/Project/ee306-digital-cmos-design-project/involution/Report/IEEE_report/4x4_multiplier_design" 1622060839
+  "/Users/tongyuan/Documents/Study/S6_Spring_2021/CMOS Design/Project/ee306-digital-cmos-design-project/involution/Report/IEEE_report/4x4_multiplier_design.xdv" 1622060829 124828 dd6b1829bf8e51251a54d18c4ed5934e "xelatex"
   (generated)
   "/Users/tongyuan/Documents/Study/S6_Spring_2021/CMOS Design/Project/ee306-digital-cmos-design-project/involution/Report/IEEE_report/4x4_multiplier_design.pdf"
-["xelatex"] 1622059798 "/Users/tongyuan/Documents/Study/S6_Spring_2021/CMOS Design/Project/ee306-digital-cmos-design-project/involution/Report/IEEE_report/4x4_multiplier_design.tex" "/Users/tongyuan/Documents/Study/S6_Spring_2021/CMOS Design/Project/ee306-digital-cmos-design-project/involution/Report/IEEE_report/4x4_multiplier_design.xdv" "4x4_multiplier_design" 1622059808
+["xelatex"] 1622060829 "/Users/tongyuan/Documents/Study/S6_Spring_2021/CMOS Design/Project/ee306-digital-cmos-design-project/involution/Report/IEEE_report/4x4_multiplier_design.tex" "/Users/tongyuan/Documents/Study/S6_Spring_2021/CMOS Design/Project/ee306-digital-cmos-design-project/involution/Report/IEEE_report/4x4_multiplier_design.xdv" "4x4_multiplier_design" 1622060839
   "../../Design/Design_figures/4X4_Multiplier_layout.png" 1622053658 2184883 6fd55fbc617909fce2458c88ac640116 ""
   "../../Design/Design_figures/4X4_Multiplier_schematic.png" 1621770783 45576 8bbd9ccb9003e8c93f652da2c64568f2 ""
   "../../Design/Design_figures/and2_schematic.png" 1622054744 10262 f7475d2b73f49b84f60083894a100307 ""
@@ -25,6 +25,8 @@
   "../../Design/simulation/trans_result/mul_11100001_down_max.png" 1622053080 49179 fe89d2e87f8eb7dfd3163e181d780160 ""
   "../../Design/simulation/trans_result/mul_11100001_up_all.png" 1622052974 83684 ffdbb94aadb9b52ed645cdbbf2e6311c ""
   "../../Design/simulation/trans_result/mul_11100001_up_max.png" 1622057749 56717 c016c1895e26fb03749a17c19dcef432 ""
+  "../../Design/simulation/trans_result/mul_sch_down_all.png" 1622060525 80399 04b2b6eb6aefed048ef8d2fb137f6630 ""
+  "../../Design/simulation/trans_result/mul_sch_up_all.png" 1622060525 79130 92ed31b264d82880d70a0bd60a4fc1a1 ""
   "../../Design/simulation/trans_result/nand2_C1.png" 1622056625 47308 b9d7b6dd2d0249b7e1b57d888e48349c ""
   "../../Design/simulation/trans_result/nand2_C2.png" 1622056655 48117 8e4d530ac59a3af7e500a4949622ce0c ""
   "../../Design/simulation/trans_result/nand2_C3.png" 1622056767 52148 b2ac31eb3f1d80f36866b338465ec4c3 ""
@@ -34,8 +36,8 @@
   "../figures/4x4_multiplier.png" 1621525808 139102 4a00213d9284ec36c10df21deca8bdbc ""
   "../figures/full_adder.jpeg" 1621527456 7090 942a2e701f6bf1a731c992bee183010d ""
   "../figures/half_adder.png" 1621526486 11442 c5e36ce07d8b51126ab5692a3837a47f ""
-  "/Users/tongyuan/Documents/Study/S6_Spring_2021/CMOS Design/Project/ee306-digital-cmos-design-project/involution/Report/IEEE_report/4x4_multiplier_design.aux" 1622059798 8719 d1e6f0f80dcf47ffa2c535598fd883b4 ""
-  "/Users/tongyuan/Documents/Study/S6_Spring_2021/CMOS Design/Project/ee306-digital-cmos-design-project/involution/Report/IEEE_report/4x4_multiplier_design.tex" 1622059797 21160 213f75864be0133719dd95758c1f2989 ""
+  "/Users/tongyuan/Documents/Study/S6_Spring_2021/CMOS Design/Project/ee306-digital-cmos-design-project/involution/Report/IEEE_report/4x4_multiplier_design.aux" 1622060829 9035 ed2c767de882f801421ae81ab6ede68e ""
+  "/Users/tongyuan/Documents/Study/S6_Spring_2021/CMOS Design/Project/ee306-digital-cmos-design-project/involution/Report/IEEE_report/4x4_multiplier_design.tex" 1622060828 21758 774edeb0557bbd77e32f5405d1061bd6 ""
   "/usr/local/texlive/2021/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2021/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/local/texlive/2021/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1246382020 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -90,13 +92,13 @@
   "/usr/local/texlive/2021/texmf-dist/web2c/texmf.cnf" 1616443989 39972 3d6bb4d9d719e93193fa020b58adf5d4 ""
   "/usr/local/texlive/2021/texmf-var/web2c/xetex/xelatex.fmt" 1619456667 5093957 c4047f0bb97c8ed4d1740a9534a85516 ""
   "/usr/local/texlive/2021/texmf.cnf" 1616695596 577 4c1911a7228e554c6032256d3cf5567d ""
-  "4x4_multiplier_design.aux" 1622059798 8719 d1e6f0f80dcf47ffa2c535598fd883b4 "xelatex"
-  "4x4_multiplier_design.tex" 1622059797 21160 213f75864be0133719dd95758c1f2989 ""
+  "4x4_multiplier_design.aux" 1622060829 9035 ed2c767de882f801421ae81ab6ede68e "xelatex"
+  "4x4_multiplier_design.tex" 1622060828 21758 774edeb0557bbd77e32f5405d1061bd6 ""
   "IEEEtran.cls" 1440611324 288304 b67b6fc6c2abb39f9b461923f5199343 ""
   "reference.tex" 1621525604 1436 83717e1cab5e85b69cb4ae083f5b50c2 ""
   (generated)
-  "4x4_multiplier_design.xdv"
   "/Users/tongyuan/Documents/Study/S6_Spring_2021/CMOS Design/Project/ee306-digital-cmos-design-project/involution/Report/IEEE_report/4x4_multiplier_design.xdv"
-  "4x4_multiplier_design.log"
   "/Users/tongyuan/Documents/Study/S6_Spring_2021/CMOS Design/Project/ee306-digital-cmos-design-project/involution/Report/IEEE_report/4x4_multiplier_design.log"
   "4x4_multiplier_design.aux"
+  "4x4_multiplier_design.log"
+  "4x4_multiplier_design.xdv"

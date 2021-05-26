@@ -302,7 +302,7 @@ As we tested, the area of the layout is \textbf{((0.39, -52)(62, 0)), 3276$\mu m
 
 \subsection{propagation delay}
 
-Here we will compare the post-layout delay measurements with the schematic level delay measurement 50f F cap is attached to the output. We apply two set of input to the multiplier so we can get the transfer data of all output. The first set is $0000 \times 1111 = 11100001$ and the second set is $0010 \times 1111 = 00011110$. As we measure, the maxmun down-to-up delay is \textbf{1.915ns} and uo-to-down delay is \textbf{0.96ns}, the plots are shown in Appendix.
+Here we will compare the post-layout delay measurements with the schematic level delay measurement 50f F cap is attached to the output. We apply two set of input to the multiplier so we can get the transfer data of all output. The first set is $0000 \times 1111 = 11100001$ and the second set is $0010 \times 1111 = 00011110$. As we measure, the maxmun down-to-up delay is \textbf{1.915ns} for av-extracted view and \textbf{1.560ns} for schematic view, uo-to-down delay is \textbf{0.96ns} for av-extracted view and \textbf{0.773ns} for schematic view, from the data we could found that the delay of schematic view is a little lower than av-extracted view due to omiting of some cap. The plots are shown in Appendix.
 
 \section{Conclusion}
 
@@ -414,6 +414,12 @@ In this project, we experience the procedure of Top to Down design and Down to T
 
 \begin{figure}[h!]
     \centering
+    \includegraphics[width=0.9\linewidth]{mul_sch_up_all.png}
+    \caption{Low to high delay of 11100001 in schematic view}
+\end{figure}
+
+\begin{figure}[h!]
+    \centering
     \includegraphics[width=0.9\linewidth]{mul_11100001_down_all.png}
     \caption{High to low delay of 11100001}
 \end{figure}
@@ -422,6 +428,12 @@ In this project, we experience the procedure of Top to Down design and Down to T
     \centering
     \includegraphics[width=0.9\linewidth]{mul_11100001_down_max.png}
     \caption{High to low delay of 11100001}
+\end{figure}
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.9\linewidth]{mul_sch_down_all.png}
+    \caption{High to low delay of 11100001 in schematic view}
 \end{figure}
 
 

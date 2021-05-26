@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2021.4.27)  27 MAY 2021 04:09
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2021.4.27)  27 MAY 2021 04:27
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -509,6 +509,14 @@ LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
 LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
 (Font)              using `TU/ptm/bx/n' instead on input line 305.
 
+
+LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
+(Font)              using `TU/ptm/bx/n' instead on input line 305.
+
+
+LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
+(Font)              using `TU/ptm/bx/n' instead on input line 305.
+
 (/Users/tongyuan/Documents/Study/S6_Spring_2021/CMOS Design/Project/ee306-digital-cmos-design-project/involution/Report/IEEE_report/reference.tex [4])
 File: ../../Design/simulation/trans_result/inv_C1.png Graphic file (type bmp)
 <../../Design/simulation/trans_result/inv_C1.png>
@@ -572,6 +580,11 @@ File: ../../Design/simulation/trans_result/mul_11100001_up_max.png Graphic file 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
+File: ../../Design/simulation/trans_result/mul_sch_up_all.png Graphic file (type bmp)
+<../../Design/simulation/trans_result/mul_sch_up_all.png>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
 File: ../../Design/simulation/trans_result/mul_11100001_down_all.png Graphic file (type bmp)
 <../../Design/simulation/trans_result/mul_11100001_down_all.png>
 
@@ -579,6 +592,11 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 File: ../../Design/simulation/trans_result/mul_11100001_down_max.png Graphic file (type bmp)
 <../../Design/simulation/trans_result/mul_11100001_down_max.png>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+File: ../../Design/simulation/trans_result/mul_sch_down_all.png Graphic file (type bmp)
+<../../Design/simulation/trans_result/mul_sch_down_all.png>
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
@@ -600,22 +618,18 @@ LaTeX Warning: Text page 6 contains only floats.
 
 LaTeX Warning: Text page 6 contains only floats.
 
-[6]
-
-LaTeX Warning: Text page 7 contains only floats.
-
-[7] (/Users/tongyuan/Documents/Study/S6_Spring_2021/CMOS Design/Project/ee306-digital-cmos-design-project/involution/Report/IEEE_report/4x4_multiplier_design.aux)
+[6] [7] (/Users/tongyuan/Documents/Study/S6_Spring_2021/CMOS Design/Project/ee306-digital-cmos-design-project/involution/Report/IEEE_report/4x4_multiplier_design.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 5375 strings out of 476919
- 93791 string characters out of 5821840
+ 5387 strings out of 476919
+ 94413 string characters out of 5821840
  401774 words of memory out of 5000000
- 25273 multiletter control sequences out of 15000+600000
+ 25283 multiletter control sequences out of 15000+600000
  415789 words of font info for 88 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  71i,11n,79p,1364b,295s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on /Users/tongyuan/Documents/Study/S6_Spring_2021/CMOS Design/Project/ee306-digital-cmos-design-project/involution/Report/IEEE_report/4x4_multiplier_design.xdv (7 pages, 120956 bytes).
+Output written on /Users/tongyuan/Documents/Study/S6_Spring_2021/CMOS Design/Project/ee306-digital-cmos-design-project/involution/Report/IEEE_report/4x4_multiplier_design.xdv (7 pages, 124828 bytes).
