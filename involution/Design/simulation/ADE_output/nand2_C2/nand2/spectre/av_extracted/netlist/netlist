@@ -1,0 +1,29 @@
+
+// Library name: multiplier_low
+// Cell name: nand2
+// View name: av_extracted
+re1 (A \2\:A) resistor r=0.001111 c=0
+re2 (Out \4\:Out) resistor r=0.001111 c=0
+re3 (\2\:Out \4\:Out) resistor r=2 c=0
+rf1 (\1\:A \2\:A) resistor r=2.1 c=0
+rf2 (\1\:Out \2\:Out) resistor r=0.3878 c=0
+rf3 (\2\:Out \3\:Out) resistor r=0.5416 c=0
+rf4 (\1\:B B) resistor r=2.1 c=0
+rf5 (\1\:vdd! vdd!) resistor r=0.479 c=0
+rf6 (vdd! \2\:vdd!) resistor r=0.05202 c=0
+rf7 (\2\:vdd! \3\:vdd!) resistor r=0.4475 c=0
+rf8 (\1\:gnd! 0) resistor r=0.4363 c=0
+rg1 (\3\:A \4\:A) resistor r=72.8433 c=0
+rg2 (\4\:A \1\:A) resistor r=3.7604 c=0
+rg3 (\4\:A \5\:A) resistor r=68.0516 c=0
+rg4 (\1\:B \2\:B) resistor r=3.7604 c=0
+rg5 (\2\:B \3\:B) resistor r=48.2599 c=0
+rg6 (\2\:B \4\:B) resistor r=92.6349 c=0
+MP1 (\1\:vdd! \4\:B \1\:Out vdd!) pmos1 w=1e-06 l=1.8e-07 as=1.2e-12 \
+        ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+MP0 (\1\:Out \3\:A \3\:vdd! vdd!) pmos1 w=1e-06 l=1.8e-07 as=1.2e-12 \
+        ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+MN1 (\1\:gnd! \3\:B net9 0) nmos1 w=8e-07 l=1.8e-07 as=1.2e-12 ad=1.2e-12 \
+        ps=5.2u pd=5.2u m=(1)*(1)
+MN0 (net9 \5\:A \3\:Out 0) nmos1 w=8e-07 l=1.8e-07 as=1.2e-12 ad=1.2e-12 \
+        ps=5.2u pd=5.2u m=(1)*(1)

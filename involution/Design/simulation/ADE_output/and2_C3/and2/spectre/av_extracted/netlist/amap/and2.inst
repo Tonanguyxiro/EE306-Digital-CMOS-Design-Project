@@ -1,0 +1,5 @@
+HEADER
+"PSFversion" "1.00"
+"re3n rf1n rf2n rf3n rf4n rf5n rf6n rf7n rf8n rf9n rf10n rf11n rf13n rf14n rf15n rf16n rf17n rf18n rg1n rg2n rg3n rg4n rg5n rg6n rg7n rg8n rg9n" "analogLib_presistor_spectre"
+"MP2n MP1n MP0n" "gpdk_pmos_spectre"
+"MN2n MN1n MN0n" "gpdk_nmos_spectre"

@@ -1,0 +1,10 @@
+CADENCE IHNL01070
+$model
+multiplier_low/inv/av_extracted inv
+$endmodel
+$net
+gnd! 0
+vdd! vdd!
+$endnet
+$param
+$endparam

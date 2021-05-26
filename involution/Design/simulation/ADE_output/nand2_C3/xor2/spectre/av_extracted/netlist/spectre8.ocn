@@ -1,0 +1,41 @@
+simulator( 'spectre )
+design(	 "/home/SME_VLSI/VLSI_57/simulation/delay2/xor2_C1/xor2/spectre/av_extracted/netlist/netlist")
+resultsDir( "/home/SME_VLSI/VLSI_57/simulation/delay2/xor2_C1/xor2/spectre/av_extracted" )
+modelFile( 
+    '("/home/SME_VLSI/306cadence/assuraTech/oa_2014/gpdk/../models/gpdk.scs" "NN")
+)
+analysis('tran ?stop "30n"  )
+envOption(
+	'analysisOrder  list("tran") 
+)
+temp( 27 ) 
+run()
+resultsDir( "/home/SME_VLSI/VLSI_57/simulation/delay2/xor2_C2/xor2/spectre/av_extracted" )
+modelFile( 
+    '("/home/SME_VLSI/306cadence/assuraTech/oa_2014/gpdk/../models/gpdk.scs" "NN")
+)
+run()
+resultsDir( "/home/SME_VLSI/VLSI_57/simulation/delay2/xor2_C3/xor2/spectre/av_extracted" )
+modelFile( 
+    '("/home/SME_VLSI/306cadence/assuraTech/oa_2014/gpdk/../models/gpdk.scs" "NN")
+)
+run()
+resultsDir( "/home/SME_VLSI/VLSI_57/simulation/delay2/xor2_C2/xor2/spectre/av_extracted" )
+modelFile( 
+    '("/home/SME_VLSI/306cadence/assuraTech/oa_2014/gpdk/../models/gpdk.scs" "NN")
+)
+run()
+resultsDir( "/home/SME_VLSI/VLSI_57/simulation/delay2/xor2_C3/xor2/spectre/av_extracted" )
+modelFile( 
+    '("/home/SME_VLSI/306cadence/assuraTech/oa_2014/gpdk/../models/gpdk.scs" "NN")
+)
+run()
+modelFile( 
+    '("/home/SME_VLSI/306cadence/assuraTech/oa_2014/gpdk/../models/gpdk.scs" "NN")
+)
+run()
+modelFile( 
+    '("/home/SME_VLSI/306cadence/assuraTech/oa_2014/gpdk/../models/gpdk.scs" "NN")
+)
+analysis('tran ?stop "40n"  )
+run()

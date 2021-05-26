@@ -1,0 +1,2942 @@
+// Generated for: spectre
+// Generated on: May 27 02:13:04 2021
+// Design library name: multiplier_low
+// Design cell name: 4X4_multiplier
+// Design view name: av_extracted
+simulator lang=spectre
+global 0 vdd!
+include "/home/SME_VLSI/VLSI_57/306cadence/test_files/4x4_mul_11100001.input"
+include "/home/SME_VLSI/306cadence/assuraTech/oa_2014/gpdk/../models/gpdk.scs" section=NN
+
+// Library name: multiplier_low
+// Cell name: 4X4_multiplier
+// View name: av_extracted
+rd1 (\8\:net19 \5\:net19) resistor r=8.0091 c=0
+rd2 (\12\:net16 \3\:net16) resistor r=5.8364 c=0
+rd3 (\24\:X3 \25\:X3) resistor r=3.1579 c=0
+rd4 (\25\:X3 \26\:X3) resistor r=0.5024 c=0
+rd5 (\26\:X3 \17\:X3) resistor r=5.0228 c=0
+rd6 (\17\:X3 \16\:X3) resistor r=4.8777 c=0
+rd7 (\25\:X3 \18\:X3) resistor r=0.04452 c=0
+rd8 (\26\:X3 X3) resistor r=1.8728 c=0
+rd9 (\20\:net17 net17) resistor r=7.2124 c=0
+rd10 (\20\:net54 \8\:net54) resistor r=8.6175 c=0
+rd11 (\12\:net15 net15) resistor r=7.3099 c=0
+rd12 (\14\:net21 net21) resistor r=5.4346 c=0
+rd13 (\8\:net0100 \11\:net0100) resistor r=4.2422 c=0
+rd14 (\8\:net29 \11\:net29) resistor r=4.6625 c=0
+rd15 (X2 \25\:X2) resistor r=2.0091 c=0
+rd16 (\25\:X2 \6\:X2) resistor r=4.3508 c=0
+rd17 (\25\:X2 \26\:X2) resistor r=4.9199 c=0
+rd18 (\26\:X2 \14\:X2) resistor r=9.0609 c=0
+rd19 (\25\:X2 \21\:X2) resistor r=4.2095 c=0
+rd20 (\26\:X2 \15\:X2) resistor r=3.9144 c=0
+rd21 (\11\:net45 \10\:net45) resistor r=3.8783 c=0
+rd22 (\11\:net5 \3\:net5) resistor r=4.1 c=0
+rd23 (\11\:net44 \8\:net44) resistor r=2.3746 c=0
+rd24 (\11\:net32 \8\:net32) resistor r=2.3184 c=0
+rd25 (\24\:X1 \3\:X1) resistor r=3.2855 c=0
+rd26 (\3\:X1 \25\:X1) resistor r=0.05722 c=0
+rd27 (\25\:X1 X1) resistor r=2.0116 c=0
+rd28 (\25\:X1 \26\:X1) resistor r=4.9159 c=0
+rd29 (\26\:X1 \9\:X1) resistor r=5.0544 c=0
+rd30 (\26\:X1 \18\:X1) resistor r=0.03024 c=0
+rd31 (X0 \25\:X0) resistor r=4.3738 c=0
+rd32 (\25\:X0 \11\:X0) resistor r=1.0865 c=0
+rd33 (\25\:X0 \24\:X0) resistor r=0.8508 c=0
+rd34 (\24\:X0 \22\:X0) resistor r=1.5696 c=0
+rd35 (\22\:X0 \23\:X0) resistor r=4.8116 c=0
+re1 (\16\:X3 \1\:X3) resistor r=4.4678 c=0
+re2 (\17\:X3 \3\:X3) resistor r=4.4712 c=0
+re3 (\5\:X3 \18\:X3) resistor r=4 c=0
+re4 (\4\:net19 \5\:net19) resistor r=0.005495 c=0
+re5 (net19 \4\:net19) resistor r=2 c=0
+re6 (\18\:net090 \2\:net090) resistor r=3.1152 c=0
+re7 (\18\:net13 \2\:net13) resistor r=3.1152 c=0
+re8 (\19\:net090 \4\:net090) resistor r=4.9649 c=0
+re9 (\4\:net13 \19\:net13) resistor r=4.9666 c=0
+re10 (\5\:net093 \2\:net093) resistor r=3.1619 c=0
+re11 (\6\:net19 \8\:net19) resistor r=2 c=0
+re12 (\3\:net16 net16) resistor r=2 c=0
+re13 (Z7 \1\:Z7) resistor r=6.021 c=0
+re14 (\8\:net54 \9\:net54) resistor r=0.004082 c=0
+re15 (\3\:net54 \9\:net54) resistor r=2 c=0
+re16 (\12\:net16 \13\:net16) resistor r=4.0411 c=0
+re17 (\6\:net55 \4\:net55) resistor r=5.3786 c=0
+re18 (\19\:X3 \24\:X3) resistor r=4 c=0
+re19 (\13\:I4\|net3 \14\:I4\|net3) resistor r=2.6847 c=0
+re20 (\14\:I4\|net3 \6\:I4\|net3) resistor r=0.9844 c=0
+re21 (\8\:I4\|net3 \14\:I4\|net3) resistor r=2 c=0
+re22 (\13\:I9\|net3 \14\:I9\|net3) resistor r=2.6847 c=0
+re23 (\14\:I9\|net3 \6\:I9\|net3) resistor r=0.9844 c=0
+re24 (\8\:I9\|net3 \14\:I9\|net3) resistor r=2 c=0
+re25 (net21 \2\:net21) resistor r=4 c=0
+re26 (net15 \2\:net15) resistor r=0.001087 c=0
+re27 (net17 \2\:net17) resistor r=0.004082 c=0
+re28 (Z6 \1\:Z6) resistor r=3.0317 c=0
+re29 (\15\:net55 \20\:net55) resistor r=4.7641 c=0
+re30 (\5\:X2 \6\:X2) resistor r=2 c=0
+re31 (\11\:X2 \14\:X2) resistor r=2 c=0
+re32 (\15\:X2 \12\:X2) resistor r=2 c=0
+re33 (\10\:net38 \2\:net38) resistor r=3.1152 c=0
+re34 (\4\:net38 \11\:net38) resistor r=5.0824 c=0
+re35 (\9\:net8 \5\:net8) resistor r=5.1152 c=0
+re36 (\11\:net8 \2\:net8) resistor r=5.0534 c=0
+re37 (\13\:net39 \2\:net39) resistor r=5.7166 c=0
+re38 (\10\:net087 \5\:net087) resistor r=3.1152 c=0
+re39 (\11\:net087 \2\:net087) resistor r=5.0993 c=0
+re40 (\21\:net55 net55) resistor r=8.1859 c=0
+re41 (\20\:net17 \19\:net17) resistor r=3.0466 c=0
+re42 (\20\:net54 \19\:net54) resistor r=3.0379 c=0
+re43 (\11\:net15 \12\:net15) resistor r=4 c=0
+re44 (\14\:net21 \12\:net21) resistor r=4.0011 c=0
+re45 (\14\:I0\|net3 \15\:I0\|net3) resistor r=0.6847 c=0
+re46 (\15\:I0\|net3 \6\:I0\|net3) resistor r=0.9844 c=0
+re47 (\8\:I0\|net3 \15\:I0\|net3) resistor r=2 c=0
+re48 (\13\:I10\|net3 \14\:I10\|net3) resistor r=2.6847 c=0
+re49 (\14\:I10\|net3 \6\:I10\|net3) resistor r=0.9844 c=0
+re50 (\8\:I10\|net3 \14\:I10\|net3) resistor r=2 c=0
+re51 (\14\:I3\|net3 \15\:I3\|net3) resistor r=0.6847 c=0
+re52 (\15\:I3\|net3 \6\:I3\|net3) resistor r=0.9844 c=0
+re53 (\8\:I3\|net3 \15\:I3\|net3) resistor r=2 c=0
+re54 (Z5 \2\:Z5) resistor r=3.1416 c=0
+re55 (\8\:net0100 \2\:net0100) resistor r=5.4502 c=0
+re56 (\8\:net29 \2\:net29) resistor r=5.86 c=0
+re57 (Z4 \1\:Z4) resistor r=3.0829 c=0
+re58 (\11\:net31 \2\:net31) resistor r=5.438 c=0
+re59 (\3\:net5 \2\:net5) resistor r=2.422 c=0
+re60 (\10\:net45 \2\:net45) resistor r=2.4508 c=0
+re61 (\11\:net1 \2\:net1) resistor r=6.1255 c=0
+re62 (\11\:net26 \2\:net26) resistor r=6.1929 c=0
+re63 (\10\:net0100 \11\:net0100) resistor r=2 c=0
+re64 (\13\:I1\|net3 \14\:I1\|net3) resistor r=2.9844 c=0
+re65 (\14\:I1\|net3 \7\:I1\|net3) resistor r=0.6847 c=0
+re66 (\12\:I1\|net3 \14\:I1\|net3) resistor r=2 c=0
+re67 (\10\:net29 \11\:net29) resistor r=2 c=0
+re68 (\19\:X2 \21\:X2) resistor r=4.0089 c=0
+re69 (\3\:net34 \13\:net34) resistor r=3.1152 c=0
+re70 (\13\:I11\|net3 \14\:I11\|net3) resistor r=2.9844 c=0
+re71 (\14\:I11\|net3 \7\:I11\|net3) resistor r=0.6847 c=0
+re72 (\12\:I11\|net3 \14\:I11\|net3) resistor r=2 c=0
+re73 (\13\:I2\|net3 \14\:I2\|net3) resistor r=2.9844 c=0
+re74 (\14\:I2\|net3 \7\:I2\|net3) resistor r=0.6847 c=0
+re75 (\9\:I2\|net3 \14\:I2\|net3) resistor r=2 c=0
+re76 (\3\:net078 \13\:net078) resistor r=3.1152 c=0
+re77 (\3\:net28 \13\:net28) resistor r=3.1152 c=0
+re78 (\18\:net34 \2\:net34) resistor r=6.3777 c=0
+re79 (\15\:net078 \2\:net078) resistor r=5.3259 c=0
+re80 (\14\:net28 \2\:net28) resistor r=5.1758 c=0
+re81 (\1\:X1 \3\:X1) resistor r=4.0933 c=0
+re82 (\8\:net44 \3\:net44) resistor r=8.0252 c=0
+re83 (\8\:X1 \9\:X1) resistor r=2.3735 c=0
+re84 (\14\:X1 \18\:X1) resistor r=2.5129 c=0
+re85 (\6\:net0115 \5\:net0115) resistor r=4.7641 c=0
+re86 (\8\:net32 \3\:net32) resistor r=9.1881 c=0
+re87 (\2\:net095 \12\:net095) resistor r=7.462 c=0
+re88 (\9\:net0115 \10\:net0115) resistor r=5.3786 c=0
+re89 (\12\:net5 \11\:net5) resistor r=4.4477 c=0
+re90 (\12\:net45 \11\:net45) resistor r=4.4706 c=0
+re91 (\11\:net44 \10\:net44) resistor r=2.7182 c=0
+re92 (\10\:net32 \11\:net32) resistor r=2.553 c=0
+re93 (\2\:net35 \11\:net35) resistor r=11.1009 c=0
+re94 (\6\:net075 \4\:net075) resistor r=5.3786 c=0
+re95 (\6\:net47 \4\:net47) resistor r=5.3786 c=0
+re96 (net075 \11\:net075) resistor r=2.6252 c=0
+re97 (\11\:net47 net47) resistor r=2.6218 c=0
+re98 (\23\:X1 \24\:X1) resistor r=4 c=0
+re99 (\11\:X0 \6\:X0) resistor r=2.0078 c=0
+re100 (\12\:net0127 net0127) resistor r=5.6983 c=0
+re101 (\22\:net0115 \20\:net0115) resistor r=7.1937 c=0
+re102 (\18\:net075 \23\:net075) resistor r=4.7641 c=0
+re103 (\18\:net47 \23\:net47) resistor r=4.7641 c=0
+re104 (\22\:X0 \21\:X0) resistor r=4.2267 c=0
+re105 (\23\:X0 \20\:X0) resistor r=4.2289 c=0
+re106 (\24\:X0 \5\:X0) resistor r=21.5123 c=0
+re107 (Z3 \3\:Z3) resistor r=3.8779 c=0
+re108 (Z2 \3\:Z2) resistor r=4.033 c=0
+re109 (Z1 \3\:Z1) resistor r=5.9155 c=0
+re110 (Y2 \21\:Y2) resistor r=1.1311 c=0
+re111 (\21\:Y2 \22\:Y2) resistor r=2.7111 c=0
+re112 (\22\:Y2 \23\:Y2) resistor r=10.4714 c=0
+re113 (\23\:Y2 \5\:Y2) resistor r=5.6954 c=0
+re114 (\21\:Y2 \17\:Y2) resistor r=1.078 c=0
+re115 (\22\:Y2 \15\:Y2) resistor r=3.023 c=0
+re116 (\23\:Y2 \6\:Y2) resistor r=3.1738 c=0
+re117 (Y3 \21\:Y3) resistor r=1.1311 c=0
+re118 (\21\:Y3 \22\:Y3) resistor r=2.8324 c=0
+re119 (\22\:Y3 \23\:Y3) resistor r=10.4206 c=0
+re120 (\23\:Y3 \5\:Y3) resistor r=5.6155 c=0
+re121 (\21\:Y3 \17\:Y3) resistor r=1.0707 c=0
+re122 (\22\:Y3 \15\:Y3) resistor r=3.0112 c=0
+re123 (\23\:Y3 \6\:Y3) resistor r=3.1534 c=0
+re124 (Z0 \2\:Z0) resistor r=20.9575 c=0
+rf1 (\1\:X3 \2\:X3) resistor r=0.01 c=0
+rf2 (\3\:X3 \4\:X3) resistor r=0.01 c=0
+rf4 (\5\:X3 \6\:X3) resistor r=0.01 c=0
+rf5 (\5\:Y3 \1\:Y3) resistor r=2.01 c=0
+rf6 (\5\:Y2 \1\:Y2) resistor r=2.01 c=0
+rf7 (\5\:X0 \1\:X0) resistor r=2.01 c=0
+rf9 (I27\|net013 \2\:I27\|net013) resistor r=0.2434 c=0
+rf10 (\2\:I27\|net013 \3\:I27\|net013) resistor r=0.3205 c=0
+rf11 (\2\:I27\|net013 \4\:I27\|net013) resistor r=0.5422 c=0
+rf12 (I20\|net013 \2\:I20\|net013) resistor r=0.2434 c=0
+rf13 (\2\:I20\|net013 \3\:I20\|net013) resistor r=0.3205 c=0
+rf14 (\2\:I20\|net013 \4\:I20\|net013) resistor r=0.5422 c=0
+rf15 (I15\|net013 \2\:I15\|net013) resistor r=0.2434 c=0
+rf16 (\2\:I15\|net013 \3\:I15\|net013) resistor r=0.3205 c=0
+rf17 (\2\:I15\|net013 \4\:I15\|net013) resistor r=0.5422 c=0
+rf18 (I19\|net013 \2\:I19\|net013) resistor r=0.2434 c=0
+rf19 (\2\:I19\|net013 \3\:I19\|net013) resistor r=0.3205 c=0
+rf20 (\2\:I19\|net013 \4\:I19\|net013) resistor r=0.5422 c=0
+rf21 (net090 \2\:net090) resistor r=2.0022 c=0
+rf22 (net13 \2\:net13) resistor r=2.0022 c=0
+rf23 (\3\:net13 \4\:net13) resistor r=0.2066 c=0
+rf24 (\4\:net13 \5\:net13) resistor r=0.6132 c=0
+rf25 (\3\:net090 \4\:net090) resistor r=0.2066 c=0
+rf26 (\4\:net090 \5\:net090) resistor r=0.6132 c=0
+rf27 (\1\:Z0 \2\:Z0) resistor r=0.6132 c=0
+rf28 (\2\:Z0 \3\:Z0) resistor r=0.2066 c=0
+rf29 (net093 \2\:net093) resistor r=0.2066 c=0
+rf30 (\2\:net093 \3\:net093) resistor r=0.6132 c=0
+rf31 (net19 \2\:net19) resistor r=0.285 c=0
+rf32 (net19 \3\:net19) resistor r=0.8307 c=0
+rf33 (I4\|net3 \2\:I4\|net3) resistor r=0.7396 c=0
+rf34 (\2\:I4\|net3 \3\:I4\|net3) resistor r=0.4087 c=0
+rf35 (\3\:I4\|net3 \4\:I4\|net3) resistor r=0.7213 c=0
+rf36 (\2\:I4\|net3 \5\:I4\|net3) resistor r=0.2896 c=0
+rf37 (\2\:I4\|net3 \6\:I4\|net3) resistor r=2.2056 c=0
+rf38 (\3\:I4\|net3 \7\:I4\|net3) resistor r=0.2841 c=0
+rf39 (I9\|net3 \2\:I9\|net3) resistor r=0.7396 c=0
+rf40 (\2\:I9\|net3 \3\:I9\|net3) resistor r=0.4087 c=0
+rf41 (\3\:I9\|net3 \4\:I9\|net3) resistor r=0.7213 c=0
+rf42 (\2\:I9\|net3 \5\:I9\|net3) resistor r=0.2896 c=0
+rf43 (\2\:I9\|net3 \6\:I9\|net3) resistor r=2.2056 c=0
+rf44 (\3\:I9\|net3 \7\:I9\|net3) resistor r=0.2841 c=0
+rf45 (I4\|I4\|Ai \2\:I4\|I4\|Ai) resistor r=0.84 c=0
+rf46 (I4\|I4\|Ai \3\:I4\|I4\|Ai) resistor r=0.2475 c=0
+rf47 (I9\|I4\|Ai \2\:I9\|I4\|Ai) resistor r=0.84 c=0
+rf48 (I9\|I4\|Ai \3\:I9\|I4\|Ai) resistor r=0.2475 c=0
+rf49 (\12\:net090 \18\:net090) resistor r=2.0267 c=0
+rf50 (\19\:net090 \15\:net090) resistor r=0.02222 c=0
+rf51 (\12\:net13 \18\:net13) resistor r=2.0267 c=0
+rf52 (\19\:net13 \15\:net13) resistor r=0.02222 c=0
+rf53 (\4\:net093 \5\:net093) resistor r=2.0111 c=0
+rf54 (I5\|I1\|Bi \2\:I5\|I1\|Bi) resistor r=0.3619 c=0
+rf55 (\2\:I5\|I1\|Bi \3\:I5\|I1\|Bi) resistor r=0.6109 c=0
+rf56 (\2\:I5\|I1\|Bi \4\:I5\|I1\|Bi) resistor r=0.2422 c=0
+rf57 (\5\:I4\|I4\|Bi \6\:I4\|I4\|Bi) resistor r=0.3789 c=0
+rf58 (\6\:I4\|I4\|Bi I4\|I4\|Bi) resistor r=0.2425 c=0
+rf59 (\6\:I4\|I4\|Bi \7\:I4\|I4\|Bi) resistor r=0.3634 c=0
+rf60 (\5\:I9\|I4\|Bi \6\:I9\|I4\|Bi) resistor r=0.3789 c=0
+rf61 (\6\:I9\|I4\|Bi I9\|I4\|Bi) resistor r=0.2425 c=0
+rf62 (\6\:I9\|I4\|Bi \7\:I9\|I4\|Bi) resistor r=0.3634 c=0
+rf63 (\6\:net19 \7\:net19) resistor r=2.0233 c=0
+rf64 (net16 \2\:net16) resistor r=2.0233 c=0
+rf65 (net55 \2\:net55) resistor r=2.01 c=0
+rf66 (\5\:I5\|I3\|net013 \6\:I5\|I3\|net013) resistor r=0.4307 c=0
+rf67 (\6\:I5\|I3\|net013 I5\|I3\|net013) resistor r=0.5507 c=0
+rf68 (\6\:I5\|I3\|net013 \7\:I5\|I3\|net013) resistor r=0.8338 c=0
+rf69 (\8\:I4\|net3 \9\:I4\|net3) resistor r=0.01 c=0
+rf70 (\8\:I9\|net3 \9\:I9\|net3) resistor r=0.01 c=0
+rf71 (\3\:net55 \4\:net55) resistor r=0.002222 c=0
+rf72 (I4\|net1 \2\:I4\|net1) resistor r=0.7023 c=0
+rf73 (\2\:I4\|net1 \3\:I4\|net1) resistor r=0.5764 c=0
+rf74 (\2\:I4\|net1 \4\:I4\|net1) resistor r=0.5108 c=0
+rf75 (I9\|net1 \2\:I9\|net1) resistor r=0.7023 c=0
+rf76 (\2\:I9\|net1 \3\:I9\|net1) resistor r=0.5764 c=0
+rf77 (\2\:I9\|net1 \4\:I9\|net1) resistor r=0.5108 c=0
+rf78 (\5\:net55 \6\:net55) resistor r=0.002222 c=0
+rf79 (net54 \2\:net54) resistor r=0.629 c=0
+rf80 (\2\:net54 \3\:net54) resistor r=0.1083 c=0
+rf81 (\3\:net54 \4\:net54) resistor r=0.1123 c=0
+rf82 (\4\:net54 \5\:net54) resistor r=0.4382 c=0
+rf83 (\2\:net54 \6\:net54) resistor r=0.4386 c=0
+rf84 (\4\:net54 \7\:net54) resistor r=0.6387 c=0
+rf85 (I4\|I3\|Ai \2\:I4\|I3\|Ai) resistor r=0.04192 c=0
+rf86 (\2\:I4\|I3\|Ai \3\:I4\|I3\|Ai) resistor r=0.6961 c=0
+rf87 (\2\:I4\|I3\|Ai \4\:I4\|I3\|Ai) resistor r=0.4006 c=0
+rf88 (I9\|I3\|Ai \2\:I9\|I3\|Ai) resistor r=0.04192 c=0
+rf89 (\2\:I9\|I3\|Ai \3\:I9\|I3\|Ai) resistor r=0.6961 c=0
+rf90 (\2\:I9\|I3\|Ai \4\:I9\|I3\|Ai) resistor r=0.4006 c=0
+rf91 (\14\:net16 \13\:net16) resistor r=0.1956 c=0
+rf92 (\13\:net16 \15\:net16) resistor r=1.0615 c=0
+rf93 (\2\:Z7 \1\:Z7) resistor r=0.1956 c=0
+rf94 (\1\:Z7 \3\:Z7) resistor r=1.0615 c=0
+rf95 (\19\:X3 \20\:X3) resistor r=0.01 c=0
+rf96 (\14\:net55 \15\:net55) resistor r=0.01 c=0
+rf97 (\15\:I4\|net3 \13\:I4\|net3) resistor r=0.08472 c=0
+rf98 (\15\:I9\|net3 \13\:I9\|net3) resistor r=0.08472 c=0
+rf99 (\3\:net21 \2\:net21) resistor r=0.1 c=0
+rf100 (\3\:net15 \2\:net15) resistor r=2.1 c=0
+rf102 (I12\|net013 \2\:I12\|net013) resistor r=0.2434 c=0
+rf103 (\2\:I12\|net013 \3\:I12\|net013) resistor r=0.3205 c=0
+rf104 (\2\:I12\|net013 \4\:I12\|net013) resistor r=0.5422 c=0
+rf105 (\4\:I5\|I1\|Ai \5\:I5\|I1\|Ai) resistor r=0.2765 c=0
+rf106 (\5\:I5\|I1\|Ai \2\:I5\|I1\|Ai) resistor r=0.04519 c=0
+rf107 (\5\:I5\|I1\|Ai \6\:I5\|I1\|Ai) resistor r=0.7634 c=0
+rf108 (\3\:net17 \4\:net17) resistor r=0.2905 c=0
+rf109 (\4\:net17 \5\:net17) resistor r=0.08276 c=0
+rf110 (\5\:net17 \6\:net17) resistor r=0.2973 c=0
+rf111 (\5\:net17 \7\:net17) resistor r=0.4127 c=0
+rf112 (\7\:net17 \8\:net17) resistor r=0.3748 c=0
+rf113 (\7\:net17 \9\:net17) resistor r=0.5859 c=0
+rf114 (\2\:net17 \4\:net17) resistor r=2 c=0
+rf115 (\2\:Z6 \1\:Z6) resistor r=0.2905 c=0
+rf116 (\1\:Z6 \3\:Z6) resistor r=0.08276 c=0
+rf117 (\3\:Z6 \4\:Z6) resistor r=0.2973 c=0
+rf118 (\3\:Z6 \5\:Z6) resistor r=0.4127 c=0
+rf119 (\5\:Z6 \6\:Z6) resistor r=0.3748 c=0
+rf120 (\5\:Z6 \7\:Z6) resistor r=0.5859 c=0
+rf121 (\16\:net55 \20\:net55) resistor r=0.01 c=0
+rf122 (\5\:I4\|net6 \6\:I4\|net6) resistor r=0.7681 c=0
+rf123 (\6\:I4\|net6 I4\|net6) resistor r=0.8057 c=0
+rf124 (\6\:I4\|net6 \7\:I4\|net6) resistor r=0.4319 c=0
+rf125 (\5\:I9\|net6 \6\:I9\|net6) resistor r=0.7681 c=0
+rf126 (\6\:I9\|net6 I9\|net6) resistor r=0.8057 c=0
+rf127 (\6\:I9\|net6 \7\:I9\|net6) resistor r=0.4319 c=0
+rf128 (net39 \2\:net39) resistor r=0.2066 c=0
+rf129 (\2\:net39 \3\:net39) resistor r=0.6132 c=0
+rf131 (I4\|I3\|Bi \4\:I4\|I3\|Bi) resistor r=0.07769 c=0
+rf132 (\4\:I4\|I3\|Bi \5\:I4\|I3\|Bi) resistor r=0.2684 c=0
+rf133 (\4\:I4\|I3\|Bi \6\:I4\|I3\|Bi) resistor r=0.5661 c=0
+rf134 (I9\|I3\|Bi \4\:I9\|I3\|Bi) resistor r=0.07769 c=0
+rf135 (\4\:I9\|I3\|Bi \5\:I9\|I3\|Bi) resistor r=0.2684 c=0
+rf136 (\4\:I9\|I3\|Bi \6\:I9\|I3\|Bi) resistor r=0.5661 c=0
+rf137 (\6\:Y3 \7\:Y3) resistor r=0.01 c=0
+rf138 (\5\:X2 \1\:X2) resistor r=2.01 c=0
+rf139 (\6\:Y2 \7\:Y2) resistor r=0.01 c=0
+rf140 (I18\|net013 \2\:I18\|net013) resistor r=0.2434 c=0
+rf141 (\2\:I18\|net013 \3\:I18\|net013) resistor r=0.3205 c=0
+rf142 (\2\:I18\|net013 \4\:I18\|net013) resistor r=0.5422 c=0
+rf143 (\11\:X2 \7\:X2) resistor r=2.01 c=0
+rf144 (\12\:X2 \13\:X2) resistor r=2.01 c=0
+rf145 (I26\|net013 \2\:I26\|net013) resistor r=0.2434 c=0
+rf146 (\2\:I26\|net013 \3\:I26\|net013) resistor r=0.3205 c=0
+rf147 (\2\:I26\|net013 \4\:I26\|net013) resistor r=0.5422 c=0
+rf148 (I21\|net013 \2\:I21\|net013) resistor r=0.2434 c=0
+rf149 (\2\:I21\|net013 \3\:I21\|net013) resistor r=0.3205 c=0
+rf150 (\2\:I21\|net013 \4\:I21\|net013) resistor r=0.5422 c=0
+rf151 (net38 \2\:net38) resistor r=2.0022 c=0
+rf152 (\3\:net38 \4\:net38) resistor r=0.2066 c=0
+rf153 (\4\:net38 \5\:net38) resistor r=0.6132 c=0
+rf154 (I0\|net3 \2\:I0\|net3) resistor r=0.7396 c=0
+rf155 (\2\:I0\|net3 \3\:I0\|net3) resistor r=0.4087 c=0
+rf156 (\3\:I0\|net3 \4\:I0\|net3) resistor r=0.7213 c=0
+rf157 (\2\:I0\|net3 \5\:I0\|net3) resistor r=0.2896 c=0
+rf158 (\2\:I0\|net3 \6\:I0\|net3) resistor r=2.2056 c=0
+rf159 (\3\:I0\|net3 \7\:I0\|net3) resistor r=0.2841 c=0
+rf160 (net8 \2\:net8) resistor r=0.2066 c=0
+rf161 (\2\:net8 \3\:net8) resistor r=0.6132 c=0
+rf162 (\4\:net8 \5\:net8) resistor r=2.0022 c=0
+rf163 (net087 \2\:net087) resistor r=0.2066 c=0
+rf164 (\2\:net087 \3\:net087) resistor r=0.6132 c=0
+rf165 (\4\:net087 \5\:net087) resistor r=2.0022 c=0
+rf166 (I0\|I4\|Ai \2\:I0\|I4\|Ai) resistor r=0.84 c=0
+rf167 (I0\|I4\|Ai \3\:I0\|I4\|Ai) resistor r=0.2475 c=0
+rf168 (\9\:net38 \10\:net38) resistor r=2.0267 c=0
+rf169 (\11\:net38 \12\:net38) resistor r=0.02222 c=0
+rf170 (I10\|net3 \2\:I10\|net3) resistor r=0.7396 c=0
+rf171 (\2\:I10\|net3 \3\:I10\|net3) resistor r=0.4087 c=0
+rf172 (\3\:I10\|net3 \4\:I10\|net3) resistor r=0.7213 c=0
+rf173 (\2\:I10\|net3 \5\:I10\|net3) resistor r=0.2896 c=0
+rf174 (\2\:I10\|net3 \6\:I10\|net3) resistor r=2.2056 c=0
+rf175 (\3\:I10\|net3 \7\:I10\|net3) resistor r=0.2841 c=0
+rf176 (\5\:I0\|I4\|Bi \6\:I0\|I4\|Bi) resistor r=0.3789 c=0
+rf177 (\6\:I0\|I4\|Bi I0\|I4\|Bi) resistor r=0.2425 c=0
+rf178 (\6\:I0\|I4\|Bi \7\:I0\|I4\|Bi) resistor r=0.3634 c=0
+rf179 (I3\|net3 \2\:I3\|net3) resistor r=0.7396 c=0
+rf180 (\2\:I3\|net3 \3\:I3\|net3) resistor r=0.4087 c=0
+rf181 (\3\:I3\|net3 \4\:I3\|net3) resistor r=0.7213 c=0
+rf182 (\2\:I3\|net3 \5\:I3\|net3) resistor r=0.2896 c=0
+rf183 (\2\:I3\|net3 \6\:I3\|net3) resistor r=2.2056 c=0
+rf184 (\3\:I3\|net3 \7\:I3\|net3) resistor r=0.2841 c=0
+rf185 (\4\:I10\|I4\|Ai \5\:I10\|I4\|Ai) resistor r=0.84 c=0
+rf186 (\4\:I10\|I4\|Ai \3\:I10\|I4\|Ai) resistor r=0.2475 c=0
+rf187 (I3\|I4\|Ai \2\:I3\|I4\|Ai) resistor r=0.84 c=0
+rf188 (I3\|I4\|Ai \3\:I3\|I4\|Ai) resistor r=0.2475 c=0
+rf189 (\10\:net8 \9\:net8) resistor r=0.02667 c=0
+rf190 (\11\:net8 \12\:net8) resistor r=0.02222 c=0
+rf191 (\13\:net39 \4\:net39) resistor r=2.0233 c=0
+rf192 (\5\:I10\|I4\|Bi \6\:I10\|I4\|Bi) resistor r=0.3789 c=0
+rf193 (\6\:I10\|I4\|Bi I10\|I4\|Bi) resistor r=0.2425 c=0
+rf194 (\6\:I10\|I4\|Bi \7\:I10\|I4\|Bi) resistor r=0.3634 c=0
+rf195 (\9\:net087 \10\:net087) resistor r=2.0267 c=0
+rf196 (\11\:net087 \12\:net087) resistor r=0.02222 c=0
+rf197 (\8\:I0\|net3 \9\:I0\|net3) resistor r=0.01 c=0
+rf198 (\5\:I3\|I4\|Bi \6\:I3\|I4\|Bi) resistor r=0.3789 c=0
+rf199 (\6\:I3\|I4\|Bi I3\|I4\|Bi) resistor r=0.2425 c=0
+rf200 (\6\:I3\|I4\|Bi \7\:I3\|I4\|Bi) resistor r=0.3634 c=0
+rf201 (I0\|net1 \2\:I0\|net1) resistor r=0.7023 c=0
+rf202 (\2\:I0\|net1 \3\:I0\|net1) resistor r=0.5764 c=0
+rf203 (\2\:I0\|net1 \4\:I0\|net1) resistor r=0.5108 c=0
+rf204 (\19\:net17 \10\:net17) resistor r=2.0233 c=0
+rf205 (I0\|I3\|Ai \2\:I0\|I3\|Ai) resistor r=0.04192 c=0
+rf206 (\2\:I0\|I3\|Ai \3\:I0\|I3\|Ai) resistor r=0.6961 c=0
+rf207 (\2\:I0\|I3\|Ai \4\:I0\|I3\|Ai) resistor r=0.4006 c=0
+rf208 (\22\:net55 \21\:net55) resistor r=0.1956 c=0
+rf209 (\21\:net55 \23\:net55) resistor r=1.0615 c=0
+rf210 (\19\:net54 \10\:net54) resistor r=2.0233 c=0
+rf211 (\8\:I10\|net3 \9\:I10\|net3) resistor r=0.01 c=0
+rf212 (\8\:I3\|net3 \9\:I3\|net3) resistor r=0.01 c=0
+rf213 (I10\|net1 \2\:I10\|net1) resistor r=0.7023 c=0
+rf214 (\2\:I10\|net1 \3\:I10\|net1) resistor r=0.5764 c=0
+rf215 (\2\:I10\|net1 \4\:I10\|net1) resistor r=0.5108 c=0
+rf216 (I3\|net1 \2\:I3\|net1) resistor r=0.7023 c=0
+rf217 (\2\:I3\|net1 \3\:I3\|net1) resistor r=0.5764 c=0
+rf218 (\2\:I3\|net1 \4\:I3\|net1) resistor r=0.5108 c=0
+rf219 (I10\|I3\|Ai \2\:I10\|I3\|Ai) resistor r=0.04192 c=0
+rf220 (\2\:I10\|I3\|Ai \3\:I10\|I3\|Ai) resistor r=0.6961 c=0
+rf221 (\2\:I10\|I3\|Ai \4\:I10\|I3\|Ai) resistor r=0.4006 c=0
+rf222 (\13\:I0\|net3 \14\:I0\|net3) resistor r=2.0847 c=0
+rf223 (\13\:net15 \11\:net15) resistor r=0.1956 c=0
+rf224 (\11\:net15 \14\:net15) resistor r=1.0615 c=0
+rf225 (net31 \2\:net31) resistor r=2.1 c=0
+rf226 (I3\|I3\|Ai \2\:I3\|I3\|Ai) resistor r=0.04192 c=0
+rf227 (\2\:I3\|I3\|Ai \3\:I3\|I3\|Ai) resistor r=0.6961 c=0
+rf228 (\2\:I3\|I3\|Ai \4\:I3\|I3\|Ai) resistor r=0.4006 c=0
+rf229 (\11\:net21 \12\:net21) resistor r=0.1956 c=0
+rf230 (\12\:net21 \13\:net21) resistor r=1.0615 c=0
+rf231 (\15\:I10\|net3 \13\:I10\|net3) resistor r=0.08472 c=0
+rf232 (net29 \2\:net29) resistor r=0.2905 c=0
+rf233 (\2\:net29 \3\:net29) resistor r=0.08276 c=0
+rf234 (\3\:net29 \4\:net29) resistor r=0.2973 c=0
+rf235 (\3\:net29 \5\:net29) resistor r=0.4127 c=0
+rf236 (\5\:net29 \6\:net29) resistor r=0.3748 c=0
+rf237 (\5\:net29 \7\:net29) resistor r=0.5859 c=0
+rf238 (net1 \2\:net1) resistor r=2.1 c=0
+rf239 (\5\:I0\|net6 \6\:I0\|net6) resistor r=0.7681 c=0
+rf240 (\6\:I0\|net6 I0\|net6) resistor r=0.8057 c=0
+rf241 (\6\:I0\|net6 \7\:I0\|net6) resistor r=0.4319 c=0
+rf242 (\13\:I3\|net3 \14\:I3\|net3) resistor r=2.0847 c=0
+rf243 (net26 \2\:net26) resistor r=2.1 c=0
+rf244 (\1\:Z5 \2\:Z5) resistor r=0.2905 c=0
+rf245 (\2\:Z5 \3\:Z5) resistor r=0.08276 c=0
+rf246 (\3\:Z5 \4\:Z5) resistor r=0.2973 c=0
+rf247 (\3\:Z5 \5\:Z5) resistor r=0.4127 c=0
+rf248 (\5\:Z5 \6\:Z5) resistor r=0.3748 c=0
+rf249 (\5\:Z5 \7\:Z5) resistor r=0.5859 c=0
+rf250 (\5\:I10\|net6 \6\:I10\|net6) resistor r=0.7681 c=0
+rf251 (\6\:I10\|net6 I10\|net6) resistor r=0.8057 c=0
+rf252 (\6\:I10\|net6 \7\:I10\|net6) resistor r=0.4319 c=0
+rf253 (net0100 \2\:net0100) resistor r=0.2905 c=0
+rf254 (\2\:net0100 \3\:net0100) resistor r=0.08276 c=0
+rf255 (\3\:net0100 \4\:net0100) resistor r=0.2973 c=0
+rf256 (\3\:net0100 \5\:net0100) resistor r=0.4127 c=0
+rf257 (\5\:net0100 \6\:net0100) resistor r=0.3748 c=0
+rf258 (\5\:net0100 \7\:net0100) resistor r=0.5859 c=0
+rf259 (\5\:I3\|net6 \6\:I3\|net6) resistor r=0.7681 c=0
+rf260 (\6\:I3\|net6 I3\|net6) resistor r=0.8057 c=0
+rf261 (\6\:I3\|net6 \7\:I3\|net6) resistor r=0.4319 c=0
+rf262 (I0\|I3\|Bi \2\:I0\|I3\|Bi) resistor r=0.07769 c=0
+rf263 (\2\:I0\|I3\|Bi \3\:I0\|I3\|Bi) resistor r=0.2684 c=0
+rf264 (\2\:I0\|I3\|Bi \4\:I0\|I3\|Bi) resistor r=0.5661 c=0
+rf265 (I1\|I3\|Bi \2\:I1\|I3\|Bi) resistor r=0.2684 c=0
+rf266 (\2\:I1\|I3\|Bi \3\:I1\|I3\|Bi) resistor r=0.07769 c=0
+rf267 (\2\:I1\|I3\|Bi \4\:I1\|I3\|Bi) resistor r=0.5661 c=0
+rf268 (I10\|I3\|Bi \4\:I10\|I3\|Bi) resistor r=0.07769 c=0
+rf269 (\4\:I10\|I3\|Bi \5\:I10\|I3\|Bi) resistor r=0.2684 c=0
+rf270 (\4\:I10\|I3\|Bi \6\:I10\|I3\|Bi) resistor r=0.5661 c=0
+rf271 (I3\|I3\|Bi \4\:I3\|I3\|Bi) resistor r=0.07769 c=0
+rf272 (\4\:I3\|I3\|Bi \5\:I3\|I3\|Bi) resistor r=0.2684 c=0
+rf273 (\4\:I3\|I3\|Bi \6\:I3\|I3\|Bi) resistor r=0.5661 c=0
+rf274 (I11\|I3\|Bi \2\:I11\|I3\|Bi) resistor r=0.2684 c=0
+rf275 (\2\:I11\|I3\|Bi \3\:I11\|I3\|Bi) resistor r=0.07769 c=0
+rf276 (\2\:I11\|I3\|Bi \4\:I11\|I3\|Bi) resistor r=0.5661 c=0
+rf277 (net32 \2\:net32) resistor r=0.2973 c=0
+rf278 (\2\:net32 \3\:net32) resistor r=0.08276 c=0
+rf279 (\3\:net32 \4\:net32) resistor r=0.2905 c=0
+rf280 (\2\:net32 \5\:net32) resistor r=0.4127 c=0
+rf281 (\5\:net32 \6\:net32) resistor r=0.5859 c=0
+rf282 (\5\:net32 \7\:net32) resistor r=0.3748 c=0
+rf283 (I2\|I3\|Bi \2\:I2\|I3\|Bi) resistor r=0.2684 c=0
+rf284 (\2\:I2\|I3\|Bi \3\:I2\|I3\|Bi) resistor r=0.07769 c=0
+rf285 (\2\:I2\|I3\|Bi \4\:I2\|I3\|Bi) resistor r=0.5661 c=0
+rf286 (net35 \2\:net35) resistor r=2.1 c=0
+rf287 (\4\:I1\|net3 \7\:I1\|net3) resistor r=2.0847 c=0
+rf288 (I1\|net6 \2\:I1\|net6) resistor r=0.7681 c=0
+rf289 (\2\:I1\|net6 \3\:I1\|net6) resistor r=0.4319 c=0
+rf290 (\2\:I1\|net6 \4\:I1\|net6) resistor r=0.8057 c=0
+rf291 (\2\:Z4 \3\:Z4) resistor r=0.2973 c=0
+rf292 (\3\:Z4 \1\:Z4) resistor r=0.08276 c=0
+rf293 (\1\:Z4 \4\:Z4) resistor r=0.2905 c=0
+rf294 (\3\:Z4 \5\:Z4) resistor r=0.4127 c=0
+rf295 (\5\:Z4 \6\:Z4) resistor r=0.5859 c=0
+rf296 (\5\:Z4 \7\:Z4) resistor r=0.3748 c=0
+rf297 (\2\:I1\|I3\|Ai \4\:I1\|I3\|Ai) resistor r=0.04192 c=0
+rf298 (\4\:I1\|I3\|Ai \5\:I1\|I3\|Ai) resistor r=0.6961 c=0
+rf299 (\4\:I1\|I3\|Ai \6\:I1\|I3\|Ai) resistor r=0.4006 c=0
+rf300 (\10\:net31 \11\:net31) resistor r=0.1956 c=0
+rf301 (\11\:net31 \12\:net31) resistor r=1.0615 c=0
+rf302 (net44 \2\:net44) resistor r=0.2973 c=0
+rf303 (\2\:net44 \3\:net44) resistor r=0.08276 c=0
+rf304 (\3\:net44 \4\:net44) resistor r=0.2905 c=0
+rf305 (\2\:net44 \5\:net44) resistor r=0.4127 c=0
+rf306 (\5\:net44 \6\:net44) resistor r=0.5859 c=0
+rf307 (\5\:net44 \7\:net44) resistor r=0.3748 c=0
+rf308 (net5 \2\:net5) resistor r=2.1 c=0
+rf309 (\8\:I1\|net3 \12\:I1\|net3) resistor r=0.01 c=0
+rf310 (\4\:I11\|net3 \7\:I11\|net3) resistor r=2.0847 c=0
+rf311 (I11\|net6 \2\:I11\|net6) resistor r=0.7681 c=0
+rf312 (\2\:I11\|net6 \3\:I11\|net6) resistor r=0.4319 c=0
+rf313 (\2\:I11\|net6 \4\:I11\|net6) resistor r=0.8057 c=0
+rf314 (net095 \2\:net095) resistor r=2.0233 c=0
+rf315 (net45 \2\:net45) resistor r=2.1 c=0
+rf316 (\4\:I2\|net3 \7\:I2\|net3) resistor r=2.0847 c=0
+rf317 (I2\|net6 \2\:I2\|net6) resistor r=0.7681 c=0
+rf318 (\2\:I2\|net6 \3\:I2\|net6) resistor r=0.4319 c=0
+rf319 (\2\:I2\|net6 \4\:I2\|net6) resistor r=0.8057 c=0
+rf320 (\2\:I11\|I3\|Ai \4\:I11\|I3\|Ai) resistor r=0.04192 c=0
+rf321 (\4\:I11\|I3\|Ai \5\:I11\|I3\|Ai) resistor r=0.6961 c=0
+rf322 (\4\:I11\|I3\|Ai \6\:I11\|I3\|Ai) resistor r=0.4006 c=0
+rf323 (\10\:net1 \11\:net1) resistor r=0.1956 c=0
+rf324 (\11\:net1 \12\:net1) resistor r=1.0615 c=0
+rf325 (net34 \2\:net34) resistor r=0.02222 c=0
+rf326 (\3\:net34 \4\:net34) resistor r=2.0267 c=0
+rf327 (\5\:I1\|net1 \6\:I1\|net1) resistor r=0.7023 c=0
+rf328 (\6\:I1\|net1 I1\|net1) resistor r=0.5108 c=0
+rf329 (\6\:I1\|net1 \7\:I1\|net1) resistor r=0.5764 c=0
+rf330 (\8\:I11\|net3 \12\:I11\|net3) resistor r=0.01 c=0
+rf331 (\2\:I2\|I3\|Ai \4\:I2\|I3\|Ai) resistor r=0.04192 c=0
+rf332 (\4\:I2\|I3\|Ai \5\:I2\|I3\|Ai) resistor r=0.6961 c=0
+rf333 (\4\:I2\|I3\|Ai \6\:I2\|I3\|Ai) resistor r=0.4006 c=0
+rf334 (I1\|I4\|Ai \2\:I1\|I4\|Ai) resistor r=0.3634 c=0
+rf335 (\2\:I1\|I4\|Ai \3\:I1\|I4\|Ai) resistor r=0.3789 c=0
+rf336 (\2\:I1\|I4\|Ai \4\:I1\|I4\|Ai) resistor r=0.2425 c=0
+rf337 (\10\:net26 \11\:net26) resistor r=0.1956 c=0
+rf338 (\11\:net26 \12\:net26) resistor r=1.0615 c=0
+rf339 (I1\|I4\|Bi \2\:I1\|I4\|Bi) resistor r=0.84 c=0
+rf340 (\2\:I1\|I4\|Bi \3\:I1\|I4\|Bi) resistor r=0.2475 c=0
+rf341 (\9\:net0100 \10\:net0100) resistor r=2.0233 c=0
+rf342 (\8\:I2\|net3 \9\:I2\|net3) resistor r=0.01 c=0
+rf343 (\9\:net29 \10\:net29) resistor r=2.0233 c=0
+rf344 (net078 \2\:net078) resistor r=0.02222 c=0
+rf345 (\3\:net078 \4\:net078) resistor r=2.0267 c=0
+rf346 (\5\:I11\|net1 \6\:I11\|net1) resistor r=0.7023 c=0
+rf347 (\6\:I11\|net1 I11\|net1) resistor r=0.5108 c=0
+rf348 (\6\:I11\|net1 \7\:I11\|net1) resistor r=0.5764 c=0
+rf349 (\19\:X2 \20\:X2) resistor r=0.01 c=0
+rf350 (\12\:net34 \13\:net34) resistor r=2.0022 c=0
+rf351 (I11\|I4\|Bi \2\:I11\|I4\|Bi) resistor r=0.3634 c=0
+rf352 (\2\:I11\|I4\|Bi \3\:I11\|I4\|Bi) resistor r=0.3789 c=0
+rf353 (\2\:I11\|I4\|Bi \4\:I11\|I4\|Bi) resistor r=0.2425 c=0
+rf354 (net28 \2\:net28) resistor r=0.02222 c=0
+rf355 (\3\:net28 \4\:net28) resistor r=2.0267 c=0
+rf356 (\5\:I2\|net1 \6\:I2\|net1) resistor r=0.7023 c=0
+rf357 (\6\:I2\|net1 I2\|net1) resistor r=0.5108 c=0
+rf358 (\6\:I2\|net1 \7\:I2\|net1) resistor r=0.5764 c=0
+rf359 (I11\|I4\|Ai \2\:I11\|I4\|Ai) resistor r=0.84 c=0
+rf360 (\2\:I11\|I4\|Ai \3\:I11\|I4\|Ai) resistor r=0.2475 c=0
+rf361 (\15\:I1\|net3 \16\:I1\|net3) resistor r=0.7213 c=0
+rf362 (\16\:I1\|net3 \17\:I1\|net3) resistor r=0.4087 c=0
+rf363 (\17\:I1\|net3 \13\:I1\|net3) resistor r=0.2056 c=0
+rf364 (\16\:I1\|net3 \18\:I1\|net3) resistor r=0.2841 c=0
+rf365 (\17\:I1\|net3 \19\:I1\|net3) resistor r=0.2896 c=0
+rf366 (\17\:I1\|net3 \20\:I1\|net3) resistor r=0.7396 c=0
+rf367 (I2\|I4\|Bi \2\:I2\|I4\|Bi) resistor r=0.3634 c=0
+rf368 (\2\:I2\|I4\|Bi \3\:I2\|I4\|Bi) resistor r=0.3789 c=0
+rf369 (\2\:I2\|I4\|Bi \4\:I2\|I4\|Bi) resistor r=0.2425 c=0
+rf370 (I2\|I4\|Ai \2\:I2\|I4\|Ai) resistor r=0.84 c=0
+rf371 (\2\:I2\|I4\|Ai \3\:I2\|I4\|Ai) resistor r=0.2475 c=0
+rf373 (I13\|net013 \2\:I13\|net013) resistor r=0.2434 c=0
+rf374 (\2\:I13\|net013 \3\:I13\|net013) resistor r=0.3205 c=0
+rf375 (\2\:I13\|net013 \4\:I13\|net013) resistor r=0.5422 c=0
+rf376 (\12\:net078 \13\:net078) resistor r=2.0022 c=0
+rf377 (\15\:I11\|net3 \16\:I11\|net3) resistor r=0.7213 c=0
+rf378 (\16\:I11\|net3 \17\:I11\|net3) resistor r=0.4087 c=0
+rf379 (\17\:I11\|net3 \13\:I11\|net3) resistor r=0.2056 c=0
+rf380 (\16\:I11\|net3 \18\:I11\|net3) resistor r=0.2841 c=0
+rf381 (\17\:I11\|net3 \19\:I11\|net3) resistor r=0.2896 c=0
+rf382 (\17\:I11\|net3 \20\:I11\|net3) resistor r=0.7396 c=0
+rf383 (\12\:net28 \13\:net28) resistor r=2.0022 c=0
+rf384 (\17\:net34 \18\:net34) resistor r=0.2066 c=0
+rf385 (\18\:net34 \19\:net34) resistor r=0.6132 c=0
+rf386 (\14\:net078 \15\:net078) resistor r=0.2066 c=0
+rf387 (\15\:net078 \16\:net078) resistor r=0.6132 c=0
+rf388 (\15\:net28 \14\:net28) resistor r=0.2066 c=0
+rf389 (\14\:net28 \16\:net28) resistor r=0.6132 c=0
+rf390 (\15\:I2\|net3 \16\:I2\|net3) resistor r=0.7213 c=0
+rf391 (\16\:I2\|net3 \17\:I2\|net3) resistor r=0.4087 c=0
+rf392 (\17\:I2\|net3 \13\:I2\|net3) resistor r=0.2056 c=0
+rf393 (\16\:I2\|net3 \18\:I2\|net3) resistor r=0.2841 c=0
+rf394 (\17\:I2\|net3 \19\:I2\|net3) resistor r=0.2896 c=0
+rf395 (\17\:I2\|net3 \20\:I2\|net3) resistor r=0.7396 c=0
+rf396 (\5\:net0115 \3\:net0115) resistor r=0.01 c=0
+rf397 (\1\:X1 \2\:X1) resistor r=0.01 c=0
+rf398 (\7\:X1 \8\:X1) resistor r=2.01 c=0
+rf399 (I6\|I1\|Ai \2\:I6\|I1\|Ai) resistor r=0.04519 c=0
+rf400 (\2\:I6\|I1\|Ai \3\:I6\|I1\|Ai) resistor r=0.7634 c=0
+rf401 (\2\:I6\|I1\|Ai \4\:I6\|I1\|Ai) resistor r=0.2765 c=0
+rf402 (\13\:X1 \14\:X1) resistor r=2.01 c=0
+rf404 (I16\|net013 \2\:I16\|net013) resistor r=0.2434 c=0
+rf405 (\2\:I16\|net013 \3\:I16\|net013) resistor r=0.3205 c=0
+rf406 (\2\:I16\|net013 \4\:I16\|net013) resistor r=0.5422 c=0
+rf407 (\11\:Y3 \15\:Y3) resistor r=0.01 c=0
+rf408 (\5\:I24\|net013 \6\:I24\|net013) resistor r=0.236 c=0
+rf409 (\6\:I24\|net013 I24\|net013) resistor r=0.2322 c=0
+rf410 (\6\:I24\|net013 \7\:I24\|net013) resistor r=0.5701 c=0
+rf411 (\6\:net0115 \7\:net0115) resistor r=0.01 c=0
+rf412 (\11\:Y2 \15\:Y2) resistor r=0.01 c=0
+rf413 (\5\:I23\|net013 \6\:I23\|net013) resistor r=0.236 c=0
+rf414 (\6\:I23\|net013 I23\|net013) resistor r=0.2322 c=0
+rf415 (\6\:I23\|net013 \7\:I23\|net013) resistor r=0.5701 c=0
+rf416 (\11\:net095 \12\:net095) resistor r=0.2066 c=0
+rf417 (\12\:net095 \13\:net095) resistor r=0.6132 c=0
+rf418 (\8\:net0115 \9\:net0115) resistor r=0.002222 c=0
+rf419 (\10\:net0115 \11\:net0115) resistor r=0.002222 c=0
+rf420 (\1\:Z1 \2\:Z1) resistor r=0.4382 c=0
+rf421 (\2\:Z1 \3\:Z1) resistor r=0.1123 c=0
+rf422 (\3\:Z1 \4\:Z1) resistor r=0.1083 c=0
+rf423 (\4\:Z1 \5\:Z1) resistor r=0.629 c=0
+rf424 (\2\:Z1 \6\:Z1) resistor r=0.6387 c=0
+rf425 (\4\:Z1 \7\:Z1) resistor r=0.4386 c=0
+rf426 (\15\:net0115 \20\:net0115) resistor r=2.01 c=0
+rf427 (\12\:net5 \13\:net5) resistor r=0.285 c=0
+rf428 (\12\:net5 \14\:net5) resistor r=0.8307 c=0
+rf429 (\12\:net45 \13\:net45) resistor r=0.285 c=0
+rf430 (\12\:net45 \14\:net45) resistor r=0.8307 c=0
+rf431 (net0127 \2\:net0127) resistor r=2.0111 c=0
+rf432 (\9\:net44 \10\:net44) resistor r=2.0111 c=0
+rf433 (I8\|I1\|Bi \2\:I8\|I1\|Bi) resistor r=0.3619 c=0
+rf434 (\2\:I8\|I1\|Bi \3\:I8\|I1\|Bi) resistor r=0.6109 c=0
+rf435 (\2\:I8\|I1\|Bi \4\:I8\|I1\|Bi) resistor r=0.2422 c=0
+rf436 (\9\:net32 \10\:net32) resistor r=2.0111 c=0
+rf437 (I7\|I1\|Bi \2\:I7\|I1\|Bi) resistor r=0.3619 c=0
+rf438 (\2\:I7\|I1\|Bi \3\:I7\|I1\|Bi) resistor r=0.6109 c=0
+rf439 (\2\:I7\|I1\|Bi \4\:I7\|I1\|Bi) resistor r=0.2422 c=0
+rf440 (\5\:I6\|I1\|Bi \6\:I6\|I1\|Bi) resistor r=0.3619 c=0
+rf441 (\6\:I6\|I1\|Bi I6\|I1\|Bi) resistor r=0.2422 c=0
+rf442 (\6\:I6\|I1\|Bi \7\:I6\|I1\|Bi) resistor r=0.6109 c=0
+rf443 (\5\:I6\|I3\|net013 \6\:I6\|I3\|net013) resistor r=0.4307 c=0
+rf444 (\6\:I6\|I3\|net013 \7\:I6\|I3\|net013) resistor r=0.8338 c=0
+rf445 (\6\:I6\|I3\|net013 \3\:I6\|I3\|net013) resistor r=0.5507 c=0
+rf446 (net075 \2\:net075) resistor r=2.01 c=0
+rf447 (net47 \2\:net47) resistor r=2.01 c=0
+rf448 (\10\:net35 \11\:net35) resistor r=0.8307 c=0
+rf449 (\11\:net35 \12\:net35) resistor r=0.285 c=0
+rf450 (\5\:I8\|I3\|net013 \6\:I8\|I3\|net013) resistor r=0.4307 c=0
+rf451 (\6\:I8\|I3\|net013 I8\|I3\|net013) resistor r=0.5507 c=0
+rf452 (\6\:I8\|I3\|net013 \7\:I8\|I3\|net013) resistor r=0.8338 c=0
+rf453 (\5\:I7\|I3\|net013 \6\:I7\|I3\|net013) resistor r=0.4307 c=0
+rf454 (\6\:I7\|I3\|net013 I7\|I3\|net013) resistor r=0.5507 c=0
+rf455 (\6\:I7\|I3\|net013 \7\:I7\|I3\|net013) resistor r=0.8338 c=0
+rf456 (\3\:net075 \4\:net075) resistor r=0.002222 c=0
+rf457 (\3\:net47 \4\:net47) resistor r=0.002222 c=0
+rf458 (\5\:net075 \6\:net075) resistor r=0.002222 c=0
+rf459 (\5\:net47 \6\:net47) resistor r=0.002222 c=0
+rf460 (\10\:net075 \11\:net075) resistor r=0.2066 c=0
+rf461 (\11\:net075 \12\:net075) resistor r=0.6132 c=0
+rf462 (\10\:net47 \11\:net47) resistor r=0.2066 c=0
+rf463 (\11\:net47 \12\:net47) resistor r=0.6132 c=0
+rf464 (\23\:X1 \21\:X1) resistor r=0.01 c=0
+rf466 (\1\:Z3 \2\:Z3) resistor r=0.629 c=0
+rf467 (\2\:Z3 \3\:Z3) resistor r=0.1083 c=0
+rf468 (\3\:Z3 \4\:Z3) resistor r=0.1123 c=0
+rf469 (\4\:Z3 \5\:Z3) resistor r=0.4382 c=0
+rf470 (\2\:Z3 \6\:Z3) resistor r=0.4386 c=0
+rf471 (\4\:Z3 \7\:Z3) resistor r=0.6387 c=0
+rf472 (\1\:Z2 \2\:Z2) resistor r=0.629 c=0
+rf473 (\2\:Z2 \3\:Z2) resistor r=0.1083 c=0
+rf474 (\3\:Z2 \4\:Z2) resistor r=0.1123 c=0
+rf475 (\4\:Z2 \5\:Z2) resistor r=0.4382 c=0
+rf476 (\2\:Z2 \6\:Z2) resistor r=0.4386 c=0
+rf477 (\4\:Z2 \7\:Z2) resistor r=0.6387 c=0
+rf478 (\17\:net075 \18\:net075) resistor r=0.01 c=0
+rf479 (\17\:net47 \18\:net47) resistor r=0.01 c=0
+rf481 (\6\:X0 \7\:X0) resistor r=2.01 c=0
+rf482 (I14\|net013 \2\:I14\|net013) resistor r=0.2434 c=0
+rf483 (\2\:I14\|net013 \3\:I14\|net013) resistor r=0.3205 c=0
+rf484 (\2\:I14\|net013 \4\:I14\|net013) resistor r=0.5422 c=0
+rf485 (I17\|net013 \2\:I17\|net013) resistor r=0.2434 c=0
+rf486 (\2\:I17\|net013 \3\:I17\|net013) resistor r=0.3205 c=0
+rf487 (\2\:I17\|net013 \4\:I17\|net013) resistor r=0.5422 c=0
+rf488 (\16\:Y3 \17\:Y3) resistor r=2.01 c=0
+rf489 (\16\:Y2 \17\:Y2) resistor r=2.01 c=0
+rf490 (\4\:I8\|I1\|Ai \5\:I8\|I1\|Ai) resistor r=0.2765 c=0
+rf491 (\5\:I8\|I1\|Ai \2\:I8\|I1\|Ai) resistor r=0.04519 c=0
+rf492 (\5\:I8\|I1\|Ai \6\:I8\|I1\|Ai) resistor r=0.7634 c=0
+rf493 (\4\:I7\|I1\|Ai \5\:I7\|I1\|Ai) resistor r=0.2765 c=0
+rf494 (\5\:I7\|I1\|Ai \2\:I7\|I1\|Ai) resistor r=0.04519 c=0
+rf495 (\5\:I7\|I1\|Ai \6\:I7\|I1\|Ai) resistor r=0.7634 c=0
+rf496 (\12\:X0 \20\:X0) resistor r=0.01 c=0
+rf497 (\16\:X0 \21\:X0) resistor r=0.01 c=0
+rf498 (\11\:net0127 \12\:net0127) resistor r=0.2066 c=0
+rf499 (\12\:net0127 \13\:net0127) resistor r=0.6132 c=0
+rf500 (\21\:net0115 \22\:net0115) resistor r=0.6132 c=0
+rf501 (\22\:net0115 \23\:net0115) resistor r=0.2066 c=0
+rf502 (\5\:I25\|net013 \6\:I25\|net013) resistor r=0.236 c=0
+rf503 (\6\:I25\|net013 I25\|net013) resistor r=0.2322 c=0
+rf504 (\6\:I25\|net013 \7\:I25\|net013) resistor r=0.5701 c=0
+rf505 (\5\:I22\|net013 \6\:I22\|net013) resistor r=0.236 c=0
+rf506 (\6\:I22\|net013 I22\|net013) resistor r=0.2322 c=0
+rf507 (\6\:I22\|net013 \7\:I22\|net013) resistor r=0.5701 c=0
+rf508 (\19\:net075 \23\:net075) resistor r=0.01 c=0
+rf509 (\19\:net47 \23\:net47) resistor r=0.01 c=0
+rf510 (\1\:gnd! \2\:gnd!) resistor r=0.5373 c=0
+rf511 (\2\:gnd! \3\:gnd!) resistor r=0.06105 c=0
+rf512 (\3\:gnd! \4\:gnd!) resistor r=0.089 c=0
+rf513 (\4\:gnd! \5\:gnd!) resistor r=0.1325 c=0
+rf514 (\5\:gnd! \6\:gnd!) resistor r=0.0567 c=0
+rf515 (\6\:gnd! \7\:gnd!) resistor r=0.05137 c=0
+rf516 (\7\:gnd! \8\:gnd!) resistor r=0.04013 c=0
+rf517 (\8\:gnd! \9\:gnd!) resistor r=0.1485 c=0
+rf518 (\9\:gnd! \10\:gnd!) resistor r=0.07027 c=0
+rf519 (\10\:gnd! \11\:gnd!) resistor r=0.07573 c=0
+rf520 (\11\:gnd! \12\:gnd!) resistor r=0.1984 c=0
+rf521 (\12\:gnd! \13\:gnd!) resistor r=0.1201 c=0
+rf522 (\13\:gnd! \14\:gnd!) resistor r=0.02927 c=0
+rf523 (\14\:gnd! \15\:gnd!) resistor r=0.03312 c=0
+rf524 (\15\:gnd! \16\:gnd!) resistor r=0.09389 c=0
+rf525 (\16\:gnd! \17\:gnd!) resistor r=0.07629 c=0
+rf526 (\17\:gnd! \18\:gnd!) resistor r=0.05008 c=0
+rf527 (\18\:gnd! \19\:gnd!) resistor r=0.02223 c=0
+rf528 (\19\:gnd! \20\:gnd!) resistor r=0.1485 c=0
+rf529 (\2\:gnd! \21\:gnd!) resistor r=0.4051 c=0
+rf530 (\2\:gnd! \22\:gnd!) resistor r=0.4778 c=0
+rf531 (\3\:gnd! \23\:gnd!) resistor r=0.3083 c=0
+rf532 (\5\:gnd! \24\:gnd!) resistor r=0.4782 c=0
+rf533 (\5\:gnd! \25\:gnd!) resistor r=0.4924 c=0
+rf534 (\6\:gnd! \26\:gnd!) resistor r=0.3585 c=0
+rf535 (\7\:gnd! \27\:gnd!) resistor r=0.3845 c=0
+rf536 (\10\:gnd! \28\:gnd!) resistor r=0.3925 c=0
+rf537 (\10\:gnd! \29\:gnd!) resistor r=0.4802 c=0
+rf538 (\11\:gnd! \30\:gnd!) resistor r=0.44 c=0
+rf539 (\12\:gnd! \31\:gnd!) resistor r=0.3843 c=0
+rf540 (\12\:gnd! \32\:gnd!) resistor r=0.4444 c=0
+rf541 (\13\:gnd! \33\:gnd!) resistor r=0.3833 c=0
+rf542 (\15\:gnd! \34\:gnd!) resistor r=0.3817 c=0
+rf543 (\15\:gnd! \35\:gnd!) resistor r=0.4721 c=0
+rf544 (\16\:gnd! \36\:gnd!) resistor r=0.4967 c=0
+rf545 (\17\:gnd! \37\:gnd!) resistor r=0.3196 c=0
+rf546 (\18\:gnd! \38\:gnd!) resistor r=0.3196 c=0
+rf547 (\20\:gnd! \39\:gnd!) resistor r=0.4346 c=0
+rf548 (\20\:gnd! \40\:gnd!) resistor r=0.486 c=0
+rf549 (\20\:gnd! \41\:gnd!) resistor r=0.1486 c=0
+rf550 (\41\:gnd! \42\:gnd!) resistor r=0.03801 c=0
+rf551 (\42\:gnd! \43\:gnd!) resistor r=0.07419 c=0
+rf552 (\43\:gnd! \44\:gnd!) resistor r=0.3142 c=0
+rf553 (\42\:gnd! \45\:gnd!) resistor r=0.3864 c=0
+rf554 (\43\:gnd! \46\:gnd!) resistor r=0.0911 c=0
+rf555 (\46\:gnd! \47\:gnd!) resistor r=0.06504 c=0
+rf556 (\47\:gnd! \48\:gnd!) resistor r=0.3175 c=0
+rf557 (\47\:gnd! \49\:gnd!) resistor r=0.04775 c=0
+rf558 (\49\:gnd! \50\:gnd!) resistor r=0.4116 c=0
+rf559 (\49\:gnd! \51\:gnd!) resistor r=0.03353 c=0
+rf560 (\51\:gnd! \52\:gnd!) resistor r=0.07914 c=0
+rf561 (\52\:gnd! \53\:gnd!) resistor r=0.05225 c=0
+rf562 (\53\:gnd! \54\:gnd!) resistor r=0.4218 c=0
+rf563 (\49\:gnd! \55\:gnd!) resistor r=0.4813 c=0
+rf564 (\52\:gnd! \56\:gnd!) resistor r=0.3864 c=0
+rf565 (\53\:gnd! \57\:gnd!) resistor r=0.1034 c=0
+rf566 (\57\:gnd! \58\:gnd!) resistor r=0.04537 c=0
+rf567 (\58\:gnd! \59\:gnd!) resistor r=0.05274 c=0
+rf568 (\59\:gnd! \60\:gnd!) resistor r=0.3142 c=0
+rf569 (\53\:gnd! \61\:gnd!) resistor r=0.4674 c=0
+rf570 (\57\:gnd! \62\:gnd!) resistor r=0.3864 c=0
+rf571 (\59\:gnd! \63\:gnd!) resistor r=0.09297 c=0
+rf572 (\63\:gnd! \64\:gnd!) resistor r=0.03064 c=0
+rf573 (\64\:gnd! \65\:gnd!) resistor r=0.3023 c=0
+rf574 (\64\:gnd! \66\:gnd!) resistor r=0.06745 c=0
+rf575 (\66\:gnd! \67\:gnd!) resistor r=0.3835 c=0
+rf576 (\66\:gnd! \68\:gnd!) resistor r=0.04394 c=0
+rf577 (\68\:gnd! \69\:gnd!) resistor r=0.1358 c=0
+rf578 (\69\:gnd! \70\:gnd!) resistor r=0.04148 c=0
+rf579 (\70\:gnd! \71\:gnd!) resistor r=0.4407 c=0
+rf580 (\66\:gnd! \72\:gnd!) resistor r=0.4754 c=0
+rf581 (\69\:gnd! \73\:gnd!) resistor r=0.3833 c=0
+rf582 (\70\:gnd! \74\:gnd!) resistor r=0.1489 c=0
+rf583 (\74\:gnd! \75\:gnd!) resistor r=0.4043 c=0
+rf584 (\74\:gnd! \76\:gnd!) resistor r=0.07477 c=0
+rf585 (\76\:gnd! \77\:gnd!) resistor r=0.3848 c=0
+rf586 (\76\:gnd! \78\:gnd!) resistor r=0.1353 c=0
+rf587 (\78\:gnd! \79\:gnd!) resistor r=0.3869 c=0
+rf588 (\76\:gnd! \80\:gnd!) resistor r=0.47 c=0
+rf589 (\78\:gnd! \81\:gnd!) resistor r=0.0387 c=0
+rf590 (\81\:gnd! \82\:gnd!) resistor r=0.1067 c=0
+rf591 (\78\:gnd! \83\:gnd!) resistor r=0.4452 c=0
+rf592 (\81\:gnd! \84\:gnd!) resistor r=0.3793 c=0
+rf593 (\82\:gnd! \85\:gnd!) resistor r=0.0706 c=0
+rf594 (\85\:gnd! \86\:gnd!) resistor r=0.3122 c=0
+rf595 (\82\:gnd! \87\:gnd!) resistor r=0.4967 c=0
+rf596 (\85\:gnd! \88\:gnd!) resistor r=0.06608 c=0
+rf597 (\88\:gnd! \89\:gnd!) resistor r=0.04684 c=0
+rf598 (\89\:gnd! \90\:gnd!) resistor r=0.306 c=0
+rf599 (\89\:gnd! \91\:gnd!) resistor r=0.09403 c=0
+rf600 (\91\:gnd! \92\:gnd!) resistor r=0.3596 c=0
+rf601 (\91\:gnd! \93\:gnd!) resistor r=0.3451 c=0
+rf602 (\93\:gnd! \94\:gnd!) resistor r=4.7066 c=0
+rf603 (\94\:gnd! \95\:gnd!) resistor r=0.476 c=0
+rf604 (\91\:gnd! \96\:gnd!) resistor r=0.442 c=0
+rf605 (\93\:gnd! \97\:gnd!) resistor r=4.2632 c=0
+rf606 (\97\:gnd! \98\:gnd!) resistor r=4.2744 c=0
+rf607 (\98\:gnd! 0) resistor r=0.4005 c=0
+rf608 (\94\:gnd! \99\:gnd!) resistor r=0.1317 c=0
+rf609 (\99\:gnd! \100\:gnd!) resistor r=0.1396 c=0
+rf610 (\100\:gnd! \101\:gnd!) resistor r=0.52 c=0
+rf611 (\97\:gnd! \102\:gnd!) resistor r=0.3328 c=0
+rf612 (\102\:gnd! \103\:gnd!) resistor r=0.05392 c=0
+rf613 (\103\:gnd! \104\:gnd!) resistor r=0.3949 c=0
+rf614 (\98\:gnd! \105\:gnd!) resistor r=0.359 c=0
+rf615 (\105\:gnd! \106\:gnd!) resistor r=0.09621 c=0
+rf616 (\106\:gnd! \107\:gnd!) resistor r=0.2996 c=0
+rf617 (\100\:gnd! \108\:gnd!) resistor r=0.1085 c=0
+rf618 (\108\:gnd! \109\:gnd!) resistor r=0.3877 c=0
+rf619 (\103\:gnd! \110\:gnd!) resistor r=0.3965 c=0
+rf620 (\103\:gnd! \111\:gnd!) resistor r=0.09221 c=0
+rf621 (\111\:gnd! \112\:gnd!) resistor r=0.3649 c=0
+rf622 (\106\:gnd! \113\:gnd!) resistor r=0.07337 c=0
+rf623 (\113\:gnd! \114\:gnd!) resistor r=0.3083 c=0
+rf624 (\108\:gnd! \115\:gnd!) resistor r=0.03889 c=0
+rf625 (\115\:gnd! \116\:gnd!) resistor r=0.4877 c=0
+rf626 (\111\:gnd! \117\:gnd!) resistor r=0.3954 c=0
+rf627 (\111\:gnd! \118\:gnd!) resistor r=0.09227 c=0
+rf628 (\118\:gnd! \119\:gnd!) resistor r=0.3971 c=0
+rf629 (\113\:gnd! \120\:gnd!) resistor r=0.03456 c=0
+rf630 (\120\:gnd! \121\:gnd!) resistor r=0.1383 c=0
+rf631 (\121\:gnd! \122\:gnd!) resistor r=0.4467 c=0
+rf632 (\115\:gnd! \123\:gnd!) resistor r=0.1292 c=0
+rf633 (\123\:gnd! \124\:gnd!) resistor r=0.3918 c=0
+rf634 (\118\:gnd! \125\:gnd!) resistor r=0.473 c=0
+rf635 (\118\:gnd! \126\:gnd!) resistor r=0.06553 c=0
+rf636 (\126\:gnd! \127\:gnd!) resistor r=0.046 c=0
+rf637 (\127\:gnd! \128\:gnd!) resistor r=0.3896 c=0
+rf638 (\121\:gnd! \129\:gnd!) resistor r=0.04511 c=0
+rf639 (\129\:gnd! \130\:gnd!) resistor r=0.358 c=0
+rf640 (\123\:gnd! \131\:gnd!) resistor r=0.08824 c=0
+rf641 (\131\:gnd! \132\:gnd!) resistor r=0.1508 c=0
+rf642 (\132\:gnd! \133\:gnd!) resistor r=0.04236 c=0
+rf643 (\133\:gnd! \134\:gnd!) resistor r=0.3918 c=0
+rf644 (\127\:gnd! \135\:gnd!) resistor r=0.1014 c=0
+rf645 (\135\:gnd! \136\:gnd!) resistor r=0.3965 c=0
+rf646 (\129\:gnd! \137\:gnd!) resistor r=0.09948 c=0
+rf647 (\137\:gnd! \138\:gnd!) resistor r=0.2186 c=0
+rf648 (\138\:gnd! \139\:gnd!) resistor r=0.3811 c=0
+rf649 (\133\:gnd! \140\:gnd!) resistor r=0.1372 c=0
+rf650 (\135\:gnd! \141\:gnd!) resistor r=0.15 c=0
+rf651 (\141\:gnd! \142\:gnd!) resistor r=0.3196 c=0
+rf652 (\138\:gnd! \143\:gnd!) resistor r=0.07421 c=0
+rf653 (\143\:gnd! \144\:gnd!) resistor r=0.3105 c=0
+rf654 (\140\:gnd! \145\:gnd!) resistor r=0.0255 c=0
+rf655 (\145\:gnd! \146\:gnd!) resistor r=0.3873 c=0
+rf656 (\141\:gnd! \147\:gnd!) resistor r=0.06745 c=0
+rf657 (\147\:gnd! \148\:gnd!) resistor r=0.3617 c=0
+rf658 (\143\:gnd! \149\:gnd!) resistor r=0.07653 c=0
+rf659 (\149\:gnd! \150\:gnd!) resistor r=0.1347 c=0
+rf660 (\150\:gnd! \151\:gnd!) resistor r=0.3038 c=0
+rf661 (\145\:gnd! \152\:gnd!) resistor r=0.1216 c=0
+rf662 (\152\:gnd! \153\:gnd!) resistor r=0.148 c=0
+rf663 (\147\:gnd! \154\:gnd!) resistor r=0.4707 c=0
+rf664 (\147\:gnd! \155\:gnd!) resistor r=0.09352 c=0
+rf665 (\155\:gnd! \156\:gnd!) resistor r=0.3896 c=0
+rf666 (\150\:gnd! \157\:gnd!) resistor r=0.0463 c=0
+rf667 (\157\:gnd! \158\:gnd!) resistor r=0.02722 c=0
+rf668 (\158\:gnd! \159\:gnd!) resistor r=0.3 c=0
+rf669 (\153\:gnd! \160\:gnd!) resistor r=0.02188 c=0
+rf670 (\160\:gnd! \161\:gnd!) resistor r=0.3873 c=0
+rf671 (\155\:gnd! \162\:gnd!) resistor r=0.05615 c=0
+rf672 (\162\:gnd! \163\:gnd!) resistor r=0.3941 c=0
+rf673 (\158\:gnd! \164\:gnd!) resistor r=0.1173 c=0
+rf674 (\164\:gnd! \165\:gnd!) resistor r=0.4044 c=0
+rf675 (\160\:gnd! \166\:gnd!) resistor r=0.1038 c=0
+rf676 (\166\:gnd! \167\:gnd!) resistor r=0.3833 c=0
+rf677 (\162\:gnd! \168\:gnd!) resistor r=0.1077 c=0
+rf678 (\168\:gnd! \169\:gnd!) resistor r=0.3874 c=0
+rf679 (\164\:gnd! \170\:gnd!) resistor r=0.1447 c=0
+rf680 (\170\:gnd! \171\:gnd!) resistor r=0.05704 c=0
+rf681 (\171\:gnd! \172\:gnd!) resistor r=0.3215 c=0
+rf682 (\166\:gnd! \173\:gnd!) resistor r=0.02269 c=0
+rf683 (\168\:gnd! \174\:gnd!) resistor r=0.0715 c=0
+rf684 (\174\:gnd! \175\:gnd!) resistor r=0.05637 c=0
+rf685 (\175\:gnd! \176\:gnd!) resistor r=0.3019 c=0
+rf686 (\171\:gnd! \177\:gnd!) resistor r=0.08887 c=0
+rf687 (\177\:gnd! \178\:gnd!) resistor r=0.06637 c=0
+rf688 (\178\:gnd! \179\:gnd!) resistor r=0.3215 c=0
+rf689 (\173\:gnd! \180\:gnd!) resistor r=0.02879 c=0
+rf690 (\180\:gnd! \181\:gnd!) resistor r=0.3873 c=0
+rf691 (\175\:gnd! \182\:gnd!) resistor r=0.09058 c=0
+rf692 (\182\:gnd! \183\:gnd!) resistor r=0.3708 c=0
+rf693 (\178\:gnd! \184\:gnd!) resistor r=0.06251 c=0
+rf694 (\184\:gnd! \185\:gnd!) resistor r=0.3843 c=0
+rf695 (\180\:gnd! \186\:gnd!) resistor r=0.1034 c=0
+rf696 (\182\:gnd! \187\:gnd!) resistor r=0.07183 c=0
+rf697 (\187\:gnd! \188\:gnd!) resistor r=0.3874 c=0
+rf698 (\184\:gnd! \189\:gnd!) resistor r=0.1469 c=0
+rf699 (\189\:gnd! \190\:gnd!) resistor r=0.4044 c=0
+rf700 (\186\:gnd! \191\:gnd!) resistor r=0.4477 c=0
+rf701 (\186\:gnd! \192\:gnd!) resistor r=0.1503 c=0
+rf702 (\187\:gnd! \193\:gnd!) resistor r=0.04481 c=0
+rf703 (\193\:gnd! \194\:gnd!) resistor r=0.3163 c=0
+rf704 (\189\:gnd! \195\:gnd!) resistor r=0.2039 c=0
+rf705 (\195\:gnd! \196\:gnd!) resistor r=0.4022 c=0
+rf706 (\192\:gnd! \197\:gnd!) resistor r=0.1433 c=0
+rf707 (\197\:gnd! \198\:gnd!) resistor r=0.3873 c=0
+rf708 (\193\:gnd! \199\:gnd!) resistor r=0.02922 c=0
+rf709 (\199\:gnd! \200\:gnd!) resistor r=0.02857 c=0
+rf710 (\200\:gnd! \201\:gnd!) resistor r=0.3834 c=0
+rf711 (\195\:gnd! \202\:gnd!) resistor r=0.1456 c=0
+rf712 (\202\:gnd! \203\:gnd!) resistor r=0.3767 c=0
+rf713 (\197\:gnd! \204\:gnd!) resistor r=0.06184 c=0
+rf714 (\204\:gnd! \205\:gnd!) resistor r=0.109 c=0
+rf715 (\205\:gnd! \206\:gnd!) resistor r=0.3873 c=0
+rf716 (\200\:gnd! \207\:gnd!) resistor r=0.05138 c=0
+rf717 (\207\:gnd! \208\:gnd!) resistor r=0.3874 c=0
+rf718 (\202\:gnd! \209\:gnd!) resistor r=0.06647 c=0
+rf719 (\209\:gnd! \210\:gnd!) resistor r=0.3213 c=0
+rf720 (\205\:gnd! \211\:gnd!) resistor r=0.03833 c=0
+rf721 (\211\:gnd! \212\:gnd!) resistor r=0.148 c=0
+rf722 (\207\:gnd! \213\:gnd!) resistor r=0.06821 c=0
+rf723 (\213\:gnd! \214\:gnd!) resistor r=0.03653 c=0
+rf724 (\214\:gnd! \215\:gnd!) resistor r=0.3929 c=0
+rf725 (\209\:gnd! \216\:gnd!) resistor r=0.07812 c=0
+rf726 (\216\:gnd! \217\:gnd!) resistor r=0.07812 c=0
+rf727 (\217\:gnd! \218\:gnd!) resistor r=0.3213 c=0
+rf728 (\212\:gnd! \219\:gnd!) resistor r=0.09425 c=0
+rf729 (\219\:gnd! \220\:gnd!) resistor r=0.3873 c=0
+rf730 (\214\:gnd! \221\:gnd!) resistor r=0.4741 c=0
+rf731 (\214\:gnd! \222\:gnd!) resistor r=0.09179 c=0
+rf732 (\222\:gnd! \223\:gnd!) resistor r=0.0567 c=0
+rf733 (\223\:gnd! \224\:gnd!) resistor r=0.3197 c=0
+rf734 (\217\:gnd! \225\:gnd!) resistor r=0.06873 c=0
+rf735 (\225\:gnd! \226\:gnd!) resistor r=0.1307 c=0
+rf736 (\226\:gnd! \227\:gnd!) resistor r=0.4022 c=0
+rf737 (\219\:gnd! \228\:gnd!) resistor r=0.0551 c=0
+rf738 (\223\:gnd! \229\:gnd!) resistor r=0.04991 c=0
+rf739 (\229\:gnd! \230\:gnd!) resistor r=0.3197 c=0
+rf740 (\226\:gnd! \231\:gnd!) resistor r=0.1662 c=0
+rf741 (\231\:gnd! \232\:gnd!) resistor r=0.3027 c=0
+rf742 (\228\:gnd! \233\:gnd!) resistor r=0.06004 c=0
+rf743 (\233\:gnd! \234\:gnd!) resistor r=0.3873 c=0
+rf744 (\229\:gnd! \235\:gnd!) resistor r=0.04157 c=0
+rf745 (\235\:gnd! \236\:gnd!) resistor r=0.04519 c=0
+rf746 (\236\:gnd! \237\:gnd!) resistor r=0.3874 c=0
+rf747 (\231\:gnd! \238\:gnd!) resistor r=0.05028 c=0
+rf748 (\238\:gnd! \239\:gnd!) resistor r=0.02337 c=0
+rf749 (\239\:gnd! \240\:gnd!) resistor r=0.3093 c=0
+rf750 (\233\:gnd! \241\:gnd!) resistor r=0.07188 c=0
+rf751 (\236\:gnd! \242\:gnd!) resistor r=0.06896 c=0
+rf752 (\242\:gnd! \243\:gnd!) resistor r=0.3173 c=0
+rf753 (\239\:gnd! \244\:gnd!) resistor r=0.1061 c=0
+rf754 (\244\:gnd! \245\:gnd!) resistor r=0.148 c=0
+rf755 (\245\:gnd! \246\:gnd!) resistor r=0.3515 c=0
+rf756 (\241\:gnd! \247\:gnd!) resistor r=0.442 c=0
+rf757 (\241\:gnd! \248\:gnd!) resistor r=0.08461 c=0
+rf758 (\248\:gnd! \249\:gnd!) resistor r=0.3873 c=0
+rf759 (\242\:gnd! \250\:gnd!) resistor r=0.04495 c=0
+rf760 (\250\:gnd! \251\:gnd!) resistor r=0.3896 c=0
+rf761 (\245\:gnd! \252\:gnd!) resistor r=0.0544 c=0
+rf762 (\252\:gnd! \253\:gnd!) resistor r=0.3085 c=0
+rf763 (\248\:gnd! \254\:gnd!) resistor r=0.06497 c=0
+rf764 (\254\:gnd! \255\:gnd!) resistor r=0.1977 c=0
+rf765 (\250\:gnd! \256\:gnd!) resistor r=0.04402 c=0
+rf766 (\256\:gnd! \257\:gnd!) resistor r=0.1485 c=0
+rf767 (\257\:gnd! \258\:gnd!) resistor r=0.07299 c=0
+rf768 (\258\:gnd! \259\:gnd!) resistor r=0.3788 c=0
+rf769 (\252\:gnd! \260\:gnd!) resistor r=0.09236 c=0
+rf770 (\260\:gnd! \261\:gnd!) resistor r=0.1489 c=0
+rf771 (\261\:gnd! \262\:gnd!) resistor r=0.4122 c=0
+rf772 (\255\:gnd! \263\:gnd!) resistor r=0.02879 c=0
+rf773 (\263\:gnd! \264\:gnd!) resistor r=0.3873 c=0
+rf774 (\258\:gnd! \265\:gnd!) resistor r=0.4741 c=0
+rf775 (\258\:gnd! \266\:gnd!) resistor r=0.06936 c=0
+rf776 (\266\:gnd! \267\:gnd!) resistor r=0.06287 c=0
+rf777 (\267\:gnd! \268\:gnd!) resistor r=0.3949 c=0
+rf778 (\261\:gnd! \269\:gnd!) resistor r=0.03693 c=0
+rf779 (\269\:gnd! \270\:gnd!) resistor r=0.3611 c=0
+rf780 (\263\:gnd! \271\:gnd!) resistor r=0.1186 c=0
+rf781 (\271\:gnd! \272\:gnd!) resistor r=0.1485 c=0
+rf782 (\272\:gnd! \273\:gnd!) resistor r=0.03889 c=0
+rf783 (\273\:gnd! \274\:gnd!) resistor r=0.3844 c=0
+rf784 (\267\:gnd! \275\:gnd!) resistor r=0.4764 c=0
+rf785 (\267\:gnd! \276\:gnd!) resistor r=0.04763 c=0
+rf786 (\276\:gnd! \277\:gnd!) resistor r=0.3962 c=0
+rf787 (\269\:gnd! \278\:gnd!) resistor r=0.09408 c=0
+rf788 (\278\:gnd! \279\:gnd!) resistor r=0.1513 c=0
+rf789 (\279\:gnd! \280\:gnd!) resistor r=0.3627 c=0
+rf790 (\273\:gnd! \281\:gnd!) resistor r=0.1108 c=0
+rf791 (\281\:gnd! \282\:gnd!) resistor r=0.5167 c=0
+rf792 (\276\:gnd! \283\:gnd!) resistor r=0.4722 c=0
+rf793 (\276\:gnd! \284\:gnd!) resistor r=0.03195 c=0
+rf794 (\284\:gnd! \285\:gnd!) resistor r=0.06382 c=0
+rf795 (\285\:gnd! \286\:gnd!) resistor r=0.3896 c=0
+rf796 (\279\:gnd! \287\:gnd!) resistor r=0.3647 c=0
+rf797 (\281\:gnd! \288\:gnd!) resistor r=0.1333 c=0
+rf798 (\288\:gnd! \289\:gnd!) resistor r=0.1508 c=0
+rf799 (\289\:gnd! \290\:gnd!) resistor r=0.5167 c=0
+rf800 (\285\:gnd! \291\:gnd!) resistor r=0.06844 c=0
+rf801 (\291\:gnd! \292\:gnd!) resistor r=0.4133 c=0
+rf802 (\289\:gnd! \293\:gnd!) resistor r=0.521 c=0
+rf803 (\291\:gnd! \294\:gnd!) resistor r=0.1508 c=0
+rf804 (\294\:gnd! \295\:gnd!) resistor r=0.06482 c=0
+rf805 (\295\:gnd! \296\:gnd!) resistor r=0.3936 c=0
+rf806 (\295\:gnd! \297\:gnd!) resistor r=0.4764 c=0
+rf807 (\295\:gnd! \298\:gnd!) resistor r=0.1289 c=0
+rf808 (\298\:gnd! \299\:gnd!) resistor r=0.364 c=0
+rf809 (\298\:gnd! \300\:gnd!) resistor r=0.4713 c=0
+rf810 (\298\:gnd! \301\:gnd!) resistor r=0.09652 c=0
+rf811 (\301\:gnd! \302\:gnd!) resistor r=0.302 c=0
+rf812 (\301\:gnd! \303\:gnd!) resistor r=0.04996 c=0
+rf813 (\303\:gnd! \304\:gnd!) resistor r=0.5113 c=0
+rf814 (\303\:gnd! \305\:gnd!) resistor r=0.1477 c=0
+rf815 (\305\:gnd! \306\:gnd!) resistor r=0.0937 c=0
+rf816 (\306\:gnd! \307\:gnd!) resistor r=0.3575 c=0
+rf817 (\306\:gnd! \308\:gnd!) resistor r=0.0552 c=0
+rf818 (\308\:gnd! \309\:gnd!) resistor r=0.4108 c=0
+rf819 (\308\:gnd! \310\:gnd!) resistor r=0.4821 c=0
+rf820 (\308\:gnd! \311\:gnd!) resistor r=0.09077 c=0
+rf821 (\311\:gnd! \312\:gnd!) resistor r=0.3857 c=0
+rf822 (\311\:gnd! \313\:gnd!) resistor r=0.07145 c=0
+rf823 (\313\:gnd! \314\:gnd!) resistor r=0.05835 c=0
+rf824 (\314\:gnd! \315\:gnd!) resistor r=0.3063 c=0
+rf825 (\314\:gnd! \316\:gnd!) resistor r=0.09091 c=0
+rf826 (\316\:gnd! \317\:gnd!) resistor r=0.3306 c=0
+rf827 (\316\:gnd! \318\:gnd!) resistor r=0.3711 c=0
+rf828 (\316\:gnd! \319\:gnd!) resistor r=0.3343 c=0
+rf829 (Y1 \21\:Y1) resistor r=0.2212 c=0
+rf830 (\21\:Y1 \18\:Y1) resistor r=3.8017 c=0
+rf831 (\18\:Y1 \12\:Y1) resistor r=10.0519 c=0
+rf832 (\12\:Y1 \5\:Y1) resistor r=4.0448 c=0
+rf833 (vdd! \1\:vdd!) resistor r=1.9259 c=0
+rf834 (\1\:vdd! \2\:vdd!) resistor r=4.4079 c=0
+rf835 (\2\:vdd! \3\:vdd!) resistor r=4.3331 c=0
+rf836 (\3\:vdd! \4\:vdd!) resistor r=0.1142 c=0
+rf837 (\4\:vdd! \5\:vdd!) resistor r=0.07026 c=0
+rf838 (\5\:vdd! \6\:vdd!) resistor r=0.1185 c=0
+rf839 (\6\:vdd! \7\:vdd!) resistor r=0.1058 c=0
+rf840 (\7\:vdd! \8\:vdd!) resistor r=0.05382 c=0
+rf841 (\8\:vdd! \9\:vdd!) resistor r=0.05336 c=0
+rf842 (\9\:vdd! \10\:vdd!) resistor r=0.1554 c=0
+rf843 (\10\:vdd! \11\:vdd!) resistor r=0.1068 c=0
+rf844 (\11\:vdd! \12\:vdd!) resistor r=0.0441 c=0
+rf845 (\12\:vdd! \13\:vdd!) resistor r=0.02879 c=0
+rf846 (\13\:vdd! \14\:vdd!) resistor r=0.1886 c=0
+rf847 (\14\:vdd! \15\:vdd!) resistor r=0.07569 c=0
+rf848 (\15\:vdd! \16\:vdd!) resistor r=0.03265 c=0
+rf849 (\16\:vdd! \17\:vdd!) resistor r=0.07166 c=0
+rf850 (\17\:vdd! \18\:vdd!) resistor r=0.02575 c=0
+rf851 (\18\:vdd! \19\:vdd!) resistor r=0.02916 c=0
+rf852 (\19\:vdd! \20\:vdd!) resistor r=0.0265 c=0
+rf853 (\20\:vdd! \21\:vdd!) resistor r=0.1023 c=0
+rf854 (\21\:vdd! \22\:vdd!) resistor r=0.05449 c=0
+rf855 (\22\:vdd! \23\:vdd!) resistor r=0.1069 c=0
+rf856 (\23\:vdd! \24\:vdd!) resistor r=0.05069 c=0
+rf857 (\24\:vdd! \25\:vdd!) resistor r=0.05136 c=0
+rf858 (\25\:vdd! \26\:vdd!) resistor r=0.1725 c=0
+rf859 (\26\:vdd! \27\:vdd!) resistor r=0.05118 c=0
+rf860 (\27\:vdd! \28\:vdd!) resistor r=0.0506 c=0
+rf861 (\28\:vdd! \29\:vdd!) resistor r=0.1064 c=0
+rf862 (\29\:vdd! \30\:vdd!) resistor r=0.05445 c=0
+rf863 (\30\:vdd! \31\:vdd!) resistor r=0.1029 c=0
+rf864 (\31\:vdd! \32\:vdd!) resistor r=0.03453 c=0
+rf865 (\32\:vdd! \33\:vdd!) resistor r=0.03083 c=0
+rf866 (\33\:vdd! \34\:vdd!) resistor r=0.0257 c=0
+rf867 (\34\:vdd! \35\:vdd!) resistor r=0.07181 c=0
+rf868 (\35\:vdd! \36\:vdd!) resistor r=0.03262 c=0
+rf869 (\36\:vdd! \37\:vdd!) resistor r=0.07526 c=0
+rf870 (\37\:vdd! \38\:vdd!) resistor r=0.1245 c=0
+rf871 (\38\:vdd! \39\:vdd!) resistor r=0.06644 c=0
+rf872 (\39\:vdd! \40\:vdd!) resistor r=0.02911 c=0
+rf873 (\40\:vdd! \41\:vdd!) resistor r=0.08239 c=0
+rf874 (\41\:vdd! \42\:vdd!) resistor r=0.07195 c=0
+rf875 (\42\:vdd! \43\:vdd!) resistor r=0.05037 c=0
+rf876 (\43\:vdd! \44\:vdd!) resistor r=0.04978 c=0
+rf877 (\44\:vdd! \45\:vdd!) resistor r=0.1047 c=0
+rf878 (\45\:vdd! \46\:vdd!) resistor r=0.05363 c=0
+rf879 (\46\:vdd! \47\:vdd!) resistor r=0.1009 c=0
+rf880 (\47\:vdd! \48\:vdd!) resistor r=0.02613 c=0
+rf881 (\48\:vdd! \49\:vdd!) resistor r=0.02876 c=0
+rf882 (\49\:vdd! \50\:vdd!) resistor r=0.02535 c=0
+rf883 (\50\:vdd! \51\:vdd!) resistor r=0.07067 c=0
+rf884 (\51\:vdd! \52\:vdd!) resistor r=0.03216 c=0
+rf885 (\52\:vdd! \53\:vdd!) resistor r=0.07448 c=0
+rf886 (\53\:vdd! \54\:vdd!) resistor r=0.1082 c=0
+rf887 (\54\:vdd! \55\:vdd!) resistor r=0.07267 c=0
+rf888 (\55\:vdd! \56\:vdd!) resistor r=0.0317 c=0
+rf889 (\56\:vdd! \57\:vdd!) resistor r=0.06006 c=0
+rf890 (\57\:vdd! \58\:vdd!) resistor r=0.429 c=0
+rf891 (\1\:vdd! \59\:vdd!) resistor r=0.2893 c=0
+rf892 (\59\:vdd! \60\:vdd!) resistor r=0.3835 c=0
+rf893 (\2\:vdd! \61\:vdd!) resistor r=0.08985 c=0
+rf894 (\61\:vdd! \62\:vdd!) resistor r=0.5222 c=0
+rf895 (\3\:vdd! \63\:vdd!) resistor r=0.7491 c=0
+rf896 (\3\:vdd! \64\:vdd!) resistor r=0.7418 c=0
+rf897 (\4\:vdd! \65\:vdd!) resistor r=0.5159 c=0
+rf898 (\4\:vdd! \66\:vdd!) resistor r=0.5159 c=0
+rf899 (\5\:vdd! \67\:vdd!) resistor r=0.4015 c=0
+rf900 (\6\:vdd! \68\:vdd!) resistor r=0.3716 c=0
+rf901 (\7\:vdd! \69\:vdd!) resistor r=0.4979 c=0
+rf902 (\7\:vdd! \70\:vdd!) resistor r=0.468 c=0
+rf903 (\8\:vdd! \71\:vdd!) resistor r=0.3726 c=0
+rf904 (\9\:vdd! \72\:vdd!) resistor r=0.3984 c=0
+rf905 (\10\:vdd! \73\:vdd!) resistor r=0.4004 c=0
+rf906 (\11\:vdd! \74\:vdd!) resistor r=0.3994 c=0
+rf907 (\12\:vdd! \75\:vdd!) resistor r=0.3996 c=0
+rf908 (\13\:vdd! \76\:vdd!) resistor r=0.3997 c=0
+rf909 (\14\:vdd! \77\:vdd!) resistor r=0.3775 c=0
+rf910 (\15\:vdd! \78\:vdd!) resistor r=0.4015 c=0
+rf911 (\16\:vdd! \79\:vdd!) resistor r=0.522 c=0
+rf912 (\17\:vdd! \80\:vdd!) resistor r=0.3972 c=0
+rf913 (\18\:vdd! \81\:vdd!) resistor r=0.3878 c=0
+rf914 (\19\:vdd! \82\:vdd!) resistor r=0.4068 c=0
+rf915 (\20\:vdd! \83\:vdd!) resistor r=0.3805 c=0
+rf916 (\21\:vdd! \84\:vdd!) resistor r=0.521 c=0
+rf917 (\21\:vdd! \85\:vdd!) resistor r=0.5021 c=0
+rf918 (\22\:vdd! \86\:vdd!) resistor r=0.3815 c=0
+rf919 (\23\:vdd! \87\:vdd!) resistor r=0.3815 c=0
+rf920 (\24\:vdd! \88\:vdd!) resistor r=0.3775 c=0
+rf921 (\25\:vdd! \89\:vdd!) resistor r=0.4015 c=0
+rf922 (\26\:vdd! \90\:vdd!) resistor r=0.3994 c=0
+rf923 (\27\:vdd! \91\:vdd!) resistor r=0.3774 c=0
+rf924 (\28\:vdd! \92\:vdd!) resistor r=0.3815 c=0
+rf925 (\29\:vdd! \93\:vdd!) resistor r=0.3815 c=0
+rf926 (\30\:vdd! \94\:vdd!) resistor r=0.521 c=0
+rf927 (\30\:vdd! \95\:vdd!) resistor r=0.5021 c=0
+rf928 (\31\:vdd! \96\:vdd!) resistor r=0.3805 c=0
+rf929 (\32\:vdd! \97\:vdd!) resistor r=0.3968 c=0
+rf930 (\33\:vdd! \98\:vdd!) resistor r=0.3878 c=0
+rf931 (\34\:vdd! \99\:vdd!) resistor r=0.3973 c=0
+rf932 (\35\:vdd! \100\:vdd!) resistor r=0.5236 c=0
+rf933 (\36\:vdd! \101\:vdd!) resistor r=0.3994 c=0
+rf934 (\37\:vdd! \102\:vdd!) resistor r=0.3733 c=0
+rf935 (\38\:vdd! \103\:vdd!) resistor r=0.4019 c=0
+rf936 (\39\:vdd! \104\:vdd!) resistor r=0.4246 c=0
+rf937 (\40\:vdd! \105\:vdd!) resistor r=0.4226 c=0
+rf938 (\41\:vdd! \106\:vdd!) resistor r=0.4019 c=0
+rf939 (\42\:vdd! \107\:vdd!) resistor r=0.3955 c=0
+rf940 (\43\:vdd! \108\:vdd!) resistor r=0.3769 c=0
+rf941 (\44\:vdd! \109\:vdd!) resistor r=0.3809 c=0
+rf942 (\45\:vdd! \110\:vdd!) resistor r=0.3809 c=0
+rf943 (\46\:vdd! \111\:vdd!) resistor r=0.5188 c=0
+rf944 (\46\:vdd! \112\:vdd!) resistor r=0.5043 c=0
+rf945 (\47\:vdd! \113\:vdd!) resistor r=0.3809 c=0
+rf946 (\48\:vdd! \114\:vdd!) resistor r=0.4028 c=0
+rf947 (\49\:vdd! \115\:vdd!) resistor r=0.3882 c=0
+rf948 (\50\:vdd! \116\:vdd!) resistor r=0.3934 c=0
+rf949 (\51\:vdd! \117\:vdd!) resistor r=0.5224 c=0
+rf950 (\52\:vdd! \118\:vdd!) resistor r=0.3975 c=0
+rf951 (\53\:vdd! \119\:vdd!) resistor r=0.3769 c=0
+rf952 (\54\:vdd! \120\:vdd!) resistor r=0.3965 c=0
+rf953 (\55\:vdd! \121\:vdd!) resistor r=0.3965 c=0
+rf954 (\56\:vdd! \122\:vdd!) resistor r=0.3975 c=0
+rf955 (\59\:vdd! \123\:vdd!) resistor r=0.09153 c=0
+rf956 (\123\:vdd! \124\:vdd!) resistor r=0.4738 c=0
+rf957 (\59\:vdd! \125\:vdd!) resistor r=0.4236 c=0
+rf958 (\61\:vdd! \126\:vdd!) resistor r=0.08918 c=0
+rf959 (\126\:vdd! \127\:vdd!) resistor r=0.02324 c=0
+rf960 (\127\:vdd! \128\:vdd!) resistor r=0.5125 c=0
+rf961 (\61\:vdd! \129\:vdd!) resistor r=0.5256 c=0
+rf962 (\123\:vdd! \130\:vdd!) resistor r=0.08497 c=0
+rf963 (\130\:vdd! \131\:vdd!) resistor r=0.4974 c=0
+rf964 (\123\:vdd! \132\:vdd!) resistor r=0.4853 c=0
+rf965 (\127\:vdd! \133\:vdd!) resistor r=0.08278 c=0
+rf966 (\133\:vdd! \134\:vdd!) resistor r=0.1069 c=0
+rf967 (\134\:vdd! \135\:vdd!) resistor r=0.1034 c=0
+rf968 (\135\:vdd! \136\:vdd!) resistor r=0.4972 c=0
+rf969 (\127\:vdd! \137\:vdd!) resistor r=0.5158 c=0
+rf970 (\130\:vdd! \138\:vdd!) resistor r=0.0271 c=0
+rf971 (\138\:vdd! \139\:vdd!) resistor r=0.04574 c=0
+rf972 (\139\:vdd! \140\:vdd!) resistor r=0.3976 c=0
+rf973 (\130\:vdd! \141\:vdd!) resistor r=0.5029 c=0
+rf974 (\133\:vdd! \142\:vdd!) resistor r=0.4829 c=0
+rf975 (\134\:vdd! \143\:vdd!) resistor r=0.4789 c=0
+rf976 (\135\:vdd! \144\:vdd!) resistor r=0.06491 c=0
+rf977 (\144\:vdd! \145\:vdd!) resistor r=0.04205 c=0
+rf978 (\145\:vdd! \146\:vdd!) resistor r=0.3944 c=0
+rf979 (\135\:vdd! \147\:vdd!) resistor r=0.4717 c=0
+rf980 (\139\:vdd! \148\:vdd!) resistor r=0.06326 c=0
+rf981 (\148\:vdd! \149\:vdd!) resistor r=0.04045 c=0
+rf982 (\149\:vdd! \150\:vdd!) resistor r=0.5014 c=0
+rf983 (\144\:vdd! \151\:vdd!) resistor r=0.4564 c=0
+rf984 (\145\:vdd! \152\:vdd!) resistor r=0.06014 c=0
+rf985 (\152\:vdd! \153\:vdd!) resistor r=0.0715 c=0
+rf986 (\153\:vdd! \154\:vdd!) resistor r=0.03861 c=0
+rf987 (\154\:vdd! \155\:vdd!) resistor r=0.06161 c=0
+rf988 (\155\:vdd! \156\:vdd!) resistor r=0.02915 c=0
+rf989 (\156\:vdd! \157\:vdd!) resistor r=0.4154 c=0
+rf990 (\148\:vdd! \158\:vdd!) resistor r=0.4621 c=0
+rf991 (\149\:vdd! \159\:vdd!) resistor r=0.1028 c=0
+rf992 (\159\:vdd! \160\:vdd!) resistor r=0.06303 c=0
+rf993 (\160\:vdd! \161\:vdd!) resistor r=0.05368 c=0
+rf994 (\161\:vdd! \162\:vdd!) resistor r=0.05529 c=0
+rf995 (\162\:vdd! \163\:vdd!) resistor r=0.52 c=0
+rf996 (\149\:vdd! \164\:vdd!) resistor r=0.467 c=0
+rf997 (\153\:vdd! \165\:vdd!) resistor r=0.3985 c=0
+rf998 (\155\:vdd! \166\:vdd!) resistor r=0.4154 c=0
+rf999 (\156\:vdd! \167\:vdd!) resistor r=0.04924 c=0
+rf1000 (\167\:vdd! \168\:vdd!) resistor r=0.1599 c=0
+rf1001 (\168\:vdd! \169\:vdd!) resistor r=0.07474 c=0
+rf1002 (\169\:vdd! \170\:vdd!) resistor r=0.3985 c=0
+rf1003 (\159\:vdd! \171\:vdd!) resistor r=0.3658 c=0
+rf1004 (\161\:vdd! \172\:vdd!) resistor r=0.4003 c=0
+rf1005 (\162\:vdd! \173\:vdd!) resistor r=0.1145 c=0
+rf1006 (\173\:vdd! \174\:vdd!) resistor r=0.4992 c=0
+rf1007 (\162\:vdd! \175\:vdd!) resistor r=0.5011 c=0
+rf1008 (\167\:vdd! \176\:vdd!) resistor r=0.3985 c=0
+rf1009 (\168\:vdd! \177\:vdd!) resistor r=0.3768 c=0
+rf1010 (\169\:vdd! \178\:vdd!) resistor r=0.03227 c=0
+rf1011 (\178\:vdd! \179\:vdd!) resistor r=0.07091 c=0
+rf1012 (\179\:vdd! \180\:vdd!) resistor r=0.3944 c=0
+rf1013 (\173\:vdd! \181\:vdd!) resistor r=0.11 c=0
+rf1014 (\181\:vdd! \182\:vdd!) resistor r=0.01688 c=0
+rf1015 (\182\:vdd! \183\:vdd!) resistor r=0.02859 c=0
+rf1016 (\183\:vdd! \184\:vdd!) resistor r=0.4171 c=0
+rf1017 (\173\:vdd! \185\:vdd!) resistor r=0.5267 c=0
+rf1018 (\178\:vdd! \186\:vdd!) resistor r=0.5222 c=0
+rf1019 (\179\:vdd! \187\:vdd!) resistor r=0.02544 c=0
+rf1020 (\187\:vdd! \188\:vdd!) resistor r=0.02894 c=0
+rf1021 (\188\:vdd! \189\:vdd!) resistor r=0.4059 c=0
+rf1022 (\182\:vdd! \190\:vdd!) resistor r=0.4193 c=0
+rf1023 (\183\:vdd! \191\:vdd!) resistor r=0.04829 c=0
+rf1024 (\191\:vdd! \192\:vdd!) resistor r=0.1035 c=0
+rf1025 (\192\:vdd! \193\:vdd!) resistor r=0.05234 c=0
+rf1026 (\193\:vdd! \194\:vdd!) resistor r=0.07331 c=0
+rf1027 (\194\:vdd! \195\:vdd!) resistor r=0.4003 c=0
+rf1028 (\187\:vdd! \196\:vdd!) resistor r=0.3881 c=0
+rf1029 (\188\:vdd! \197\:vdd!) resistor r=0.02627 c=0
+rf1030 (\197\:vdd! \198\:vdd!) resistor r=0.02216 c=0
+rf1031 (\198\:vdd! \199\:vdd!) resistor r=0.07917 c=0
+rf1032 (\199\:vdd! \200\:vdd!) resistor r=0.5204 c=0
+rf1033 (\191\:vdd! \201\:vdd!) resistor r=0.4025 c=0
+rf1034 (\192\:vdd! \202\:vdd!) resistor r=0.4025 c=0
+rf1035 (\193\:vdd! \203\:vdd!) resistor r=0.3697 c=0
+rf1036 (\194\:vdd! \204\:vdd!) resistor r=0.03166 c=0
+rf1037 (\204\:vdd! \205\:vdd!) resistor r=0.06955 c=0
+rf1038 (\205\:vdd! \206\:vdd!) resistor r=0.3961 c=0
+rf1039 (\197\:vdd! \207\:vdd!) resistor r=0.3808 c=0
+rf1040 (\199\:vdd! \208\:vdd!) resistor r=0.01667 c=0
+rf1041 (\208\:vdd! \209\:vdd!) resistor r=0.03729 c=0
+rf1042 (\209\:vdd! \210\:vdd!) resistor r=0.1055 c=0
+rf1043 (\210\:vdd! \211\:vdd!) resistor r=0.05007 c=0
+rf1044 (\211\:vdd! \212\:vdd!) resistor r=0.05073 c=0
+rf1045 (\212\:vdd! \213\:vdd!) resistor r=0.3985 c=0
+rf1046 (\199\:vdd! \214\:vdd!) resistor r=0.5026 c=0
+rf1047 (\204\:vdd! \215\:vdd!) resistor r=0.511 c=0
+rf1048 (\205\:vdd! \216\:vdd!) resistor r=0.02496 c=0
+rf1049 (\216\:vdd! \217\:vdd!) resistor r=0.02839 c=0
+rf1050 (\217\:vdd! \218\:vdd!) resistor r=0.4076 c=0
+rf1051 (\209\:vdd! \219\:vdd!) resistor r=0.3808 c=0
+rf1052 (\210\:vdd! \220\:vdd!) resistor r=0.3808 c=0
+rf1053 (\211\:vdd! \221\:vdd!) resistor r=0.3768 c=0
+rf1054 (\212\:vdd! \222\:vdd!) resistor r=0.1583 c=0
+rf1055 (\222\:vdd! \223\:vdd!) resistor r=0.03795 c=0
+rf1056 (\223\:vdd! \224\:vdd!) resistor r=0.3997 c=0
+rf1057 (\216\:vdd! \225\:vdd!) resistor r=0.3809 c=0
+rf1058 (\217\:vdd! \226\:vdd!) resistor r=0.02577 c=0
+rf1059 (\226\:vdd! \227\:vdd!) resistor r=0.08626 c=0
+rf1060 (\227\:vdd! \228\:vdd!) resistor r=0.444 c=0
+rf1061 (\223\:vdd! \229\:vdd!) resistor r=0.05073 c=0
+rf1062 (\229\:vdd! \230\:vdd!) resistor r=0.05007 c=0
+rf1063 (\230\:vdd! \231\:vdd!) resistor r=0.1055 c=0
+rf1064 (\231\:vdd! \232\:vdd!) resistor r=0.05397 c=0
+rf1065 (\232\:vdd! \233\:vdd!) resistor r=0.5215 c=0
+rf1066 (\226\:vdd! \234\:vdd!) resistor r=0.3736 c=0
+rf1067 (\227\:vdd! \235\:vdd!) resistor r=0.06722 c=0
+rf1068 (\235\:vdd! \236\:vdd!) resistor r=0.1035 c=0
+rf1069 (\236\:vdd! \237\:vdd!) resistor r=0.04912 c=0
+rf1070 (\237\:vdd! \238\:vdd!) resistor r=0.04976 c=0
+rf1071 (\238\:vdd! \239\:vdd!) resistor r=0.4003 c=0
+rf1072 (\227\:vdd! \240\:vdd!) resistor r=0.4204 c=0
+rf1073 (\229\:vdd! \241\:vdd!) resistor r=0.3757 c=0
+rf1074 (\230\:vdd! \242\:vdd!) resistor r=0.3797 c=0
+rf1075 (\231\:vdd! \243\:vdd!) resistor r=0.3797 c=0
+rf1076 (\232\:vdd! \244\:vdd!) resistor r=0.0772 c=0
+rf1077 (\244\:vdd! \245\:vdd!) resistor r=0.02413 c=0
+rf1078 (\245\:vdd! \246\:vdd!) resistor r=0.02627 c=0
+rf1079 (\246\:vdd! \247\:vdd!) resistor r=0.407 c=0
+rf1080 (\232\:vdd! \248\:vdd!) resistor r=0.5015 c=0
+rf1081 (\235\:vdd! \249\:vdd!) resistor r=0.3736 c=0
+rf1082 (\236\:vdd! \250\:vdd!) resistor r=0.3736 c=0
+rf1083 (\237\:vdd! \251\:vdd!) resistor r=0.3697 c=0
+rf1084 (\238\:vdd! \252\:vdd!) resistor r=0.08109 c=0
+rf1085 (\252\:vdd! \253\:vdd!) resistor r=0.03142 c=0
+rf1086 (\253\:vdd! \254\:vdd!) resistor r=0.4025 c=0
+rf1087 (\245\:vdd! \255\:vdd!) resistor r=0.3797 c=0
+rf1088 (\246\:vdd! \256\:vdd!) resistor r=0.02894 c=0
+rf1089 (\256\:vdd! \257\:vdd!) resistor r=0.02544 c=0
+rf1090 (\257\:vdd! \258\:vdd!) resistor r=0.3954 c=0
+rf1091 (\253\:vdd! \259\:vdd!) resistor r=0.04976 c=0
+rf1092 (\259\:vdd! \260\:vdd!) resistor r=0.04912 c=0
+rf1093 (\260\:vdd! \261\:vdd!) resistor r=0.1035 c=0
+rf1094 (\261\:vdd! \262\:vdd!) resistor r=0.039 c=0
+rf1095 (\262\:vdd! \263\:vdd!) resistor r=0.4719 c=0
+rf1096 (\256\:vdd! \264\:vdd!) resistor r=0.387 c=0
+rf1097 (\257\:vdd! \265\:vdd!) resistor r=0.0506 c=0
+rf1098 (\265\:vdd! \266\:vdd!) resistor r=0.02031 c=0
+rf1099 (\266\:vdd! \267\:vdd!) resistor r=0.03227 c=0
+rf1100 (\267\:vdd! \268\:vdd!) resistor r=0.3997 c=0
+rf1101 (\259\:vdd! \269\:vdd!) resistor r=0.3675 c=0
+rf1102 (\260\:vdd! \270\:vdd!) resistor r=0.3714 c=0
+rf1103 (\261\:vdd! \271\:vdd!) resistor r=0.3714 c=0
+rf1104 (\262\:vdd! \272\:vdd!) resistor r=0.03309 c=0
+rf1105 (\272\:vdd! \273\:vdd!) resistor r=0.07884 c=0
+rf1106 (\273\:vdd! \274\:vdd!) resistor r=0.0398 c=0
+rf1107 (\274\:vdd! \275\:vdd!) resistor r=0.457 c=0
+rf1108 (\262\:vdd! \276\:vdd!) resistor r=0.469 c=0
+rf1109 (\266\:vdd! \277\:vdd!) resistor r=0.5205 c=0
+rf1110 (\267\:vdd! \278\:vdd!) resistor r=0.07474 c=0
+rf1111 (\278\:vdd! \279\:vdd!) resistor r=0.1343 c=0
+rf1112 (\279\:vdd! \280\:vdd!) resistor r=0.07645 c=0
+rf1113 (\280\:vdd! \281\:vdd!) resistor r=0.5178 c=0
+rf1114 (\273\:vdd! \282\:vdd!) resistor r=0.3714 c=0
+rf1115 (\274\:vdd! \283\:vdd!) resistor r=0.0406 c=0
+rf1116 (\283\:vdd! \284\:vdd!) resistor r=0.3983 c=0
+rf1117 (\274\:vdd! \285\:vdd!) resistor r=0.4394 c=0
+rf1118 (\278\:vdd! \286\:vdd!) resistor r=0.3757 c=0
+rf1119 (\279\:vdd! \287\:vdd!) resistor r=0.3997 c=0
+rf1120 (\280\:vdd! \288\:vdd!) resistor r=0.1145 c=0
+rf1121 (\288\:vdd! \289\:vdd!) resistor r=0.07545 c=0
+rf1122 (\289\:vdd! \290\:vdd!) resistor r=0.3985 c=0
+rf1123 (\280\:vdd! \291\:vdd!) resistor r=0.5178 c=0
+rf1124 (\283\:vdd! \292\:vdd!) resistor r=0.06955 c=0
+rf1125 (\292\:vdd! \293\:vdd!) resistor r=0.03166 c=0
+rf1126 (\293\:vdd! \294\:vdd!) resistor r=0.4025 c=0
+rf1127 (\288\:vdd! \295\:vdd!) resistor r=0.4804 c=0
+rf1128 (\289\:vdd! \296\:vdd!) resistor r=0.05073 c=0
+rf1129 (\296\:vdd! \297\:vdd!) resistor r=0.05007 c=0
+rf1130 (\297\:vdd! \298\:vdd!) resistor r=0.1055 c=0
+rf1131 (\298\:vdd! \299\:vdd!) resistor r=0.05397 c=0
+rf1132 (\299\:vdd! \300\:vdd!) resistor r=0.5204 c=0
+rf1133 (\292\:vdd! \301\:vdd!) resistor r=0.5076 c=0
+rf1134 (\293\:vdd! \302\:vdd!) resistor r=0.07331 c=0
+rf1135 (\302\:vdd! \303\:vdd!) resistor r=0.1136 c=0
+rf1136 (\303\:vdd! \304\:vdd!) resistor r=0.06973 c=0
+rf1137 (\304\:vdd! \305\:vdd!) resistor r=0.02618 c=0
+rf1138 (\305\:vdd! \306\:vdd!) resistor r=0.4025 c=0
+rf1139 (\296\:vdd! \307\:vdd!) resistor r=0.3768 c=0
+rf1140 (\297\:vdd! \308\:vdd!) resistor r=0.3808 c=0
+rf1141 (\298\:vdd! \309\:vdd!) resistor r=0.3808 c=0
+rf1142 (\299\:vdd! \310\:vdd!) resistor r=0.06371 c=0
+rf1143 (\310\:vdd! \311\:vdd!) resistor r=0.03762 c=0
+rf1144 (\311\:vdd! \312\:vdd!) resistor r=0.02627 c=0
+rf1145 (\312\:vdd! \313\:vdd!) resistor r=0.4059 c=0
+rf1146 (\299\:vdd! \314\:vdd!) resistor r=0.5026 c=0
+rf1147 (\302\:vdd! \315\:vdd!) resistor r=0.3675 c=0
+rf1148 (\303\:vdd! \316\:vdd!) resistor r=0.4014 c=0
+rf1149 (\304\:vdd! \317\:vdd!) resistor r=0.4044 c=0
+rf1150 (\305\:vdd! \318\:vdd!) resistor r=0.09561 c=0
+rf1151 (\318\:vdd! \319\:vdd!) resistor r=0.0604 c=0
+rf1152 (\319\:vdd! \320\:vdd!) resistor r=0.4159 c=0
+rf1153 (\311\:vdd! \321\:vdd!) resistor r=0.3808 c=0
+rf1154 (\312\:vdd! \322\:vdd!) resistor r=0.02894 c=0
+rf1155 (\322\:vdd! \323\:vdd!) resistor r=0.02544 c=0
+rf1156 (\323\:vdd! \324\:vdd!) resistor r=0.3944 c=0
+rf1157 (\318\:vdd! \325\:vdd!) resistor r=0.4861 c=0
+rf1158 (\319\:vdd! \326\:vdd!) resistor r=0.02853 c=0
+rf1159 (\326\:vdd! \327\:vdd!) resistor r=0.03782 c=0
+rf1160 (\327\:vdd! \328\:vdd!) resistor r=0.0281 c=0
+rf1161 (\328\:vdd! \329\:vdd!) resistor r=0.02813 c=0
+rf1162 (\329\:vdd! \330\:vdd!) resistor r=0.4038 c=0
+rf1163 (\322\:vdd! \331\:vdd!) resistor r=0.3881 c=0
+rf1164 (\323\:vdd! \332\:vdd!) resistor r=0.05784 c=0
+rf1165 (\332\:vdd! \333\:vdd!) resistor r=0.04585 c=0
+rf1166 (\333\:vdd! \334\:vdd!) resistor r=0.3985 c=0
+rf1167 (\326\:vdd! \335\:vdd!) resistor r=0.4148 c=0
+rf1168 (\328\:vdd! \336\:vdd!) resistor r=0.4027 c=0
+rf1169 (\329\:vdd! \337\:vdd!) resistor r=0.06649 c=0
+rf1170 (\337\:vdd! \338\:vdd!) resistor r=0.1013 c=0
+rf1171 (\338\:vdd! \339\:vdd!) resistor r=0.1159 c=0
+rf1172 (\339\:vdd! \340\:vdd!) resistor r=0.5024 c=0
+rf1173 (\332\:vdd! \341\:vdd!) resistor r=0.617 c=0
+rf1174 (\333\:vdd! \342\:vdd!) resistor r=0.07474 c=0
+rf1175 (\342\:vdd! \343\:vdd!) resistor r=0.1076 c=0
+rf1176 (\343\:vdd! \344\:vdd!) resistor r=0.07294 c=0
+rf1177 (\344\:vdd! \345\:vdd!) resistor r=0.03281 c=0
+rf1178 (\345\:vdd! \346\:vdd!) resistor r=0.3985 c=0
+rf1179 (\337\:vdd! \347\:vdd!) resistor r=0.5065 c=0
+rf1180 (\338\:vdd! \348\:vdd!) resistor r=0.4589 c=0
+rf1181 (\339\:vdd! \349\:vdd!) resistor r=0.04944 c=0
+rf1182 (\349\:vdd! \350\:vdd!) resistor r=0.04887 c=0
+rf1183 (\350\:vdd! \351\:vdd!) resistor r=0.4238 c=0
+rf1184 (\339\:vdd! \352\:vdd!) resistor r=0.4635 c=0
+rf1185 (\342\:vdd! \353\:vdd!) resistor r=0.3768 c=0
+rf1186 (\343\:vdd! \354\:vdd!) resistor r=0.4019 c=0
+rf1187 (\344\:vdd! \355\:vdd!) resistor r=0.4019 c=0
+rf1188 (\345\:vdd! \356\:vdd!) resistor r=0.06262 c=0
+rf1189 (\349\:vdd! \357\:vdd!) resistor r=0.49 c=0
+rf1190 (\350\:vdd! \358\:vdd!) resistor r=0.1152 c=0
+rf1191 (\358\:vdd! \359\:vdd!) resistor r=0.4926 c=0
+rf1192 (\356\:vdd! \360\:vdd!) resistor r=0.4309 c=0
+rf1193 (\358\:vdd! \361\:vdd!) resistor r=0.02438 c=0
+rf1194 (\361\:vdd! \362\:vdd!) resistor r=0.04862 c=0
+rf1195 (\362\:vdd! \363\:vdd!) resistor r=0.5103 c=0
+rf1196 (\358\:vdd! \364\:vdd!) resistor r=0.5128 c=0
+rf1197 (\362\:vdd! \365\:vdd!) resistor r=0.07402 c=0
+rf1198 (\365\:vdd! \366\:vdd!) resistor r=0.0174 c=0
+rf1199 (\366\:vdd! \367\:vdd!) resistor r=0.4537 c=0
+rf1200 (\362\:vdd! \368\:vdd!) resistor r=0.5159 c=0
+rf1201 (\366\:vdd! \369\:vdd!) resistor r=0.5053 c=0
+rg1 (\7\:X3 \8\:X3) resistor r=91.5933 c=0
+rg2 (\8\:X3 \2\:X3) resistor r=3.7604 c=0
+rg3 (\8\:X3 \9\:X3) resistor r=62.0099 c=0
+rg4 (\10\:X3 \11\:X3) resistor r=91.5933 c=0
+rg5 (\11\:X3 \4\:X3) resistor r=3.7604 c=0
+rg6 (\11\:X3 \12\:X3) resistor r=62.0099 c=0
+rg7 (\13\:X3 \14\:X3) resistor r=91.5933 c=0
+rg8 (\14\:X3 \6\:X3) resistor r=3.7604 c=0
+rg9 (\14\:X3 \15\:X3) resistor r=62.0099 c=0
+rg10 (\1\:Y3 \2\:Y3) resistor r=3.7604 c=0
+rg11 (\2\:Y3 \3\:Y3) resistor r=62.0099 c=0
+rg12 (\2\:Y3 \4\:Y3) resistor r=91.5933 c=0
+rg13 (\1\:Y2 \2\:Y2) resistor r=3.7604 c=0
+rg14 (\2\:Y2 \3\:Y2) resistor r=62.0099 c=0
+rg15 (\2\:Y2 \4\:Y2) resistor r=91.5933 c=0
+rg16 (\1\:X0 \2\:X0) resistor r=3.7604 c=0
+rg17 (\2\:X0 \3\:X0) resistor r=91.5933 c=0
+rg18 (\2\:X0 \4\:X0) resistor r=62.0099 c=0
+rg20 (\2\:Y1 \3\:Y1) resistor r=62.0099 c=0
+rg21 (\2\:Y1 \4\:Y1) resistor r=91.5933 c=0
+rg22 (\4\:Y1 \5\:Y1) resistor r=134.735 c=0
+rg23 (\5\:I27\|net013 \6\:I27\|net013) resistor r=37.6755 c=0
+rg24 (\6\:I27\|net013 I27\|net013) resistor r=19.7812 c=0
+rg25 (\6\:I27\|net013 \7\:I27\|net013) resistor r=115.592 c=0
+rg26 (\5\:I20\|net013 \6\:I20\|net013) resistor r=37.6755 c=0
+rg27 (\6\:I20\|net013 I20\|net013) resistor r=19.7812 c=0
+rg28 (\6\:I20\|net013 \7\:I20\|net013) resistor r=115.592 c=0
+rg29 (\5\:I15\|net013 \6\:I15\|net013) resistor r=115.592 c=0
+rg30 (\6\:I15\|net013 I15\|net013) resistor r=19.7812 c=0
+rg31 (\6\:I15\|net013 \7\:I15\|net013) resistor r=37.6755 c=0
+rg32 (\5\:I19\|net013 \6\:I19\|net013) resistor r=37.6755 c=0
+rg33 (\6\:I19\|net013 I19\|net013) resistor r=19.7812 c=0
+rg34 (\6\:I19\|net013 \7\:I19\|net013) resistor r=115.592 c=0
+rg35 (\6\:net090 \7\:net090) resistor r=132.954 c=0
+rg36 (\7\:net090 \8\:net090) resistor r=83.7878 c=0
+rg37 (\7\:net090 net090) resistor r=15.5249 c=0
+rg38 (\6\:net13 \7\:net13) resistor r=132.954 c=0
+rg39 (\7\:net13 \8\:net13) resistor r=83.7878 c=0
+rg40 (\7\:net13 net13) resistor r=15.5249 c=0
+rg41 (I5\|I3\|net013 \2\:I5\|I3\|net013) resistor r=3.7604 c=0
+rg42 (\2\:I5\|I3\|net013 \3\:I5\|I3\|net013) resistor r=109.302 c=0
+rg43 (\2\:I5\|I3\|net013 \4\:I5\|I3\|net013) resistor r=43.2599 c=0
+rg44 (I4\|I4\|Bi \2\:I4\|I4\|Bi) resistor r=3.4479 c=0
+rg45 (\2\:I4\|I4\|Bi \3\:I4\|I4\|Bi) resistor r=70.5516 c=0
+rg46 (\2\:I4\|I4\|Bi \4\:I4\|I4\|Bi) resistor r=68.2599 c=0
+rg47 (\4\:I4\|I4\|Ai \5\:I4\|I4\|Ai) resistor r=426.762 c=0
+rg48 (\5\:I4\|I4\|Ai \3\:I4\|I4\|Ai) resistor r=295.399 c=0
+rg49 (I9\|I4\|Bi \2\:I9\|I4\|Bi) resistor r=3.4479 c=0
+rg50 (\2\:I9\|I4\|Bi \3\:I9\|I4\|Bi) resistor r=70.5516 c=0
+rg51 (\2\:I9\|I4\|Bi \4\:I9\|I4\|Bi) resistor r=68.2599 c=0
+rg52 (\4\:I9\|I4\|Ai \5\:I9\|I4\|Ai) resistor r=426.762 c=0
+rg53 (\5\:I9\|I4\|Ai \3\:I9\|I4\|Ai) resistor r=295.399 c=0
+rg54 (\9\:net090 \10\:net090) resistor r=68.6766 c=0
+rg55 (\10\:net090 \11\:net090) resistor r=39.0198 c=0
+rg56 (\11\:net090 \12\:net090) resistor r=3.7604 c=0
+rg57 (\12\:net090 \13\:net090) resistor r=42.4747 c=0
+rg58 (\13\:net090 \14\:net090) resistor r=51.4263 c=0
+rg59 (\10\:net090 \15\:net090) resistor r=3.6562 c=0
+rg60 (\11\:net090 \16\:net090) resistor r=47.6349 c=0
+rg61 (\13\:net090 \17\:net090) resistor r=106.01 c=0
+rg62 (\9\:net13 \10\:net13) resistor r=68.6766 c=0
+rg63 (\10\:net13 \11\:net13) resistor r=39.0198 c=0
+rg64 (\11\:net13 \12\:net13) resistor r=3.7604 c=0
+rg65 (\12\:net13 \13\:net13) resistor r=42.4747 c=0
+rg66 (\13\:net13 \14\:net13) resistor r=51.4263 c=0
+rg67 (\10\:net13 \15\:net13) resistor r=3.6562 c=0
+rg68 (\11\:net13 \16\:net13) resistor r=47.6349 c=0
+rg69 (\13\:net13 \17\:net13) resistor r=106.01 c=0
+rg70 (\5\:I5\|I1\|Bi \6\:I5\|I1\|Bi) resistor r=53.0516 c=0
+rg71 (\6\:I5\|I1\|Bi \4\:I5\|I1\|Bi) resistor r=3.6562 c=0
+rg72 (\6\:I5\|I1\|Bi \7\:I5\|I1\|Bi) resistor r=84.0933 c=0
+rg73 (\7\:net19 \9\:net19) resistor r=3.7604 c=0
+rg74 (\9\:net19 \10\:net19) resistor r=47.6349 c=0
+rg75 (\10\:net19 \11\:net19) resistor r=149.112 c=0
+rg76 (\11\:net19 \12\:net19) resistor r=237.862 c=0
+rg77 (\12\:net19 \13\:net19) resistor r=167.131 c=0
+rg78 (\9\:net19 \14\:net19) resistor r=109.093 c=0
+rg79 (\11\:net19 \15\:net19) resistor r=54.2235 c=0
+rg80 (\15\:net19 \16\:net19) resistor r=140.208 c=0
+rg81 (\2\:net16 \4\:net16) resistor r=3.7604 c=0
+rg82 (\4\:net16 \5\:net16) resistor r=47.6349 c=0
+rg83 (\5\:net16 \6\:net16) resistor r=149.112 c=0
+rg84 (\6\:net16 \7\:net16) resistor r=237.862 c=0
+rg85 (\7\:net16 \8\:net16) resistor r=167.131 c=0
+rg86 (\4\:net16 \9\:net16) resistor r=109.093 c=0
+rg87 (\6\:net16 \10\:net16) resistor r=54.2235 c=0
+rg88 (\10\:net16 \11\:net16) resistor r=140.208 c=0
+rg89 (\10\:I4\|net3 \11\:I4\|net3) resistor r=97.8433 c=0
+rg90 (\11\:I4\|net3 \9\:I4\|net3) resistor r=3.7604 c=0
+rg91 (\11\:I4\|net3 \12\:I4\|net3) resistor r=40.9683 c=0
+rg92 (\10\:I9\|net3 \11\:I9\|net3) resistor r=97.8433 c=0
+rg93 (\11\:I9\|net3 \9\:I9\|net3) resistor r=3.7604 c=0
+rg94 (\11\:I9\|net3 \12\:I9\|net3) resistor r=40.9683 c=0
+rg95 (\2\:net55 \7\:net55) resistor r=3.7604 c=0
+rg96 (\7\:net55 \8\:net55) resistor r=73.0516 c=0
+rg97 (\7\:net55 \9\:net55) resistor r=79.5099 c=0
+rg98 (\8\:net55 \5\:net55) resistor r=77.3221 c=0
+rg99 (\5\:I4\|net1 \6\:I4\|net1) resistor r=80.5516 c=0
+rg100 (\6\:I4\|net1 \4\:I4\|net1) resistor r=3.5521 c=0
+rg101 (\6\:I4\|net1 \7\:I4\|net1) resistor r=76.1766 c=0
+rg102 (\5\:I9\|net1 \6\:I9\|net1) resistor r=80.5516 c=0
+rg103 (\6\:I9\|net1 \4\:I9\|net1) resistor r=3.5521 c=0
+rg104 (\6\:I9\|net1 \7\:I9\|net1) resistor r=76.1766 c=0
+rg105 (\21\:X3 \22\:X3) resistor r=91.5933 c=0
+rg106 (\22\:X3 \20\:X3) resistor r=3.7604 c=0
+rg107 (\22\:X3 \23\:X3) resistor r=62.0099 c=0
+rg108 (\10\:net55 \11\:net55) resistor r=47.3355 c=0
+rg109 (\11\:net55 \12\:net55) resistor r=120.434 c=0
+rg110 (\12\:net55 \13\:net55) resistor r=41.6577 c=0
+rg111 (\11\:net55 \14\:net55) resistor r=7.4762 c=0
+rg112 (\12\:net55 \3\:net55) resistor r=32.1097 c=0
+rg113 (I4\|net6 \2\:I4\|net6) resistor r=3.5521 c=0
+rg114 (\2\:I4\|net6 \3\:I4\|net6) resistor r=77.0099 c=0
+rg115 (\2\:I4\|net6 \4\:I4\|net6) resistor r=79.7183 c=0
+rg116 (I9\|net6 \2\:I9\|net6) resistor r=3.5521 c=0
+rg117 (\2\:I9\|net6 \3\:I9\|net6) resistor r=77.0099 c=0
+rg118 (\2\:I9\|net6 \4\:I9\|net6) resistor r=79.7183 c=0
+rg119 (\6\:net093 \7\:net093) resistor r=174.262 c=0
+rg120 (\7\:net093 \8\:net093) resistor r=165.153 c=0
+rg121 (\8\:net093 \9\:net093) resistor r=116.403 c=0
+rg122 (\9\:net093 \10\:net093) resistor r=138.542 c=0
+rg123 (\8\:net093 \11\:net093) resistor r=135.474 c=0
+rg124 (\11\:net093 \12\:net093) resistor r=72.4266 c=0
+rg125 (\12\:net093 \4\:net093) resistor r=3.7604 c=0
+rg126 (\12\:net093 \13\:net093) resistor r=80.1349 c=0
+rg127 (I5\|I1\|Ai \2\:I5\|I1\|Ai) resistor r=77.852 c=0
+rg128 (\2\:I5\|I1\|Ai \3\:I5\|I1\|Ai) resistor r=333.882 c=0
+rg129 (\16\:net55 \17\:net55) resistor r=3.7604 c=0
+rg130 (\17\:net55 \18\:net55) resistor r=55.3433 c=0
+rg131 (\17\:net55 \19\:net55) resistor r=81.8016 c=0
+rg132 (\5\:I12\|net013 \6\:I12\|net013) resistor r=37.6755 c=0
+rg133 (\6\:I12\|net013 I12\|net013) resistor r=19.7812 c=0
+rg134 (\6\:I12\|net013 \7\:I12\|net013) resistor r=115.592 c=0
+rg135 (\16\:I4\|net3 \17\:I4\|net3) resistor r=158.125 c=0
+rg136 (\17\:I4\|net3 \18\:I4\|net3) resistor r=211.449 c=0
+rg137 (\18\:I4\|net3 \19\:I4\|net3) resistor r=168.536 c=0
+rg138 (\19\:I4\|net3 \15\:I4\|net3) resistor r=6.3083 c=0
+rg139 (\19\:I4\|net3 \20\:I4\|net3) resistor r=38.7601 c=0
+rg140 (\5\:I4\|I3\|Ai I4\|I3\|Ai) resistor r=317.339 c=0
+rg141 (I4\|I3\|Ai \6\:I4\|I3\|Ai) resistor r=91.8988 c=0
+rg142 (\16\:I9\|net3 \17\:I9\|net3) resistor r=158.125 c=0
+rg143 (\17\:I9\|net3 \18\:I9\|net3) resistor r=211.449 c=0
+rg144 (\18\:I9\|net3 \19\:I9\|net3) resistor r=168.536 c=0
+rg145 (\19\:I9\|net3 \15\:I9\|net3) resistor r=6.3083 c=0
+rg146 (\19\:I9\|net3 \20\:I9\|net3) resistor r=38.7601 c=0
+rg147 (\5\:I9\|I3\|Ai I9\|I3\|Ai) resistor r=317.339 c=0
+rg148 (I9\|I3\|Ai \6\:I9\|I3\|Ai) resistor r=91.8988 c=0
+rg149 (\4\:net21 \5\:net21) resistor r=181.923 c=0
+rg150 (\5\:net21 \6\:net21) resistor r=107.843 c=0
+rg151 (\6\:net21 \7\:net21) resistor r=48.8849 c=0
+rg152 (\7\:net21 \8\:net21) resistor r=189.671 c=0
+rg153 (\8\:net21 \9\:net21) resistor r=180.126 c=0
+rg154 (\4\:net21 \10\:net21) resistor r=158.125 c=0
+rg155 (\6\:net21 \3\:net21) resistor r=3.4479 c=0
+rg156 (\4\:net15 \5\:net15) resistor r=181.923 c=0
+rg157 (\5\:net15 \6\:net15) resistor r=107.843 c=0
+rg158 (\6\:net15 \7\:net15) resistor r=48.8849 c=0
+rg159 (\7\:net15 \8\:net15) resistor r=189.671 c=0
+rg160 (\8\:net15 \9\:net15) resistor r=180.126 c=0
+rg161 (\4\:net15 \10\:net15) resistor r=158.125 c=0
+rg162 (\6\:net15 \3\:net15) resistor r=3.4479 c=0
+rg163 (\9\:Y1 \10\:Y1) resistor r=62.0099 c=0
+rg165 (\10\:Y1 \11\:Y1) resistor r=91.5933 c=0
+rg166 (\11\:Y1 \12\:Y1) resistor r=135.03 c=0
+rg167 (I4\|I3\|Bi \2\:I4\|I3\|Bi) resistor r=271.714 c=0
+rg168 (\2\:I4\|I3\|Bi \3\:I4\|I3\|Bi) resistor r=140.208 c=0
+rg169 (I9\|I3\|Bi \2\:I9\|I3\|Bi) resistor r=271.714 c=0
+rg170 (\2\:I9\|I3\|Bi \3\:I9\|I3\|Bi) resistor r=140.208 c=0
+rg171 (\1\:X2 \2\:X2) resistor r=3.7604 c=0
+rg172 (\2\:X2 \3\:X2) resistor r=62.0099 c=0
+rg173 (\2\:X2 \4\:X2) resistor r=91.5933 c=0
+rg174 (\8\:Y3 \9\:Y3) resistor r=91.5933 c=0
+rg175 (\9\:Y3 \7\:Y3) resistor r=3.7604 c=0
+rg176 (\9\:Y3 \10\:Y3) resistor r=62.0099 c=0
+rg177 (\8\:Y2 \9\:Y2) resistor r=91.5933 c=0
+rg178 (\9\:Y2 \7\:Y2) resistor r=3.7604 c=0
+rg179 (\9\:Y2 \10\:Y2) resistor r=62.0099 c=0
+rg180 (\7\:X2 \8\:X2) resistor r=3.7604 c=0
+rg181 (\8\:X2 \9\:X2) resistor r=62.0099 c=0
+rg182 (\8\:X2 \10\:X2) resistor r=91.5933 c=0
+rg183 (\13\:X2 \16\:X2) resistor r=3.7604 c=0
+rg184 (\16\:X2 \17\:X2) resistor r=62.0099 c=0
+rg185 (\16\:X2 \18\:X2) resistor r=91.5933 c=0
+rg186 (\5\:I18\|net013 \6\:I18\|net013) resistor r=37.6755 c=0
+rg187 (\6\:I18\|net013 I18\|net013) resistor r=19.7812 c=0
+rg188 (\6\:I18\|net013 \7\:I18\|net013) resistor r=115.592 c=0
+rg189 (\6\:net38 \7\:net38) resistor r=132.954 c=0
+rg190 (\7\:net38 \8\:net38) resistor r=83.7878 c=0
+rg191 (\7\:net38 net38) resistor r=15.5249 c=0
+rg192 (\5\:I26\|net013 \6\:I26\|net013) resistor r=37.6755 c=0
+rg193 (\6\:I26\|net013 I26\|net013) resistor r=19.7812 c=0
+rg194 (\6\:I26\|net013 \7\:I26\|net013) resistor r=115.592 c=0
+rg195 (\5\:I21\|net013 \6\:I21\|net013) resistor r=37.6755 c=0
+rg196 (\6\:I21\|net013 I21\|net013) resistor r=19.7812 c=0
+rg197 (\6\:I21\|net013 \7\:I21\|net013) resistor r=115.592 c=0
+rg198 (I0\|I4\|Bi \2\:I0\|I4\|Bi) resistor r=3.4479 c=0
+rg199 (\2\:I0\|I4\|Bi \3\:I0\|I4\|Bi) resistor r=70.5516 c=0
+rg200 (\2\:I0\|I4\|Bi \4\:I0\|I4\|Bi) resistor r=68.2599 c=0
+rg201 (\4\:I0\|I4\|Ai \5\:I0\|I4\|Ai) resistor r=426.762 c=0
+rg202 (\5\:I0\|I4\|Ai \3\:I0\|I4\|Ai) resistor r=295.399 c=0
+rg203 (\6\:net8 \7\:net8) resistor r=132.954 c=0
+rg204 (\7\:net8 \8\:net8) resistor r=83.7878 c=0
+rg205 (\7\:net8 \4\:net8) resistor r=15.5249 c=0
+rg206 (\6\:net087 \7\:net087) resistor r=132.954 c=0
+rg207 (\7\:net087 \8\:net087) resistor r=83.7878 c=0
+rg208 (\7\:net087 \4\:net087) resistor r=15.5249 c=0
+rg209 (\13\:net38 \14\:net38) resistor r=68.6766 c=0
+rg210 (\14\:net38 \15\:net38) resistor r=39.0198 c=0
+rg211 (\15\:net38 \9\:net38) resistor r=3.7604 c=0
+rg212 (\9\:net38 \16\:net38) resistor r=42.4747 c=0
+rg213 (\16\:net38 \17\:net38) resistor r=51.4263 c=0
+rg214 (\14\:net38 \12\:net38) resistor r=3.6562 c=0
+rg215 (\15\:net38 \18\:net38) resistor r=47.6349 c=0
+rg216 (\16\:net38 \19\:net38) resistor r=106.01 c=0
+rg217 (I10\|I4\|Bi \2\:I10\|I4\|Bi) resistor r=3.4479 c=0
+rg218 (\2\:I10\|I4\|Bi \3\:I10\|I4\|Bi) resistor r=70.5516 c=0
+rg219 (\2\:I10\|I4\|Bi \4\:I10\|I4\|Bi) resistor r=68.2599 c=0
+rg220 (I10\|I4\|Ai \2\:I10\|I4\|Ai) resistor r=426.762 c=0
+rg221 (\2\:I10\|I4\|Ai \3\:I10\|I4\|Ai) resistor r=295.399 c=0
+rg222 (I3\|I4\|Bi \2\:I3\|I4\|Bi) resistor r=3.4479 c=0
+rg223 (\2\:I3\|I4\|Bi \3\:I3\|I4\|Bi) resistor r=70.5516 c=0
+rg224 (\2\:I3\|I4\|Bi \4\:I3\|I4\|Bi) resistor r=68.2599 c=0
+rg225 (\4\:I3\|I4\|Ai \5\:I3\|I4\|Ai) resistor r=426.762 c=0
+rg226 (\5\:I3\|I4\|Ai \3\:I3\|I4\|Ai) resistor r=295.399 c=0
+rg227 (\4\:net39 \5\:net39) resistor r=3.7604 c=0
+rg228 (\5\:net39 \6\:net39) resistor r=47.6349 c=0
+rg229 (\6\:net39 \7\:net39) resistor r=149.112 c=0
+rg230 (\7\:net39 \8\:net39) resistor r=237.862 c=0
+rg231 (\8\:net39 \9\:net39) resistor r=167.131 c=0
+rg232 (\5\:net39 \10\:net39) resistor r=109.093 c=0
+rg233 (\7\:net39 \11\:net39) resistor r=54.2235 c=0
+rg234 (\11\:net39 \12\:net39) resistor r=140.208 c=0
+rg235 (\13\:net8 \14\:net8) resistor r=68.6766 c=0
+rg236 (\14\:net8 \15\:net8) resistor r=39.0198 c=0
+rg237 (\15\:net8 \10\:net8) resistor r=3.7604 c=0
+rg238 (\10\:net8 \16\:net8) resistor r=42.4747 c=0
+rg239 (\16\:net8 \17\:net8) resistor r=51.4263 c=0
+rg240 (\14\:net8 \12\:net8) resistor r=3.6562 c=0
+rg241 (\15\:net8 \18\:net8) resistor r=47.6349 c=0
+rg242 (\16\:net8 \19\:net8) resistor r=106.01 c=0
+rg243 (\13\:net087 \14\:net087) resistor r=68.6766 c=0
+rg244 (\14\:net087 \15\:net087) resistor r=39.0198 c=0
+rg245 (\15\:net087 \9\:net087) resistor r=3.7604 c=0
+rg246 (\9\:net087 \16\:net087) resistor r=42.4747 c=0
+rg247 (\16\:net087 \17\:net087) resistor r=51.4263 c=0
+rg248 (\14\:net087 \12\:net087) resistor r=3.6562 c=0
+rg249 (\15\:net087 \18\:net087) resistor r=47.6349 c=0
+rg250 (\16\:net087 \19\:net087) resistor r=106.01 c=0
+rg251 (\10\:I0\|net3 \11\:I0\|net3) resistor r=97.8433 c=0
+rg252 (\11\:I0\|net3 \9\:I0\|net3) resistor r=3.7604 c=0
+rg253 (\11\:I0\|net3 \12\:I0\|net3) resistor r=40.9683 c=0
+rg254 (\5\:I0\|net1 \6\:I0\|net1) resistor r=80.5516 c=0
+rg255 (\6\:I0\|net1 \4\:I0\|net1) resistor r=3.5521 c=0
+rg256 (\6\:I0\|net1 \7\:I0\|net1) resistor r=76.1766 c=0
+rg257 (\10\:net17 \11\:net17) resistor r=3.7604 c=0
+rg258 (\11\:net17 \12\:net17) resistor r=47.6349 c=0
+rg259 (\12\:net17 \13\:net17) resistor r=149.112 c=0
+rg260 (\13\:net17 \14\:net17) resistor r=237.862 c=0
+rg261 (\14\:net17 \15\:net17) resistor r=167.131 c=0
+rg262 (\11\:net17 \16\:net17) resistor r=109.093 c=0
+rg263 (\13\:net17 \17\:net17) resistor r=54.2235 c=0
+rg264 (\17\:net17 \18\:net17) resistor r=140.208 c=0
+rg265 (\10\:net54 \11\:net54) resistor r=3.7604 c=0
+rg266 (\11\:net54 \12\:net54) resistor r=47.6349 c=0
+rg267 (\12\:net54 \13\:net54) resistor r=149.112 c=0
+rg268 (\13\:net54 \14\:net54) resistor r=237.862 c=0
+rg269 (\14\:net54 \15\:net54) resistor r=167.131 c=0
+rg270 (\11\:net54 \16\:net54) resistor r=109.093 c=0
+rg271 (\13\:net54 \17\:net54) resistor r=54.2235 c=0
+rg272 (\17\:net54 \18\:net54) resistor r=140.208 c=0
+rg273 (\10\:I10\|net3 \11\:I10\|net3) resistor r=97.8433 c=0
+rg274 (\11\:I10\|net3 \9\:I10\|net3) resistor r=3.7604 c=0
+rg275 (\11\:I10\|net3 \12\:I10\|net3) resistor r=40.9683 c=0
+rg276 (I0\|net6 \2\:I0\|net6) resistor r=3.5521 c=0
+rg277 (\2\:I0\|net6 \3\:I0\|net6) resistor r=77.0099 c=0
+rg278 (\2\:I0\|net6 \4\:I0\|net6) resistor r=79.7183 c=0
+rg279 (\10\:I3\|net3 \11\:I3\|net3) resistor r=97.8433 c=0
+rg280 (\11\:I3\|net3 \9\:I3\|net3) resistor r=3.7604 c=0
+rg281 (\11\:I3\|net3 \12\:I3\|net3) resistor r=40.9683 c=0
+rg282 (\5\:I10\|net1 \6\:I10\|net1) resistor r=80.5516 c=0
+rg283 (\6\:I10\|net1 \4\:I10\|net1) resistor r=3.5521 c=0
+rg284 (\6\:I10\|net1 \7\:I10\|net1) resistor r=76.1766 c=0
+rg285 (\5\:I3\|net1 \6\:I3\|net1) resistor r=80.5516 c=0
+rg286 (\6\:I3\|net1 \4\:I3\|net1) resistor r=3.5521 c=0
+rg287 (\6\:I3\|net1 \7\:I3\|net1) resistor r=76.1766 c=0
+rg288 (I10\|net6 \2\:I10\|net6) resistor r=3.5521 c=0
+rg289 (\2\:I10\|net6 \3\:I10\|net6) resistor r=77.0099 c=0
+rg290 (\2\:I10\|net6 \4\:I10\|net6) resistor r=79.7183 c=0
+rg291 (I3\|net6 \2\:I3\|net6) resistor r=3.5521 c=0
+rg292 (\2\:I3\|net6 \3\:I3\|net6) resistor r=77.0099 c=0
+rg293 (\2\:I3\|net6 \4\:I3\|net6) resistor r=79.7183 c=0
+rg294 (\16\:I0\|net3 \17\:I0\|net3) resistor r=158.125 c=0
+rg295 (\17\:I0\|net3 \18\:I0\|net3) resistor r=211.449 c=0
+rg296 (\18\:I0\|net3 \19\:I0\|net3) resistor r=168.536 c=0
+rg297 (\19\:I0\|net3 \13\:I0\|net3) resistor r=6.3083 c=0
+rg298 (\19\:I0\|net3 \20\:I0\|net3) resistor r=38.7601 c=0
+rg299 (\5\:I0\|I3\|Ai I0\|I3\|Ai) resistor r=317.339 c=0
+rg300 (I0\|I3\|Ai \6\:I0\|I3\|Ai) resistor r=91.8988 c=0
+rg301 (\3\:net31 \4\:net31) resistor r=181.923 c=0
+rg302 (\4\:net31 \5\:net31) resistor r=107.843 c=0
+rg303 (\5\:net31 \6\:net31) resistor r=48.8849 c=0
+rg304 (\6\:net31 \7\:net31) resistor r=189.671 c=0
+rg305 (\7\:net31 \8\:net31) resistor r=180.126 c=0
+rg306 (\3\:net31 \9\:net31) resistor r=158.125 c=0
+rg307 (\5\:net31 net31) resistor r=3.4479 c=0
+rg308 (\16\:I10\|net3 \17\:I10\|net3) resistor r=158.125 c=0
+rg309 (\17\:I10\|net3 \18\:I10\|net3) resistor r=211.449 c=0
+rg310 (\18\:I10\|net3 \19\:I10\|net3) resistor r=168.536 c=0
+rg311 (\19\:I10\|net3 \15\:I10\|net3) resistor r=6.3083 c=0
+rg312 (\19\:I10\|net3 \20\:I10\|net3) resistor r=38.7601 c=0
+rg313 (\5\:I10\|I3\|Ai I10\|I3\|Ai) resistor r=317.339 c=0
+rg314 (I10\|I3\|Ai \6\:I10\|I3\|Ai) resistor r=91.8988 c=0
+rg315 (I0\|I3\|Bi \5\:I0\|I3\|Bi) resistor r=271.714 c=0
+rg316 (\5\:I0\|I3\|Bi \6\:I0\|I3\|Bi) resistor r=140.208 c=0
+rg317 (\16\:I3\|net3 \17\:I3\|net3) resistor r=158.125 c=0
+rg318 (\17\:I3\|net3 \18\:I3\|net3) resistor r=211.449 c=0
+rg319 (\18\:I3\|net3 \19\:I3\|net3) resistor r=168.536 c=0
+rg320 (\19\:I3\|net3 \13\:I3\|net3) resistor r=6.3083 c=0
+rg321 (\19\:I3\|net3 \20\:I3\|net3) resistor r=38.7601 c=0
+rg322 (\5\:I3\|I3\|Ai I3\|I3\|Ai) resistor r=317.339 c=0
+rg323 (I3\|I3\|Ai \6\:I3\|I3\|Ai) resistor r=91.8988 c=0
+rg324 (\3\:net1 \4\:net1) resistor r=181.923 c=0
+rg325 (\4\:net1 \5\:net1) resistor r=107.843 c=0
+rg326 (\5\:net1 \6\:net1) resistor r=48.8849 c=0
+rg327 (\6\:net1 \7\:net1) resistor r=189.671 c=0
+rg328 (\7\:net1 \8\:net1) resistor r=180.126 c=0
+rg329 (\3\:net1 \9\:net1) resistor r=158.125 c=0
+rg330 (\5\:net1 net1) resistor r=3.4479 c=0
+rg331 (\3\:net26 \4\:net26) resistor r=181.923 c=0
+rg332 (\4\:net26 \5\:net26) resistor r=107.843 c=0
+rg333 (\5\:net26 \6\:net26) resistor r=48.8849 c=0
+rg334 (\6\:net26 \7\:net26) resistor r=189.671 c=0
+rg335 (\7\:net26 \8\:net26) resistor r=180.126 c=0
+rg336 (\3\:net26 \9\:net26) resistor r=158.125 c=0
+rg337 (\5\:net26 net26) resistor r=3.4479 c=0
+rg338 (I10\|I3\|Bi \2\:I10\|I3\|Bi) resistor r=271.714 c=0
+rg339 (\2\:I10\|I3\|Bi \3\:I10\|I3\|Bi) resistor r=140.208 c=0
+rg340 (\5\:I1\|I3\|Bi \3\:I1\|I3\|Bi) resistor r=271.714 c=0
+rg341 (\5\:I1\|I3\|Bi \6\:I1\|I3\|Bi) resistor r=140.208 c=0
+rg342 (I3\|I3\|Bi \2\:I3\|I3\|Bi) resistor r=271.714 c=0
+rg343 (\2\:I3\|I3\|Bi \3\:I3\|I3\|Bi) resistor r=140.208 c=0
+rg344 (\5\:I11\|I3\|Bi \3\:I11\|I3\|Bi) resistor r=271.714 c=0
+rg345 (\5\:I11\|I3\|Bi \6\:I11\|I3\|Bi) resistor r=140.208 c=0
+rg346 (I1\|net3 \2\:I1\|net3) resistor r=38.7601 c=0
+rg347 (\2\:I1\|net3 \3\:I1\|net3) resistor r=168.536 c=0
+rg348 (\2\:I1\|net3 \4\:I1\|net3) resistor r=6.3083 c=0
+rg349 (\3\:I1\|net3 \5\:I1\|net3) resistor r=211.449 c=0
+rg350 (\5\:I1\|net3 \6\:I1\|net3) resistor r=158.125 c=0
+rg351 (\5\:I2\|I3\|Bi \3\:I2\|I3\|Bi) resistor r=271.714 c=0
+rg352 (\5\:I2\|I3\|Bi \6\:I2\|I3\|Bi) resistor r=140.208 c=0
+rg353 (\3\:net35 \4\:net35) resistor r=180.126 c=0
+rg354 (\4\:net35 \5\:net35) resistor r=193.622 c=0
+rg355 (\5\:net35 \6\:net35) resistor r=48.8849 c=0
+rg356 (\6\:net35 \7\:net35) resistor r=107.843 c=0
+rg357 (\7\:net35 \8\:net35) resistor r=181.923 c=0
+rg358 (\8\:net35 \9\:net35) resistor r=158.125 c=0
+rg359 (\6\:net35 net35) resistor r=3.4479 c=0
+rg360 (\5\:I1\|net6 \6\:I1\|net6) resistor r=79.7183 c=0
+rg361 (\6\:I1\|net6 \4\:I1\|net6) resistor r=3.5521 c=0
+rg362 (\6\:I1\|net6 \7\:I1\|net6) resistor r=77.0099 c=0
+rg363 (I1\|I3\|Ai \2\:I1\|I3\|Ai) resistor r=91.8988 c=0
+rg364 (\2\:I1\|I3\|Ai \3\:I1\|I3\|Ai) resistor r=317.339 c=0
+rg365 (I1\|net1 \2\:I1\|net1) resistor r=3.5521 c=0
+rg366 (\2\:I1\|net1 \3\:I1\|net1) resistor r=76.1766 c=0
+rg367 (\2\:I1\|net1 \4\:I1\|net1) resistor r=80.5516 c=0
+rg368 (I11\|net3 \2\:I11\|net3) resistor r=38.7601 c=0
+rg369 (\2\:I11\|net3 \3\:I11\|net3) resistor r=168.536 c=0
+rg370 (\2\:I11\|net3 \4\:I11\|net3) resistor r=6.3083 c=0
+rg371 (\3\:I11\|net3 \5\:I11\|net3) resistor r=211.449 c=0
+rg372 (\5\:I11\|net3 \6\:I11\|net3) resistor r=158.125 c=0
+rg373 (\8\:I1\|net3 \9\:I1\|net3) resistor r=3.7604 c=0
+rg374 (\9\:I1\|net3 \10\:I1\|net3) resistor r=40.9683 c=0
+rg375 (\9\:I1\|net3 \11\:I1\|net3) resistor r=97.8433 c=0
+rg376 (\4\:net5 \5\:net5) resistor r=180.126 c=0
+rg377 (\5\:net5 \6\:net5) resistor r=193.622 c=0
+rg378 (\6\:net5 \7\:net5) resistor r=48.8849 c=0
+rg379 (\7\:net5 \8\:net5) resistor r=107.843 c=0
+rg380 (\8\:net5 \9\:net5) resistor r=181.923 c=0
+rg381 (\9\:net5 \10\:net5) resistor r=158.125 c=0
+rg382 (\7\:net5 net5) resistor r=3.4479 c=0
+rg383 (I2\|net3 \2\:I2\|net3) resistor r=38.7601 c=0
+rg384 (\2\:I2\|net3 \3\:I2\|net3) resistor r=168.536 c=0
+rg385 (\2\:I2\|net3 \4\:I2\|net3) resistor r=6.3083 c=0
+rg386 (\3\:I2\|net3 \5\:I2\|net3) resistor r=211.449 c=0
+rg387 (\5\:I2\|net3 \6\:I2\|net3) resistor r=158.125 c=0
+rg388 (\5\:I11\|net6 \6\:I11\|net6) resistor r=79.7183 c=0
+rg389 (\6\:I11\|net6 \4\:I11\|net6) resistor r=3.5521 c=0
+rg390 (\6\:I11\|net6 \7\:I11\|net6) resistor r=77.0099 c=0
+rg391 (\3\:net45 \4\:net45) resistor r=180.126 c=0
+rg392 (\4\:net45 \5\:net45) resistor r=193.622 c=0
+rg393 (\5\:net45 \6\:net45) resistor r=48.8849 c=0
+rg394 (\6\:net45 \7\:net45) resistor r=107.843 c=0
+rg395 (\7\:net45 \8\:net45) resistor r=181.923 c=0
+rg396 (\8\:net45 \9\:net45) resistor r=158.125 c=0
+rg397 (\6\:net45 net45) resistor r=3.4479 c=0
+rg398 (I11\|I3\|Ai \2\:I11\|I3\|Ai) resistor r=91.8988 c=0
+rg399 (\2\:I11\|I3\|Ai \3\:I11\|I3\|Ai) resistor r=317.339 c=0
+rg400 (\5\:I2\|net6 \6\:I2\|net6) resistor r=79.7183 c=0
+rg401 (\6\:I2\|net6 \4\:I2\|net6) resistor r=3.5521 c=0
+rg402 (\6\:I2\|net6 \7\:I2\|net6) resistor r=77.0099 c=0
+rg403 (I11\|net1 \2\:I11\|net1) resistor r=3.5521 c=0
+rg404 (\2\:I11\|net1 \3\:I11\|net1) resistor r=76.1766 c=0
+rg405 (\2\:I11\|net1 \4\:I11\|net1) resistor r=80.5516 c=0
+rg406 (I2\|I3\|Ai \2\:I2\|I3\|Ai) resistor r=91.8988 c=0
+rg407 (\2\:I2\|I3\|Ai \3\:I2\|I3\|Ai) resistor r=317.339 c=0
+rg408 (\8\:I11\|net3 \9\:I11\|net3) resistor r=3.7604 c=0
+rg409 (\9\:I11\|net3 \10\:I11\|net3) resistor r=40.9683 c=0
+rg410 (\9\:I11\|net3 \11\:I11\|net3) resistor r=97.8433 c=0
+rg411 (I2\|net1 \2\:I2\|net1) resistor r=3.5521 c=0
+rg412 (\2\:I2\|net1 \3\:I2\|net1) resistor r=76.1766 c=0
+rg413 (\2\:I2\|net1 \4\:I2\|net1) resistor r=80.5516 c=0
+rg414 (\5\:I1\|I4\|Ai \6\:I1\|I4\|Ai) resistor r=68.2599 c=0
+rg415 (\6\:I1\|I4\|Ai \4\:I1\|I4\|Ai) resistor r=3.4479 c=0
+rg416 (\6\:I1\|I4\|Ai \7\:I1\|I4\|Ai) resistor r=70.5516 c=0
+rg417 (\8\:I2\|net3 \10\:I2\|net3) resistor r=3.7604 c=0
+rg418 (\10\:I2\|net3 \11\:I2\|net3) resistor r=40.9683 c=0
+rg419 (\10\:I2\|net3 \12\:I2\|net3) resistor r=97.8433 c=0
+rg420 (\5\:net34 \6\:net34) resistor r=106.125 c=0
+rg421 (\6\:net34 \4\:net34) resistor r=42.5281 c=0
+rg422 (\4\:net34 \7\:net34) resistor r=3.7604 c=0
+rg423 (\7\:net34 \8\:net34) resistor r=47.6349 c=0
+rg424 (\6\:net34 \9\:net34) resistor r=51.3337 c=0
+rg425 (\7\:net34 \10\:net34) resistor r=39.0198 c=0
+rg426 (\10\:net34 \11\:net34) resistor r=68.6766 c=0
+rg427 (\10\:net34 net34) resistor r=3.6562 c=0
+rg428 (\22\:X2 \23\:X2) resistor r=91.5933 c=0
+rg429 (\23\:X2 \20\:X2) resistor r=3.7604 c=0
+rg430 (\23\:X2 \24\:X2) resistor r=62.0099 c=0
+rg431 (\5\:I11\|I4\|Bi \6\:I11\|I4\|Bi) resistor r=68.2599 c=0
+rg432 (\6\:I11\|I4\|Bi \4\:I11\|I4\|Bi) resistor r=3.4479 c=0
+rg433 (\6\:I11\|I4\|Bi \7\:I11\|I4\|Bi) resistor r=70.5516 c=0
+rg434 (\5\:net078 \6\:net078) resistor r=106.125 c=0
+rg435 (\6\:net078 \4\:net078) resistor r=42.5281 c=0
+rg436 (\4\:net078 \7\:net078) resistor r=3.7604 c=0
+rg437 (\7\:net078 \8\:net078) resistor r=47.6349 c=0
+rg438 (\6\:net078 \9\:net078) resistor r=51.3337 c=0
+rg439 (\7\:net078 \10\:net078) resistor r=39.0198 c=0
+rg440 (\10\:net078 \11\:net078) resistor r=68.6766 c=0
+rg441 (\10\:net078 net078) resistor r=3.6562 c=0
+rg442 (\14\:net34 \15\:net34) resistor r=83.7878 c=0
+rg443 (\15\:net34 \16\:net34) resistor r=132.954 c=0
+rg444 (\15\:net34 \12\:net34) resistor r=15.5249 c=0
+rg445 (\5\:I2\|I4\|Bi \6\:I2\|I4\|Bi) resistor r=68.2599 c=0
+rg446 (\6\:I2\|I4\|Bi \4\:I2\|I4\|Bi) resistor r=3.4479 c=0
+rg447 (\6\:I2\|I4\|Bi \7\:I2\|I4\|Bi) resistor r=70.5516 c=0
+rg448 (\5\:net28 \6\:net28) resistor r=106.125 c=0
+rg449 (\6\:net28 \4\:net28) resistor r=42.5281 c=0
+rg450 (\4\:net28 \7\:net28) resistor r=3.7604 c=0
+rg451 (\7\:net28 \8\:net28) resistor r=47.6349 c=0
+rg452 (\6\:net28 \9\:net28) resistor r=51.3337 c=0
+rg453 (\7\:net28 \10\:net28) resistor r=39.0198 c=0
+rg454 (\10\:net28 \11\:net28) resistor r=68.6766 c=0
+rg455 (\10\:net28 net28) resistor r=3.6562 c=0
+rg456 (\3\:net095 \4\:net095) resistor r=167.131 c=0
+rg457 (\4\:net095 \5\:net095) resistor r=237.862 c=0
+rg458 (\5\:net095 \6\:net095) resistor r=149.112 c=0
+rg459 (\6\:net095 \7\:net095) resistor r=47.6349 c=0
+rg460 (\7\:net095 net095) resistor r=3.7604 c=0
+rg461 (\5\:net095 \8\:net095) resistor r=54.2235 c=0
+rg462 (\8\:net095 \9\:net095) resistor r=140.208 c=0
+rg463 (\7\:net095 \10\:net095) resistor r=109.093 c=0
+rg464 (\4\:I1\|I4\|Bi \5\:I1\|I4\|Bi) resistor r=426.762 c=0
+rg465 (\5\:I1\|I4\|Bi \3\:I1\|I4\|Bi) resistor r=295.399 c=0
+rg466 (\5\:I13\|net013 \6\:I13\|net013) resistor r=37.6755 c=0
+rg467 (\6\:I13\|net013 I13\|net013) resistor r=19.7812 c=0
+rg468 (\6\:I13\|net013 \7\:I13\|net013) resistor r=115.592 c=0
+rg469 (\17\:net078 \18\:net078) resistor r=83.7878 c=0
+rg470 (\18\:net078 \19\:net078) resistor r=132.954 c=0
+rg471 (\18\:net078 \12\:net078) resistor r=15.5249 c=0
+rg472 (\17\:net28 \18\:net28) resistor r=83.7878 c=0
+rg473 (\18\:net28 \19\:net28) resistor r=132.954 c=0
+rg474 (\18\:net28 \12\:net28) resistor r=15.5249 c=0
+rg475 (\12\:net0100 \13\:net0100) resistor r=167.131 c=0
+rg476 (\13\:net0100 \14\:net0100) resistor r=237.862 c=0
+rg477 (\14\:net0100 \15\:net0100) resistor r=149.112 c=0
+rg478 (\15\:net0100 \16\:net0100) resistor r=47.6349 c=0
+rg479 (\16\:net0100 \9\:net0100) resistor r=3.7604 c=0
+rg480 (\14\:net0100 \17\:net0100) resistor r=54.2235 c=0
+rg481 (\17\:net0100 \18\:net0100) resistor r=140.208 c=0
+rg482 (\16\:net0100 \19\:net0100) resistor r=109.093 c=0
+rg483 (net0115 \2\:net0115) resistor r=81.8016 c=0
+rg484 (\2\:net0115 \3\:net0115) resistor r=3.7604 c=0
+rg485 (\2\:net0115 \4\:net0115) resistor r=55.3433 c=0
+rg486 (\4\:X1 \5\:X1) resistor r=91.5933 c=0
+rg487 (\5\:X1 \2\:X1) resistor r=3.7604 c=0
+rg488 (\5\:X1 \6\:X1) resistor r=62.0099 c=0
+rg489 (\12\:net29 \13\:net29) resistor r=167.131 c=0
+rg490 (\13\:net29 \14\:net29) resistor r=237.862 c=0
+rg491 (\14\:net29 \15\:net29) resistor r=149.112 c=0
+rg492 (\15\:net29 \16\:net29) resistor r=47.6349 c=0
+rg493 (\16\:net29 \9\:net29) resistor r=3.7604 c=0
+rg494 (\14\:net29 \17\:net29) resistor r=54.2235 c=0
+rg495 (\17\:net29 \18\:net29) resistor r=140.208 c=0
+rg496 (\16\:net29 \19\:net29) resistor r=109.093 c=0
+rg497 (\4\:I11\|I4\|Ai \5\:I11\|I4\|Ai) resistor r=426.762 c=0
+rg498 (\5\:I11\|I4\|Ai \3\:I11\|I4\|Ai) resistor r=295.399 c=0
+rg499 (I24\|net013 \2\:I24\|net013) resistor r=19.7812 c=0
+rg500 (\2\:I24\|net013 \3\:I24\|net013) resistor r=115.592 c=0
+rg501 (\2\:I24\|net013 \4\:I24\|net013) resistor r=37.6755 c=0
+rg502 (I23\|net013 \2\:I23\|net013) resistor r=19.7812 c=0
+rg503 (\2\:I23\|net013 \3\:I23\|net013) resistor r=115.592 c=0
+rg504 (\2\:I23\|net013 \4\:I23\|net013) resistor r=37.6755 c=0
+rg505 (\10\:X1 \11\:X1) resistor r=91.5933 c=0
+rg506 (\11\:X1 \7\:X1) resistor r=3.7604 c=0
+rg507 (\11\:X1 \12\:X1) resistor r=62.0099 c=0
+rg508 (\4\:I2\|I4\|Ai \5\:I2\|I4\|Ai) resistor r=426.762 c=0
+rg509 (\5\:I2\|I4\|Ai \3\:I2\|I4\|Ai) resistor r=295.399 c=0
+rg510 (\15\:X1 \16\:X1) resistor r=91.5933 c=0
+rg511 (\16\:X1 \13\:X1) resistor r=3.7604 c=0
+rg512 (\16\:X1 \17\:X1) resistor r=62.0099 c=0
+rg514 (\15\:Y1 \16\:Y1) resistor r=62.0099 c=0
+rg515 (\15\:Y1 \17\:Y1) resistor r=91.5933 c=0
+rg516 (\17\:Y1 \18\:Y1) resistor r=135.482 c=0
+rg517 (\11\:Y3 \12\:Y3) resistor r=3.7604 c=0
+rg518 (\12\:Y3 \13\:Y3) resistor r=62.0099 c=0
+rg519 (\12\:Y3 \14\:Y3) resistor r=91.5933 c=0
+rg520 (\11\:Y2 \12\:Y2) resistor r=3.7604 c=0
+rg521 (\12\:Y2 \13\:Y2) resistor r=62.0099 c=0
+rg522 (\12\:Y2 \14\:Y2) resistor r=91.5933 c=0
+rg523 (\5\:I16\|net013 \6\:I16\|net013) resistor r=37.6755 c=0
+rg524 (\6\:I16\|net013 I16\|net013) resistor r=19.7812 c=0
+rg525 (\6\:I16\|net013 \7\:I16\|net013) resistor r=115.592 c=0
+rg526 (\12\:net0115 \13\:net0115) resistor r=79.5099 c=0
+rg527 (\13\:net0115 \14\:net0115) resistor r=73.0516 c=0
+rg528 (\14\:net0115 \8\:net0115) resistor r=77.3221 c=0
+rg529 (\13\:net0115 \15\:net0115) resistor r=3.7604 c=0
+rg530 (\16\:net0115 \17\:net0115) resistor r=41.6577 c=0
+rg531 (\17\:net0115 \18\:net0115) resistor r=120.434 c=0
+rg532 (\18\:net0115 \7\:net0115) resistor r=7.4762 c=0
+rg533 (\17\:net0115 \11\:net0115) resistor r=32.1097 c=0
+rg534 (\18\:net0115 \19\:net0115) resistor r=47.3355 c=0
+rg535 (\5\:I6\|I1\|Ai I6\|I1\|Ai) resistor r=333.423 c=0
+rg536 (I6\|I1\|Ai \6\:I6\|I1\|Ai) resistor r=76.0655 c=0
+rg537 (I8\|I3\|net013 \2\:I8\|I3\|net013) resistor r=3.7604 c=0
+rg538 (\2\:I8\|I3\|net013 \3\:I8\|I3\|net013) resistor r=109.302 c=0
+rg539 (\2\:I8\|I3\|net013 \4\:I8\|I3\|net013) resistor r=43.2599 c=0
+rg540 (I7\|I3\|net013 \2\:I7\|I3\|net013) resistor r=3.7604 c=0
+rg541 (\2\:I7\|I3\|net013 \3\:I7\|I3\|net013) resistor r=109.302 c=0
+rg542 (\2\:I7\|I3\|net013 \4\:I7\|I3\|net013) resistor r=43.2599 c=0
+rg543 (I6\|I1\|Bi \2\:I6\|I1\|Bi) resistor r=3.6562 c=0
+rg544 (\2\:I6\|I1\|Bi \3\:I6\|I1\|Bi) resistor r=84.0933 c=0
+rg545 (\2\:I6\|I1\|Bi \4\:I6\|I1\|Bi) resistor r=53.0516 c=0
+rg546 (\5\:I8\|I1\|Bi \6\:I8\|I1\|Bi) resistor r=53.0516 c=0
+rg547 (\6\:I8\|I1\|Bi \4\:I8\|I1\|Bi) resistor r=3.6562 c=0
+rg548 (\6\:I8\|I1\|Bi \7\:I8\|I1\|Bi) resistor r=84.0933 c=0
+rg549 (\5\:I7\|I1\|Bi \6\:I7\|I1\|Bi) resistor r=53.0516 c=0
+rg550 (\6\:I7\|I1\|Bi \4\:I7\|I1\|Bi) resistor r=3.6562 c=0
+rg551 (\6\:I7\|I1\|Bi \7\:I7\|I1\|Bi) resistor r=84.0933 c=0
+rg552 (I6\|I3\|net013 \2\:I6\|I3\|net013) resistor r=43.2599 c=0
+rg553 (\2\:I6\|I3\|net013 \3\:I6\|I3\|net013) resistor r=3.7604 c=0
+rg554 (\2\:I6\|I3\|net013 \4\:I6\|I3\|net013) resistor r=109.302 c=0
+rg555 (\3\:net0127 \4\:net0127) resistor r=116.403 c=0
+rg556 (\4\:net0127 \5\:net0127) resistor r=165.153 c=0
+rg557 (\5\:net0127 \6\:net0127) resistor r=174.262 c=0
+rg558 (\3\:net0127 \7\:net0127) resistor r=138.542 c=0
+rg559 (\4\:net0127 \8\:net0127) resistor r=135.474 c=0
+rg560 (\8\:net0127 \9\:net0127) resistor r=72.4266 c=0
+rg561 (\9\:net0127 \10\:net0127) resistor r=80.1349 c=0
+rg562 (\9\:net0127 \2\:net0127) resistor r=3.7604 c=0
+rg563 (\2\:net075 \7\:net075) resistor r=3.7604 c=0
+rg564 (\7\:net075 \8\:net075) resistor r=73.0516 c=0
+rg565 (\7\:net075 \9\:net075) resistor r=79.5099 c=0
+rg566 (\8\:net075 \5\:net075) resistor r=77.3221 c=0
+rg567 (\2\:net47 \7\:net47) resistor r=3.7604 c=0
+rg568 (\7\:net47 \8\:net47) resistor r=73.0516 c=0
+rg569 (\7\:net47 \9\:net47) resistor r=79.5099 c=0
+rg570 (\8\:net47 \5\:net47) resistor r=77.3221 c=0
+rg571 (\19\:X1 \20\:X1) resistor r=91.5933 c=0
+rg572 (\20\:X1 \21\:X1) resistor r=3.7604 c=0
+rg573 (\20\:X1 \22\:X1) resistor r=62.0099 c=0
+rg574 (\13\:net075 \14\:net075) resistor r=47.3355 c=0
+rg575 (\14\:net075 \15\:net075) resistor r=120.434 c=0
+rg576 (\15\:net075 \16\:net075) resistor r=41.6577 c=0
+rg577 (\14\:net075 \17\:net075) resistor r=7.4762 c=0
+rg578 (\15\:net075 \3\:net075) resistor r=32.1097 c=0
+rg579 (\13\:net47 \14\:net47) resistor r=47.3355 c=0
+rg580 (\14\:net47 \15\:net47) resistor r=120.434 c=0
+rg581 (\15\:net47 \16\:net47) resistor r=41.6577 c=0
+rg582 (\14\:net47 \17\:net47) resistor r=7.4762 c=0
+rg583 (\15\:net47 \3\:net47) resistor r=32.1097 c=0
+rg584 (\7\:X0 \8\:X0) resistor r=3.7604 c=0
+rg585 (\8\:X0 \9\:X0) resistor r=91.5933 c=0
+rg586 (\8\:X0 \10\:X0) resistor r=62.0099 c=0
+rg587 (\12\:net44 \13\:net44) resistor r=174.262 c=0
+rg588 (\13\:net44 \14\:net44) resistor r=165.153 c=0
+rg589 (\14\:net44 \15\:net44) resistor r=116.403 c=0
+rg590 (\15\:net44 \16\:net44) resistor r=138.542 c=0
+rg591 (\14\:net44 \17\:net44) resistor r=135.474 c=0
+rg592 (\17\:net44 \18\:net44) resistor r=72.4266 c=0
+rg593 (\18\:net44 \9\:net44) resistor r=3.7604 c=0
+rg594 (\18\:net44 \19\:net44) resistor r=80.1349 c=0
+rg595 (\12\:net32 \13\:net32) resistor r=174.262 c=0
+rg596 (\13\:net32 \14\:net32) resistor r=165.153 c=0
+rg597 (\14\:net32 \15\:net32) resistor r=116.403 c=0
+rg598 (\15\:net32 \16\:net32) resistor r=138.542 c=0
+rg599 (\14\:net32 \17\:net32) resistor r=135.474 c=0
+rg600 (\17\:net32 \18\:net32) resistor r=72.4266 c=0
+rg601 (\18\:net32 \9\:net32) resistor r=3.7604 c=0
+rg602 (\18\:net32 \19\:net32) resistor r=80.1349 c=0
+rg603 (I25\|net013 \2\:I25\|net013) resistor r=19.7812 c=0
+rg604 (\2\:I25\|net013 \3\:I25\|net013) resistor r=115.592 c=0
+rg605 (\2\:I25\|net013 \4\:I25\|net013) resistor r=37.6755 c=0
+rg606 (I22\|net013 \2\:I22\|net013) resistor r=19.7812 c=0
+rg607 (\2\:I22\|net013 \3\:I22\|net013) resistor r=115.592 c=0
+rg608 (\2\:I22\|net013 \4\:I22\|net013) resistor r=37.6755 c=0
+rg609 (\18\:Y3 \19\:Y3) resistor r=91.5933 c=0
+rg610 (\19\:Y3 \16\:Y3) resistor r=3.7604 c=0
+rg611 (\19\:Y3 \20\:Y3) resistor r=62.0099 c=0
+rg612 (\18\:Y2 \19\:Y2) resistor r=91.5933 c=0
+rg613 (\19\:Y2 \16\:Y2) resistor r=3.7604 c=0
+rg614 (\19\:Y2 \20\:Y2) resistor r=62.0099 c=0
+rg615 (I8\|I1\|Ai \2\:I8\|I1\|Ai) resistor r=77.852 c=0
+rg616 (\2\:I8\|I1\|Ai \3\:I8\|I1\|Ai) resistor r=333.882 c=0
+rg617 (I7\|I1\|Ai \2\:I7\|I1\|Ai) resistor r=77.852 c=0
+rg618 (\2\:I7\|I1\|Ai \3\:I7\|I1\|Ai) resistor r=333.882 c=0
+rg619 (\5\:I14\|net013 \6\:I14\|net013) resistor r=37.6755 c=0
+rg620 (\6\:I14\|net013 I14\|net013) resistor r=19.7812 c=0
+rg621 (\6\:I14\|net013 \7\:I14\|net013) resistor r=115.592 c=0
+rg622 (\5\:I17\|net013 \6\:I17\|net013) resistor r=115.592 c=0
+rg623 (\6\:I17\|net013 I17\|net013) resistor r=19.7812 c=0
+rg624 (\6\:I17\|net013 \7\:I17\|net013) resistor r=37.6755 c=0
+rg625 (\12\:X0 \13\:X0) resistor r=3.7604 c=0
+rg626 (\13\:X0 \14\:X0) resistor r=62.0099 c=0
+rg627 (\13\:X0 \15\:X0) resistor r=91.5933 c=0
+rg628 (\16\:X0 \17\:X0) resistor r=3.7604 c=0
+rg629 (\17\:X0 \18\:X0) resistor r=62.0099 c=0
+rg630 (\17\:X0 \19\:X0) resistor r=91.5933 c=0
+rg631 (\19\:net075 \20\:net075) resistor r=3.7604 c=0
+rg632 (\20\:net075 \21\:net075) resistor r=55.3433 c=0
+rg633 (\20\:net075 \22\:net075) resistor r=81.8016 c=0
+rg634 (\19\:net47 \20\:net47) resistor r=3.7604 c=0
+rg635 (\20\:net47 \21\:net47) resistor r=55.3433 c=0
+rg636 (\20\:net47 \22\:net47) resistor r=81.8016 c=0
+rg637 (\21\:Y1 \22\:Y1) resistor r=627.236 c=0
+rg638 (\22\:Y1 \23\:Y1) resistor r=62.0099 c=0
+rg640 (\23\:Y1 \24\:Y1) resistor r=91.5933 c=0
+rg641 (Y0 \9\:Y0) resistor r=129.31 c=0
+rg642 (\9\:Y0 \10\:Y0) resistor r=455.086 c=0
+rg643 (\10\:Y0 \11\:Y0) resistor r=1019.75 c=0
+rg644 (\11\:Y0 \12\:Y0) resistor r=948.15 c=0
+rg645 (\12\:Y0 \13\:Y0) resistor r=62.0099 c=0
+rg647 (\9\:Y0 \14\:Y0) resistor r=165.202 c=0
+rg648 (\14\:Y0 \15\:Y0) resistor r=91.5933 c=0
+rg649 (\15\:Y0 \16\:Y0) resistor r=62.0099 c=0
+rg650 (\10\:Y0 \17\:Y0) resistor r=165.41 c=0
+rg651 (\17\:Y0 \18\:Y0) resistor r=91.5933 c=0
+rg652 (\18\:Y0 \19\:Y0) resistor r=62.0099 c=0
+rg653 (\11\:Y0 \20\:Y0) resistor r=165.618 c=0
+rg654 (\20\:Y0 \21\:Y0) resistor r=91.5933 c=0
+rg655 (\21\:Y0 \22\:Y0) resistor r=62.0099 c=0
+rg656 (\13\:Y0 \23\:Y0) resistor r=91.5933 c=0
+I25\|MP0 (\7\:I25\|net013 \20\:Y3 \66\:vdd! vdd!) pmos1 w=1e-06 l=1.8e-07 \
+        as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I22\|MP0 (\7\:I22\|net013 \20\:Y2 \137\:vdd! vdd!) pmos1 w=1e-06 l=1.8e-07 \
+        as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I14\|MP2 (\13\:net0127 \7\:I14\|net013 \125\:vdd! vdd!) pmos1 w=1e-06 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I17\|MP2 (\21\:net0115 \5\:I17\|net013 \60\:vdd! vdd!) pmos1 w=1e-06 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I25\|MP1 (\64\:vdd! \14\:X0 \7\:I25\|net013 vdd!) pmos1 w=1e-06 l=1.8e-07 \
+        as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I22\|MP1 (\129\:vdd! \18\:X0 \7\:I22\|net013 vdd!) pmos1 w=1e-06 l=1.8e-07 \
+        as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I8\|I1\|MP4 (\63\:vdd! \22\:net075 \4\:I8\|I1\|Ai vdd!) pmos1 w=1e-06 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I7\|I1\|MP4 (\62\:vdd! \22\:net47 \4\:I7\|I1\|Ai vdd!) pmos1 w=1e-06 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I14\|MP1 (\4\:I14\|net013 \22\:X1 \141\:vdd! vdd!) pmos1 w=1e-06 l=1.8e-07 \
+        as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I17\|MP0 (\4\:I17\|net013 \22\:Y1 \131\:vdd! vdd!) pmos1 w=1e-06 l=1.8e-07 \
+        as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I25\|MP2 (\67\:vdd! \3\:I25\|net013 \12\:net075 vdd!) pmos1 w=1e-06 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I22\|MP2 (\142\:vdd! \3\:I22\|net013 \12\:net47 vdd!) pmos1 w=1e-06 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I8\|I1\|MP1 (I8\|I1\|net8 \13\:net44 \1\:Z3 vdd!) pmos1 w=1e-06 l=1.8e-07 \
+        as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I7\|I1\|MP1 (I7\|I1\|net8 \13\:net32 \1\:Z2 vdd!) pmos1 w=1e-06 l=1.8e-07 \
+        as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I14\|MP0 (\132\:vdd! \16\:Y0 \4\:I14\|net013 vdd!) pmos1 w=1e-06 l=1.8e-07 \
+        as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I17\|MP1 (\124\:vdd! \10\:X0 \4\:I17\|net013 vdd!) pmos1 w=1e-06 l=1.8e-07 \
+        as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I8\|I1\|MP0 (\65\:vdd! I8\|I1\|Ai I8\|I1\|net8 vdd!) pmos1 w=1e-06 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I7\|I1\|MP0 (\128\:vdd! I7\|I1\|Ai I7\|I1\|net8 vdd!) pmos1 w=1e-06 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I8\|I3\|MP1 (\7\:I8\|I3\|net013 \17\:net44 \70\:vdd! vdd!) pmos1 w=1e-06 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I8\|I1\|MP2 (I8\|I1\|net022 \5\:I8\|I1\|Bi \69\:vdd! vdd!) pmos1 w=1e-06 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I7\|I3\|MP1 (\7\:I7\|I3\|net013 \17\:net32 \147\:vdd! vdd!) pmos1 w=1e-06 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I7\|I1\|MP2 (I7\|I1\|net022 \5\:I7\|I1\|Bi \136\:vdd! vdd!) pmos1 w=1e-06 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I6\|I3\|MP2 (\12\:net35 \4\:I6\|I3\|net013 \158\:vdd! vdd!) pmos1 w=1e-06 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I6\|I1\|MP5 (\140\:vdd! \3\:net0127 \5\:I6\|I1\|Bi vdd!) pmos1 w=1e-06 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I8\|I3\|MP0 (\68\:vdd! \8\:net075 \7\:I8\|I3\|net013 vdd!) pmos1 w=1e-06 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I8\|I1\|MP3 (\7\:Z3 \16\:net075 I8\|I1\|net022 vdd!) pmos1 w=1e-06 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I7\|I3\|MP0 (\143\:vdd! \8\:net47 \7\:I7\|I3\|net013 vdd!) pmos1 w=1e-06 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I7\|I1\|MP3 (\7\:Z2 \16\:net47 I7\|I1\|net022 vdd!) pmos1 w=1e-06 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I6\|I3\|MP1 (\164\:vdd! \8\:net0127 \7\:I6\|I3\|net013 vdd!) pmos1 w=1e-06 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I6\|I1\|MP2 (\150\:vdd! \4\:I6\|I1\|Bi I6\|I1\|net022 vdd!) pmos1 w=1e-06 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I24\|MP0 (\73\:vdd! \13\:Y3 \7\:I24\|net013 vdd!) pmos1 w=1e-06 l=1.8e-07 \
+        as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I6\|I1\|MP0 (I6\|I1\|net8 \6\:I6\|I1\|Ai \163\:vdd! vdd!) pmos1 w=1e-06 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I23\|MP0 (\165\:vdd! \13\:Y2 \7\:I23\|net013 vdd!) pmos1 w=1e-06 l=1.8e-07 \
+        as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I6\|I1\|MP1 (\5\:Z1 \5\:net0127 I6\|I1\|net8 vdd!) pmos1 w=1e-06 l=1.8e-07 \
+        as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I16\|MP2 (\13\:net095 \7\:I16\|net013 \172\:vdd! vdd!) pmos1 w=1e-06 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I6\|I3\|MP0 (\7\:I6\|I3\|net013 \14\:net0115 \171\:vdd! vdd!) pmos1 \
+        w=1e-06 l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I6\|I1\|MP3 (I6\|I1\|net022 \16\:net0115 \6\:Z1 vdd!) pmos1 w=1e-06 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I8\|I1\|MP5 (I8\|I1\|Bi \15\:net44 \72\:vdd! vdd!) pmos1 w=1e-06 l=1.8e-07 \
+        as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I8\|I3\|MP2 (\71\:vdd! \3\:I8\|I3\|net013 \13\:net5 vdd!) pmos1 w=1e-06 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I7\|I1\|MP5 (I7\|I1\|Bi \15\:net32 \146\:vdd! vdd!) pmos1 w=1e-06 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I7\|I3\|MP2 (\151\:vdd! \3\:I7\|I3\|net013 \13\:net45 vdd!) pmos1 w=1e-06 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I6\|I1\|MP4 (\4\:I6\|I1\|Ai net0115 \174\:vdd! vdd!) pmos1 w=1e-06 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I16\|MP1 (\4\:I16\|net013 \6\:X1 \185\:vdd! vdd!) pmos1 w=1e-06 l=1.8e-07 \
+        as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I2\|I4\|MP0 (\157\:vdd! \5\:I2\|I4\|Ai I2\|I4\|net8 vdd!) pmos1 w=1e-06 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I24\|MP1 (\7\:I24\|net013 \12\:X1 \74\:vdd! vdd!) pmos1 w=1e-06 l=1.8e-07 \
+        as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I16\|MP0 (\175\:vdd! \16\:Y1 \4\:I16\|net013 vdd!) pmos1 w=1e-06 l=1.8e-07 \
+        as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I23\|MP1 (\7\:I23\|net013 \17\:X1 \166\:vdd! vdd!) pmos1 w=1e-06 l=1.8e-07 \
+        as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I13\|MP2 (\19\:net34 \7\:I13\|net013 \190\:vdd! vdd!) pmos1 w=1e-06 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I11\|I4\|MP1 (I11\|I4\|net8 \13\:net0100 \15\:I11\|net3 vdd!) pmos1 \
+        w=1e-06 l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I24\|MP2 (\76\:vdd! \3\:I24\|net013 \16\:net078 vdd!) pmos1 w=1e-06 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I23\|MP2 (\176\:vdd! \3\:I23\|net013 \16\:net28 vdd!) pmos1 w=1e-06 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I2\|I4\|MP1 (I2\|I4\|net8 \13\:net29 \15\:I2\|net3 vdd!) pmos1 w=1e-06 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I11\|I4\|MP0 (\75\:vdd! \5\:I11\|I4\|Ai I11\|I4\|net8 vdd!) pmos1 w=1e-06 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I1\|I0\|MP0 (\7\:I1\|net1 \6\:net095 \225\:vdd! vdd!) pmos1 w=1e-06 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I1\|I4\|MP4 (I1\|I4\|Ai \8\:net095 \206\:vdd! vdd!) pmos1 w=1e-06 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I1\|I0\|MP1 (\215\:vdd! \8\:net34 \7\:I1\|net1 vdd!) pmos1 w=1e-06 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I1\|I4\|MP0 (I1\|I4\|net8 \5\:I1\|I4\|Ai \195\:vdd! vdd!) pmos1 w=1e-06 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I1\|I4\|MP5 (\203\:vdd! \9\:net34 \2\:I1\|I4\|Bi vdd!) pmos1 w=1e-06 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I1\|I4\|MP1 (\20\:I1\|net3 \16\:net34 I1\|I4\|net8 vdd!) pmos1 w=1e-06 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I13\|MP1 (\4\:I13\|net013 \24\:X2 \202\:vdd! vdd!) pmos1 w=1e-06 l=1.8e-07 \
+        as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I13\|MP0 (\201\:vdd! \19\:Y0 \4\:I13\|net013 vdd!) pmos1 w=1e-06 l=1.8e-07 \
+        as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I1\|I4\|MP3 (I1\|I4\|net022 \4\:net095 \15\:I1\|net3 vdd!) pmos1 w=1e-06 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I1\|I4\|MP2 (\184\:vdd! \5\:I1\|I4\|Bi I1\|I4\|net022 vdd!) pmos1 w=1e-06 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I2\|I1\|MP1 (\12\:net26 \7\:I2\|net6 \214\:vdd! vdd!) pmos1 w=1e-06 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I2\|I1\|MP0 (\207\:vdd! \3\:I2\|net1 \12\:net26 vdd!) pmos1 w=1e-06 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I2\|I0\|MP1 (\7\:I2\|net1 \15\:net29 \196\:vdd! vdd!) pmos1 w=1e-06 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I2\|I0\|MP0 (\186\:vdd! \8\:net28 \7\:I2\|net1 vdd!) pmos1 w=1e-06 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I2\|I4\|MP4 (\177\:vdd! \9\:net28 \2\:I2\|I4\|Ai vdd!) pmos1 w=1e-06 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I1\|I3\|MP5 (\251\:vdd! \9\:net35 I1\|I3\|Bi vdd!) pmos1 w=1e-06 l=1.8e-07 \
+        as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I1\|I3\|MP2 (I1\|I3\|net022 \5\:I1\|I3\|Bi \239\:vdd! vdd!) pmos1 w=1e-06 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I1\|I3\|MP3 (\6\:net32 \3\:I1\|net3 I1\|I3\|net022 vdd!) pmos1 w=1e-06 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I1\|I2\|MP0 (I1\|net6 \5\:I1\|net3 \250\:vdd! vdd!) pmos1 w=1e-06 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I1\|I2\|MP1 (\249\:vdd! \5\:net35 I1\|net6 vdd!) pmos1 w=1e-06 l=1.8e-07 \
+        as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I1\|I3\|MP1 (I1\|I3\|net8 \4\:net35 \7\:net32 vdd!) pmos1 w=1e-06 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I1\|I3\|MP0 (\228\:vdd! I1\|I3\|Ai I1\|I3\|net8 vdd!) pmos1 w=1e-06 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I1\|I1\|MP1 (\12\:net31 \7\:I1\|net6 \240\:vdd! vdd!) pmos1 w=1e-06 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I1\|I1\|MP0 (\234\:vdd! \3\:I1\|net1 \12\:net31 vdd!) pmos1 w=1e-06 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I1\|I3\|MP4 (\218\:vdd! \11\:I1\|net3 \6\:I1\|I3\|Ai vdd!) pmos1 w=1e-06 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I3\|I3\|MP5 (\5\:I3\|I3\|Bi \9\:net26 \241\:vdd! vdd!) pmos1 w=1e-06 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I2\|I3\|MP5 (\221\:vdd! \9\:net45 I2\|I3\|Bi vdd!) pmos1 w=1e-06 l=1.8e-07 \
+        as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I2\|I2\|MP0 (I2\|net6 \5\:I2\|net3 \220\:vdd! vdd!) pmos1 w=1e-06 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I2\|I2\|MP1 (\219\:vdd! \5\:net45 I2\|net6 vdd!) pmos1 w=1e-06 l=1.8e-07 \
+        as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I3\|I3\|MP2 (\224\:vdd! \2\:I3\|I3\|Bi I3\|I3\|net022 vdd!) pmos1 w=1e-06 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I2\|I3\|MP2 (I2\|I3\|net022 \5\:I2\|I3\|Bi \213\:vdd! vdd!) pmos1 w=1e-06 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I2\|I3\|MP3 (\6\:net44 \3\:I2\|net3 I2\|I3\|net022 vdd!) pmos1 w=1e-06 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I2\|I3\|MP1 (I2\|I3\|net8 \4\:net45 \7\:net44 vdd!) pmos1 w=1e-06 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I2\|I3\|MP0 (\200\:vdd! I2\|I3\|Ai I2\|I3\|net8 vdd!) pmos1 w=1e-06 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I2\|I3\|MP4 (\189\:vdd! \12\:I2\|net3 \6\:I2\|I3\|Ai vdd!) pmos1 w=1e-06 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I2\|I4\|MP5 (I2\|I4\|Bi \17\:net29 \180\:vdd! vdd!) pmos1 w=1e-06 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I2\|I4\|MP2 (I2\|I4\|net022 \5\:I2\|I4\|Bi \170\:vdd! vdd!) pmos1 w=1e-06 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I2\|I4\|MP3 (\20\:I2\|net3 \19\:net28 I2\|I4\|net022 vdd!) pmos1 w=1e-06 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I11\|I3\|MP0 (\84\:vdd! I11\|I3\|Ai I11\|I3\|net8 vdd!) pmos1 w=1e-06 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I11\|I1\|MP1 (\12\:net1 \7\:I11\|net6 \85\:vdd! vdd!) pmos1 w=1e-06 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I11\|I1\|MP0 (\83\:vdd! \3\:I11\|net1 \12\:net1 vdd!) pmos1 w=1e-06 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I11\|I3\|MP4 (\82\:vdd! \11\:I11\|net3 \6\:I11\|I3\|Ai vdd!) pmos1 w=1e-06 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I11\|I0\|MP1 (\7\:I11\|net1 \15\:net0100 \81\:vdd! vdd!) pmos1 w=1e-06 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I11\|I4\|MP5 (I11\|I4\|Bi \17\:net0100 \80\:vdd! vdd!) pmos1 w=1e-06 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I11\|I0\|MP0 (\79\:vdd! \8\:net078 \7\:I11\|net1 vdd!) pmos1 w=1e-06 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I11\|I4\|MP2 (I11\|I4\|net022 \5\:I11\|I4\|Bi \78\:vdd! vdd!) pmos1 \
+        w=1e-06 l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I11\|I4\|MP4 (\77\:vdd! \9\:net078 \2\:I11\|I4\|Ai vdd!) pmos1 w=1e-06 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I11\|I4\|MP3 (\20\:I11\|net3 \19\:net078 I11\|I4\|net022 vdd!) pmos1 \
+        w=1e-06 l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I10\|I3\|MP2 (\90\:vdd! \2\:I10\|I3\|Bi I10\|I3\|net022 vdd!) pmos1 \
+        w=1e-06 l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I10\|I3\|MP5 (\5\:I10\|I3\|Bi \9\:net1 \91\:vdd! vdd!) pmos1 w=1e-06 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I11\|I3\|MP5 (\88\:vdd! \10\:net5 I11\|I3\|Bi vdd!) pmos1 w=1e-06 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I11\|I3\|MP2 (I11\|I3\|net022 \5\:I11\|I3\|Bi \89\:vdd! vdd!) pmos1 \
+        w=1e-06 l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I11\|I3\|MP3 (\6\:Z4 \3\:I11\|net3 I11\|I3\|net022 vdd!) pmos1 w=1e-06 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I11\|I2\|MP0 (I11\|net6 \5\:I11\|net3 \87\:vdd! vdd!) pmos1 w=1e-06 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I11\|I2\|MP1 (\86\:vdd! \6\:net5 I11\|net6 vdd!) pmos1 w=1e-06 l=1.8e-07 \
+        as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I11\|I3\|MP1 (I11\|I3\|net8 \5\:net5 \7\:Z4 vdd!) pmos1 w=1e-06 l=1.8e-07 \
+        as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I0\|I3\|MP4 (\4\:I0\|I3\|Ai \10\:I0\|net3 \275\:vdd! vdd!) pmos1 w=1e-06 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I0\|I1\|MP1 (\23\:net55 \7\:I0\|net1 \282\:vdd! vdd!) pmos1 w=1e-06 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I0\|I1\|MP0 (\276\:vdd! \3\:I0\|net6 \23\:net55 vdd!) pmos1 w=1e-06 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I0\|I3\|MP0 (I0\|I3\|net8 \6\:I0\|I3\|Ai \263\:vdd! vdd!) pmos1 w=1e-06 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I0\|I3\|MP1 (\6\:net29 \7\:net31 I0\|I3\|net8 vdd!) pmos1 w=1e-06 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I0\|I2\|MP1 (\5\:I0\|net6 \6\:net31 \271\:vdd! vdd!) pmos1 w=1e-06 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I0\|I2\|MP0 (\270\:vdd! \17\:I0\|net3 \5\:I0\|net6 vdd!) pmos1 w=1e-06 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I0\|I3\|MP3 (I0\|I3\|net022 \18\:I0\|net3 \7\:net29 vdd!) pmos1 w=1e-06 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I0\|I3\|MP2 (\254\:vdd! \5\:I0\|I3\|Bi I0\|I3\|net022 vdd!) pmos1 w=1e-06 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I0\|I3\|MP5 (\3\:I0\|I3\|Bi \9\:net31 \269\:vdd! vdd!) pmos1 w=1e-06 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I3\|I0\|MP0 (\3\:I3\|net1 \18\:net087 \277\:vdd! vdd!) pmos1 w=1e-06 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I3\|I0\|MP1 (\264\:vdd! \12\:net54 \3\:I3\|net1 vdd!) pmos1 w=1e-06 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I3\|I1\|MP1 (\13\:net21 \7\:I3\|net1 \255\:vdd! vdd!) pmos1 w=1e-06 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I3\|I1\|MP0 (\248\:vdd! \3\:I3\|net6 \13\:net21 vdd!) pmos1 w=1e-06 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I3\|I2\|MP1 (\5\:I3\|net6 \6\:net26 \243\:vdd! vdd!) pmos1 w=1e-06 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I3\|I2\|MP0 (\242\:vdd! \17\:I3\|net3 \5\:I3\|net6 vdd!) pmos1 w=1e-06 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I0\|I4\|MP3 (I0\|I4\|net022 \6\:net38 I0\|net3 vdd!) pmos1 w=1e-06 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I21\|MP2 (\3\:net087 \7\:I21\|net013 \287\:vdd! vdd!) pmos1 w=1e-06 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I0\|I4\|MP4 (I0\|I4\|Ai \17\:net38 \315\:vdd! vdd!) pmos1 w=1e-06 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I0\|I4\|MP2 (\294\:vdd! \4\:I0\|I4\|Bi I0\|I4\|net022 vdd!) pmos1 w=1e-06 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I0\|I0\|MP0 (\3\:I0\|net1 \18\:net38 \301\:vdd! vdd!) pmos1 w=1e-06 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I3\|I4\|MP4 (I3\|I4\|Ai \17\:net087 \286\:vdd! vdd!) pmos1 w=1e-06 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I0\|I4\|MP5 (\284\:vdd! \11\:net39 \7\:I0\|I4\|Bi vdd!) pmos1 w=1e-06 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I0\|I0\|MP1 (\285\:vdd! \6\:net39 \3\:I0\|net1 vdd!) pmos1 w=1e-06 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I18\|MP1 (\317\:vdd! \3\:X2 \4\:I18\|net013 vdd!) pmos1 w=1e-06 l=1.8e-07 \
+        as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I0\|I4\|MP0 (I0\|I4\|net8 \5\:I0\|I4\|Ai \306\:vdd! vdd!) pmos1 w=1e-06 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I21\|MP0 (\4\:I21\|net013 \10\:Y2 \295\:vdd! vdd!) pmos1 w=1e-06 l=1.8e-07 \
+        as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I0\|I4\|MP1 (\4\:I0\|net3 \8\:net39 I0\|I4\|net8 vdd!) pmos1 w=1e-06 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I21\|MP1 (\291\:vdd! \17\:X2 \4\:I21\|net013 vdd!) pmos1 w=1e-06 l=1.8e-07 \
+        as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I18\|MP2 (\5\:net38 \7\:I18\|net013 \316\:vdd! vdd!) pmos1 w=1e-06 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I10\|I3\|MP0 (I10\|I3\|net8 \6\:I10\|I3\|Ai \94\:vdd! vdd!) pmos1 w=1e-06 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I3\|I3\|MP0 (I3\|I3\|net8 \6\:I3\|I3\|Ai \233\:vdd! vdd!) pmos1 w=1e-06 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I10\|I3\|MP1 (\6\:Z5 \7\:net1 I10\|I3\|net8 vdd!) pmos1 w=1e-06 l=1.8e-07 \
+        as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I10\|I2\|MP1 (\5\:I10\|net6 \6\:net1 \93\:vdd! vdd!) pmos1 w=1e-06 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I3\|I3\|MP1 (\6\:net0100 \7\:net26 I3\|I3\|net8 vdd!) pmos1 w=1e-06 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I10\|I2\|MP0 (\92\:vdd! \17\:I10\|net3 \5\:I10\|net6 vdd!) pmos1 w=1e-06 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I10\|I3\|MP3 (I10\|I3\|net022 \18\:I10\|net3 \7\:Z5 vdd!) pmos1 w=1e-06 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I3\|I3\|MP3 (I3\|I3\|net022 \18\:I3\|net3 \7\:net0100 vdd!) pmos1 w=1e-06 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I10\|I4\|MP5 (\99\:vdd! \17\:net17 \7\:I10\|I4\|Bi vdd!) pmos1 w=1e-06 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I3\|I4\|MP5 (\258\:vdd! \17\:net54 \7\:I3\|I4\|Bi vdd!) pmos1 w=1e-06 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I10\|I0\|MP1 (\98\:vdd! \12\:net17 \3\:I10\|net1 vdd!) pmos1 w=1e-06 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I10\|I3\|MP4 (\4\:I10\|I3\|Ai \10\:I10\|net3 \97\:vdd! vdd!) pmos1 w=1e-06 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I3\|I3\|MP4 (\4\:I3\|I3\|Ai \10\:I3\|net3 \247\:vdd! vdd!) pmos1 w=1e-06 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I10\|I1\|MP1 (\14\:net15 \7\:I10\|net1 \96\:vdd! vdd!) pmos1 w=1e-06 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I10\|I1\|MP0 (\95\:vdd! \3\:I10\|net6 \14\:net15 vdd!) pmos1 w=1e-06 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I10\|I4\|MP3 (I10\|I4\|net022 \6\:net8 I10\|net3 vdd!) pmos1 w=1e-06 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I3\|I4\|MP3 (I3\|I4\|net022 \6\:net087 I3\|net3 vdd!) pmos1 w=1e-06 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I10\|I4\|MP4 (\4\:I10\|I4\|Ai \17\:net8 \102\:vdd! vdd!) pmos1 w=1e-06 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I10\|I4\|MP2 (\101\:vdd! \4\:I10\|I4\|Bi I10\|I4\|net022 vdd!) pmos1 \
+        w=1e-06 l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I3\|I4\|MP2 (\268\:vdd! \4\:I3\|I4\|Bi I3\|I4\|net022 vdd!) pmos1 w=1e-06 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I10\|I0\|MP0 (\3\:I10\|net1 \18\:net8 \100\:vdd! vdd!) pmos1 w=1e-06 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I26\|MP0 (\4\:I26\|net013 \10\:Y3 \106\:vdd! vdd!) pmos1 w=1e-06 l=1.8e-07 \
+        as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I26\|MP1 (\104\:vdd! \9\:X2 \4\:I26\|net013 vdd!) pmos1 w=1e-06 l=1.8e-07 \
+        as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I10\|I4\|MP0 (I10\|I4\|net8 \2\:I10\|I4\|Ai \105\:vdd! vdd!) pmos1 w=1e-06 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I3\|I4\|MP0 (I3\|I4\|net8 \5\:I3\|I4\|Ai \281\:vdd! vdd!) pmos1 w=1e-06 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I10\|I4\|MP1 (\4\:I10\|net3 \14\:net17 I10\|I4\|net8 vdd!) pmos1 w=1e-06 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I3\|I4\|MP1 (\4\:I3\|net3 \14\:net54 I3\|I4\|net8 vdd!) pmos1 w=1e-06 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I26\|MP2 (\3\:net8 \7\:I26\|net013 \103\:vdd! vdd!) pmos1 w=1e-06 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I4\|I2\|MP1 (\5\:I4\|net6 \7\:net21 \309\:vdd! vdd!) pmos1 w=1e-06 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I4\|I2\|MP0 (\308\:vdd! \17\:I4\|net3 \5\:I4\|net6 vdd!) pmos1 w=1e-06 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I5\|I1\|MP4 (\320\:vdd! \19\:net55 \4\:I5\|I1\|Ai vdd!) pmos1 w=1e-06 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I12\|MP2 (\3\:net39 \7\:I12\|net013 \335\:vdd! vdd!) pmos1 w=1e-06 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I4\|I3\|MP5 (\5\:I4\|I3\|Bi \10\:net21 \307\:vdd! vdd!) pmos1 w=1e-06 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I18\|MP0 (\4\:I18\|net013 \9\:Y1 \325\:vdd! vdd!) pmos1 w=1e-06 l=1.8e-07 \
+        as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I5\|I3\|MP0 (\348\:vdd! \8\:net55 \7\:I5\|I3\|net013 vdd!) pmos1 w=1e-06 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I5\|I1\|MP3 (\7\:net54 \13\:net55 I5\|I1\|net022 vdd!) pmos1 w=1e-06 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I4\|I1\|MP1 (\15\:net16 \7\:I4\|net1 \321\:vdd! vdd!) pmos1 w=1e-06 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I5\|I1\|MP1 (I5\|I1\|net8 \7\:net093 net54 vdd!) pmos1 w=1e-06 l=1.8e-07 \
+        as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I4\|I1\|MP0 (\314\:vdd! \3\:I4\|net6 \15\:net16 vdd!) pmos1 w=1e-06 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I12\|MP1 (\4\:I12\|net013 \23\:X3 \347\:vdd! vdd!) pmos1 w=1e-06 l=1.8e-07 \
+        as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I5\|I1\|MP0 (\330\:vdd! I5\|I1\|Ai I5\|I1\|net8 vdd!) pmos1 w=1e-06 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I12\|MP0 (\336\:vdd! \22\:Y0 \4\:I12\|net013 vdd!) pmos1 w=1e-06 l=1.8e-07 \
+        as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I4\|I4\|MP4 (I4\|I4\|Ai \14\:net090 \353\:vdd! vdd!) pmos1 w=1e-06 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I5\|I1\|MP5 (I5\|I1\|Bi \9\:net093 \351\:vdd! vdd!) pmos1 w=1e-06 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I5\|I3\|MP2 (\357\:vdd! \3\:I5\|I3\|net013 \2\:net19 vdd!) pmos1 w=1e-06 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I4\|I0\|MP0 (\3\:I4\|net1 \16\:net090 \341\:vdd! vdd!) pmos1 w=1e-06 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I5\|I3\|MP1 (\7\:I5\|I3\|net013 \11\:net093 \352\:vdd! vdd!) pmos1 w=1e-06 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I5\|I1\|MP2 (I5\|I1\|net022 \5\:I5\|I1\|Bi \340\:vdd! vdd!) pmos1 w=1e-06 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I4\|I0\|MP1 (\331\:vdd! \10\:net19 \3\:I4\|net1 vdd!) pmos1 w=1e-06 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I20\|MP1 (\4\:I20\|net013 \12\:X3 \360\:vdd! vdd!) pmos1 w=1e-06 l=1.8e-07 \
+        as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I15\|MP0 (\4\:I15\|net013 \12\:Y0 \367\:vdd! vdd!) pmos1 w=1e-06 l=1.8e-07 \
+        as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I19\|MP1 (\4\:I19\|net013 \15\:X3 \369\:vdd! vdd!) pmos1 w=1e-06 l=1.8e-07 \
+        as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I20\|MP0 (\355\:vdd! \3\:Y2 \4\:I20\|net013 vdd!) pmos1 w=1e-06 l=1.8e-07 \
+        as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I15\|MP1 (\363\:vdd! \4\:X0 \4\:I15\|net013 vdd!) pmos1 w=1e-06 l=1.8e-07 \
+        as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I19\|MP0 (\368\:vdd! \3\:Y1 \4\:I19\|net013 vdd!) pmos1 w=1e-06 l=1.8e-07 \
+        as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I20\|MP2 (\5\:net090 \7\:I20\|net013 \354\:vdd! vdd!) pmos1 w=1e-06 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I15\|MP2 (\1\:Z0 \5\:I15\|net013 \359\:vdd! vdd!) pmos1 w=1e-06 l=1.8e-07 \
+        as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I19\|MP2 (\3\:net093 \7\:I19\|net013 \364\:vdd! vdd!) pmos1 w=1e-06 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I4\|I3\|MP4 (\4\:I4\|I3\|Ai \10\:I4\|net3 \313\:vdd! vdd!) pmos1 w=1e-06 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I4\|I3\|MP0 (I4\|I3\|net8 \6\:I4\|I3\|Ai \300\:vdd! vdd!) pmos1 w=1e-06 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I4\|I3\|MP1 (\8\:net17 \8\:net21 I4\|I3\|net8 vdd!) pmos1 w=1e-06 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I4\|I3\|MP3 (I4\|I3\|net022 \18\:I4\|net3 \9\:net17 vdd!) pmos1 w=1e-06 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I4\|I3\|MP2 (\290\:vdd! \2\:I4\|I3\|Bi I4\|I3\|net022 vdd!) pmos1 w=1e-06 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I9\|I0\|MP1 (\115\:vdd! \5\:net16 \3\:I9\|net1 vdd!) pmos1 w=1e-06 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I9\|I3\|MP4 (\4\:I9\|I3\|Ai \10\:I9\|net3 \114\:vdd! vdd!) pmos1 w=1e-06 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I9\|I1\|MP1 (\3\:Z7 \7\:I9\|net1 \113\:vdd! vdd!) pmos1 w=1e-06 l=1.8e-07 \
+        as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I9\|I1\|MP0 (\112\:vdd! \3\:I9\|net6 \3\:Z7 vdd!) pmos1 w=1e-06 l=1.8e-07 \
+        as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I9\|I3\|MP0 (I9\|I3\|net8 \6\:I9\|I3\|Ai \111\:vdd! vdd!) pmos1 w=1e-06 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I9\|I3\|MP1 (\6\:Z6 \8\:net15 I9\|I3\|net8 vdd!) pmos1 w=1e-06 l=1.8e-07 \
+        as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I9\|I2\|MP1 (\5\:I9\|net6 \7\:net15 \110\:vdd! vdd!) pmos1 w=1e-06 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I9\|I2\|MP0 (\109\:vdd! \17\:I9\|net3 \5\:I9\|net6 vdd!) pmos1 w=1e-06 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I9\|I3\|MP3 (I9\|I3\|net022 \18\:I9\|net3 \7\:Z6 vdd!) pmos1 w=1e-06 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I9\|I3\|MP2 (\107\:vdd! \2\:I9\|I3\|Bi I9\|I3\|net022 vdd!) pmos1 w=1e-06 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I9\|I3\|MP5 (\5\:I9\|I3\|Bi \10\:net15 \108\:vdd! vdd!) pmos1 w=1e-06 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I4\|I4\|MP3 (I4\|I4\|net022 \6\:net090 I4\|net3 vdd!) pmos1 w=1e-06 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I9\|I4\|MP3 (I9\|I4\|net022 \6\:net13 I9\|net3 vdd!) pmos1 w=1e-06 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I9\|I4\|MP4 (I9\|I4\|Ai \14\:net13 \119\:vdd! vdd!) pmos1 w=1e-06 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I4\|I4\|MP2 (\334\:vdd! \4\:I4\|I4\|Bi I4\|I4\|net022 vdd!) pmos1 w=1e-06 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I9\|I4\|MP2 (\118\:vdd! \4\:I9\|I4\|Bi I9\|I4\|net022 vdd!) pmos1 w=1e-06 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I9\|I0\|MP0 (\3\:I9\|net1 \16\:net13 \117\:vdd! vdd!) pmos1 w=1e-06 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I4\|I4\|MP5 (\324\:vdd! \15\:net19 \7\:I4\|I4\|Bi vdd!) pmos1 w=1e-06 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I9\|I4\|MP5 (\116\:vdd! \10\:net16 \7\:I9\|I4\|Bi vdd!) pmos1 w=1e-06 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I27\|MP1 (\4\:I27\|net013 \9\:X3 \58\:vdd! vdd!) pmos1 w=1e-06 l=1.8e-07 \
+        as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I27\|MP0 (\121\:vdd! \3\:Y3 \4\:I27\|net013 vdd!) pmos1 w=1e-06 l=1.8e-07 \
+        as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I4\|I4\|MP0 (I4\|I4\|net8 \5\:I4\|I4\|Ai \346\:vdd! vdd!) pmos1 w=1e-06 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I9\|I4\|MP0 (I9\|I4\|net8 \5\:I9\|I4\|Ai \122\:vdd! vdd!) pmos1 w=1e-06 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I4\|I4\|MP1 (\4\:I4\|net3 \12\:net19 I4\|I4\|net8 vdd!) pmos1 w=1e-06 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I9\|I4\|MP1 (\4\:I9\|net3 \7\:net16 I9\|I4\|net8 vdd!) pmos1 w=1e-06 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I27\|MP2 (\5\:net13 \7\:I27\|net013 \120\:vdd! vdd!) pmos1 w=1e-06 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I25\|MN0 (I25\|net9 \18\:Y3 \21\:gnd! 0) nmos1 w=8e-07 l=1.8e-07 \
+        as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I22\|MN0 (I22\|net9 \18\:Y2 \317\:gnd! 0) nmos1 w=8e-07 l=1.8e-07 \
+        as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I14\|MN2 (\11\:net0127 \5\:I14\|net013 \287\:gnd! 0) nmos1 w=8e-07 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I17\|MN2 (\23\:net0115 \7\:I17\|net013 \319\:gnd! 0) nmos1 w=8e-07 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I25\|MN1 (\5\:I25\|net013 \15\:X0 I25\|net9 0) nmos1 w=8e-07 l=1.8e-07 \
+        as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I22\|MN1 (\5\:I22\|net013 \19\:X0 I22\|net9 0) nmos1 w=8e-07 l=1.8e-07 \
+        as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I8\|I1\|MN4 (\293\:gnd! \21\:net075 \6\:I8\|I1\|Ai 0) nmos1 w=8e-07 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I7\|I1\|MN4 (\1\:gnd! \21\:net47 \6\:I7\|I1\|Ai 0) nmos1 w=8e-07 l=1.8e-07 \
+        as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I14\|MN1 (I14\|net9 \19\:X1 \3\:I14\|net013 0) nmos1 w=8e-07 l=1.8e-07 \
+        as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I17\|MN0 (I17\|net9 \24\:Y1 \3\:I17\|net013 0) nmos1 w=8e-07 l=1.8e-07 \
+        as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I25\|MN2 (\23\:gnd! \4\:I25\|net013 \10\:net075 0) nmos1 w=8e-07 l=1.8e-07 \
+        as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I22\|MN2 (\315\:gnd! \4\:I22\|net013 \10\:net47 0) nmos1 w=8e-07 l=1.8e-07 \
+        as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I8\|I1\|MN2 (I8\|I1\|net17 \13\:net075 \6\:Z3 0) nmos1 w=8e-07 l=1.8e-07 \
+        as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I7\|I1\|MN2 (I7\|I1\|net17 \13\:net47 \6\:Z2 0) nmos1 w=8e-07 l=1.8e-07 \
+        as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I14\|MN0 (\280\:gnd! \14\:Y0 I14\|net9 0) nmos1 w=8e-07 l=1.8e-07 \
+        as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I17\|MN1 (\318\:gnd! \9\:X0 I17\|net9 0) nmos1 w=8e-07 l=1.8e-07 \
+        as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I8\|I1\|MN3 (\290\:gnd! \12\:net44 I8\|I1\|net17 0) nmos1 w=8e-07 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I7\|I1\|MN3 (\22\:gnd! \12\:net32 I7\|I1\|net17 0) nmos1 w=8e-07 l=1.8e-07 \
+        as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I8\|I3\|MN1 (I8\|I3\|net9 \19\:net44 \24\:gnd! 0) nmos1 w=8e-07 l=1.8e-07 \
+        as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I8\|I1\|MN1 (I8\|I1\|net32 \7\:I8\|I1\|Bi \282\:gnd! 0) nmos1 w=8e-07 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I7\|I3\|MN1 (I7\|I3\|net9 \19\:net32 \309\:gnd! 0) nmos1 w=8e-07 l=1.8e-07 \
+        as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I7\|I1\|MN1 (I7\|I1\|net32 \7\:I7\|I1\|Bi \25\:gnd! 0) nmos1 w=8e-07 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I6\|I3\|MN2 (\10\:net35 I6\|I3\|net013 \270\:gnd! 0) nmos1 w=8e-07 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I6\|I1\|MN5 (\312\:gnd! \7\:net0127 \7\:I6\|I1\|Bi 0) nmos1 w=8e-07 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I8\|I3\|MN0 (\5\:I8\|I3\|net013 \9\:net075 I8\|I3\|net9 0) nmos1 w=8e-07 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I8\|I1\|MN0 (\5\:Z3 \3\:I8\|I1\|Ai I8\|I1\|net32 0) nmos1 w=8e-07 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I7\|I3\|MN0 (\5\:I7\|I3\|net013 \9\:net47 I7\|I3\|net9 0) nmos1 w=8e-07 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I7\|I1\|MN0 (\5\:Z2 \3\:I7\|I1\|Ai I7\|I1\|net32 0) nmos1 w=8e-07 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I6\|I3\|MN1 (\262\:gnd! \10\:net0127 I6\|I3\|net9 0) nmos1 w=8e-07 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I6\|I1\|MN1 (\310\:gnd! \3\:I6\|I1\|Bi I6\|I1\|net32 0) nmos1 w=8e-07 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I24\|MN0 (\5\:I24\|net013 \14\:Y3 I24\|net9 0) nmos1 w=8e-07 l=1.8e-07 \
+        as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I6\|I1\|MN3 (I6\|I1\|net17 \6\:net0127 \304\:gnd! 0) nmos1 w=8e-07 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I23\|MN0 (\5\:I23\|net013 \14\:Y2 I23\|net9 0) nmos1 w=8e-07 l=1.8e-07 \
+        as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I6\|I1\|MN2 (\7\:Z1 \19\:net0115 I6\|I1\|net17 0) nmos1 w=8e-07 l=1.8e-07 \
+        as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I16\|MN2 (\11\:net095 \5\:I16\|net013 \253\:gnd! 0) nmos1 w=8e-07 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I6\|I3\|MN0 (I6\|I3\|net9 \12\:net0115 \5\:I6\|I3\|net013 0) nmos1 w=8e-07 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I6\|I1\|MN0 (I6\|I1\|net32 \5\:I6\|I1\|Ai \1\:Z1 0) nmos1 w=8e-07 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I8\|I1\|MN5 (\3\:I8\|I1\|Bi \16\:net44 \274\:gnd! 0) nmos1 w=8e-07 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I8\|I3\|MN2 (\26\:gnd! \4\:I8\|I3\|net013 \14\:net5 0) nmos1 w=8e-07 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I7\|I1\|MN5 (\3\:I7\|I1\|Bi \16\:net32 \27\:gnd! 0) nmos1 w=8e-07 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I7\|I3\|MN2 (\307\:gnd! \4\:I7\|I3\|net013 \14\:net45 0) nmos1 w=8e-07 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I6\|I1\|MN4 (\3\:I6\|I1\|Ai \4\:net0115 \300\:gnd! 0) nmos1 w=8e-07 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I16\|MN1 (I16\|net9 \4\:X1 \3\:I16\|net013 0) nmos1 w=8e-07 l=1.8e-07 \
+        as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I2\|I4\|MN3 (\29\:gnd! \12\:net29 I2\|I4\|net17 0) nmos1 w=8e-07 l=1.8e-07 \
+        as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I24\|MN1 (I24\|net9 \10\:X1 \28\:gnd! 0) nmos1 w=8e-07 l=1.8e-07 \
+        as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I16\|MN0 (\246\:gnd! \17\:Y1 I16\|net9 0) nmos1 w=8e-07 l=1.8e-07 \
+        as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I23\|MN1 (I23\|net9 \15\:X1 \302\:gnd! 0) nmos1 w=8e-07 l=1.8e-07 \
+        as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I13\|MN2 (\17\:net34 \5\:I13\|net013 \240\:gnd! 0) nmos1 w=8e-07 l=1.8e-07 \
+        as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I11\|I4\|MN2 (I11\|I4\|net17 \17\:net078 \18\:I11\|net3 0) nmos1 w=8e-07 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I24\|MN2 (\30\:gnd! \4\:I24\|net013 \14\:net078 0) nmos1 w=8e-07 l=1.8e-07 \
+        as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I23\|MN2 (\299\:gnd! \4\:I23\|net013 \15\:net28 0) nmos1 w=8e-07 l=1.8e-07 \
+        as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I2\|I4\|MN2 (I2\|I4\|net17 \17\:net28 \18\:I2\|net3 0) nmos1 w=8e-07 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I11\|I4\|MN3 (\264\:gnd! \12\:net0100 I11\|I4\|net17 0) nmos1 w=8e-07 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I1\|I4\|MN1 (\19\:I1\|net3 \4\:I1\|I4\|Bi I1\|I4\|net32 0) nmos1 w=8e-07 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I2\|I0\|MN1 (I2\|I0\|net9 \19\:net29 \292\:gnd! 0) nmos1 w=8e-07 l=1.8e-07 \
+        as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I2\|I0\|MN0 (\5\:I2\|net1 \11\:net28 I2\|I0\|net9 0) nmos1 w=8e-07 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I13\|MN1 (I13\|net9 \22\:X2 \3\:I13\|net013 0) nmos1 w=8e-07 l=1.8e-07 \
+        as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I13\|MN0 (\232\:gnd! \17\:Y0 I13\|net9 0) nmos1 w=8e-07 l=1.8e-07 \
+        as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I1\|I4\|MN3 (I1\|I4\|net17 \14\:net34 \18\:I1\|net3 0) nmos1 w=8e-07 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I2\|I4\|MN4 (\296\:gnd! \5\:net28 I2\|I4\|Ai 0) nmos1 w=8e-07 l=1.8e-07 \
+        as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I1\|I4\|MN2 (\297\:gnd! \3\:net095 I1\|I4\|net17 0) nmos1 w=8e-07 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I11\|I4\|MN5 (\3\:I11\|I4\|Bi \18\:net0100 \247\:gnd! 0) nmos1 w=8e-07 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I11\|I0\|MN0 (\5\:I11\|net1 \11\:net078 I11\|I0\|net9 0) nmos1 w=8e-07 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I2\|I4\|MN5 (\3\:I2\|I4\|Bi \18\:net29 \33\:gnd! 0) nmos1 w=8e-07 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I11\|I4\|MN1 (I11\|I4\|net32 \7\:I11\|I4\|Bi \249\:gnd! 0) nmos1 w=8e-07 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I11\|I4\|MN4 (\31\:gnd! \5\:net078 I11\|I4\|Ai 0) nmos1 w=8e-07 l=1.8e-07 \
+        as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I2\|I4\|MN1 (I2\|I4\|net32 \7\:I2\|I4\|Bi \32\:gnd! 0) nmos1 w=8e-07 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I11\|I4\|MN0 (\19\:I11\|net3 \4\:I11\|I4\|Ai I11\|I4\|net32 0) nmos1 \
+        w=8e-07 l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I2\|I4\|MN0 (\19\:I2\|net3 \4\:I2\|I4\|Ai I2\|I4\|net32 0) nmos1 w=8e-07 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I1\|I0\|MN0 (I1\|I0\|net9 \10\:net095 \218\:gnd! 0) nmos1 w=8e-07 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I1\|I4\|MN4 (\3\:I1\|I4\|Ai \9\:net095 \283\:gnd! 0) nmos1 w=8e-07 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I2\|I1\|MN1 (I2\|I1\|net9 \5\:I2\|net6 \277\:gnd! 0) nmos1 w=8e-07 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I1\|I0\|MN1 (\5\:I1\|net1 \11\:net34 I1\|I0\|net9 0) nmos1 w=8e-07 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I2\|I1\|MN0 (\10\:net26 \4\:I2\|net1 I2\|I1\|net9 0) nmos1 w=8e-07 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I1\|I4\|MN0 (I1\|I4\|net32 \7\:I1\|I4\|Ai \286\:gnd! 0) nmos1 w=8e-07 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I1\|I4\|MN5 (\227\:gnd! \5\:net34 I1\|I4\|Bi 0) nmos1 w=8e-07 l=1.8e-07 \
+        as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I2\|I3\|MN2 (I2\|I3\|net17 I2\|net3 net44 0) nmos1 w=8e-07 l=1.8e-07 \
+        as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I11\|I3\|MN3 (\220\:gnd! \4\:net5 I11\|I3\|net17 0) nmos1 w=8e-07 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I11\|I1\|MN1 (I11\|I1\|net9 \5\:I11\|net6 \37\:gnd! 0) nmos1 w=8e-07 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I2\|I3\|MN3 (\36\:gnd! \3\:net45 I2\|I3\|net17 0) nmos1 w=8e-07 l=1.8e-07 \
+        as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I11\|I1\|MN0 (\10\:net1 \4\:I11\|net1 I11\|I1\|net9 0) nmos1 w=8e-07 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I11\|I3\|MN4 (\234\:gnd! \10\:I11\|net3 \5\:I11\|I3\|Ai 0) nmos1 w=8e-07 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I2\|I3\|MN4 (\35\:gnd! \11\:I2\|net3 \5\:I2\|I3\|Ai 0) nmos1 w=8e-07 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I11\|I0\|MN1 (I11\|I0\|net9 \19\:net0100 \34\:gnd! 0) nmos1 w=8e-07 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I1\|I2\|MN1 (\203\:gnd! \7\:net35 I1\|I2\|net9 0) nmos1 w=8e-07 l=1.8e-07 \
+        as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I1\|I3\|MN2 (I1\|I3\|net17 I1\|net3 net32 0) nmos1 w=8e-07 l=1.8e-07 \
+        as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I2\|I3\|MN5 (\259\:gnd! \8\:net45 \4\:I2\|I3\|Bi 0) nmos1 w=8e-07 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I1\|I3\|MN3 (\265\:gnd! \3\:net35 I1\|I3\|net17 0) nmos1 w=8e-07 l=1.8e-07 \
+        as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I1\|I1\|MN1 (I1\|I1\|net9 \5\:I1\|net6 \210\:gnd! 0) nmos1 w=8e-07 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I2\|I2\|MN0 (I2\|I2\|net9 \6\:I2\|net3 \3\:I2\|net6 0) nmos1 w=8e-07 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I1\|I1\|MN0 (\10\:net31 \4\:I1\|net1 I1\|I1\|net9 0) nmos1 w=8e-07 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I1\|I3\|MN4 (\275\:gnd! \10\:I1\|net3 \5\:I1\|I3\|Ai 0) nmos1 w=8e-07 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I2\|I2\|MN1 (\268\:gnd! \7\:net45 I2\|I2\|net9 0) nmos1 w=8e-07 l=1.8e-07 \
+        as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I11\|I3\|MN5 (\39\:gnd! \9\:net5 \4\:I11\|I3\|Bi 0) nmos1 w=8e-07 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I11\|I3\|MN1 (I11\|I3\|net32 \6\:I11\|I3\|Bi \206\:gnd! 0) nmos1 w=8e-07 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I2\|I3\|MN1 (I2\|I3\|net32 \6\:I2\|I3\|Bi \40\:gnd! 0) nmos1 w=8e-07 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I11\|I3\|MN0 (\4\:Z4 \3\:I11\|I3\|Ai I11\|I3\|net32 0) nmos1 w=8e-07 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I2\|I3\|MN0 (\4\:net44 \3\:I2\|I3\|Ai I2\|I3\|net32 0) nmos1 w=8e-07 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I11\|I2\|MN0 (I11\|I2\|net9 \6\:I11\|net3 \3\:I11\|net6 0) nmos1 w=8e-07 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I11\|I2\|MN1 (\38\:gnd! \8\:net5 I11\|I2\|net9 0) nmos1 w=8e-07 l=1.8e-07 \
+        as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I11\|I3\|MN2 (I11\|I3\|net17 I11\|net3 \2\:Z4 0) nmos1 w=8e-07 l=1.8e-07 \
+        as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I10\|I3\|MN1 (\198\:gnd! \3\:I10\|I3\|Bi I10\|I3\|net32 0) nmos1 w=8e-07 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I10\|I3\|MN5 (\6\:I10\|I3\|Bi \3\:net1 \44\:gnd! 0) nmos1 w=8e-07 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I3\|I3\|MN1 (\45\:gnd! \3\:I3\|I3\|Bi I3\|I3\|net32 0) nmos1 w=8e-07 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I3\|I3\|MN5 (\6\:I3\|I3\|Bi \3\:net26 \243\:gnd! 0) nmos1 w=8e-07 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I1\|I3\|MN5 (\196\:gnd! \8\:net35 \4\:I1\|I3\|Bi 0) nmos1 w=8e-07 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I1\|I3\|MN1 (I1\|I3\|net32 \6\:I1\|I3\|Bi \251\:gnd! 0) nmos1 w=8e-07 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I1\|I3\|MN0 (\4\:net32 \3\:I1\|I3\|Ai I1\|I3\|net32 0) nmos1 w=8e-07 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I1\|I2\|MN0 (I1\|I2\|net9 \6\:I1\|net3 \3\:I1\|net6 0) nmos1 w=8e-07 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I0\|I2\|MN1 (I0\|I2\|net9 \4\:net31 \185\:gnd! 0) nmos1 w=8e-07 l=1.8e-07 \
+        as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I3\|I1\|MN1 (\224\:gnd! \4\:I3\|net6 I3\|I1\|net9 0) nmos1 w=8e-07 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I0\|I2\|MN0 (\7\:I0\|net6 \16\:I0\|net3 I0\|I2\|net9 0) nmos1 w=8e-07 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I0\|I3\|MN0 (I0\|I3\|net32 \5\:I0\|I3\|Ai net29 0) nmos1 w=8e-07 l=1.8e-07 \
+        as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I3\|I2\|MN1 (I3\|I2\|net9 \4\:net26 \230\:gnd! 0) nmos1 w=8e-07 l=1.8e-07 \
+        as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I0\|I3\|MN1 (\237\:gnd! \6\:I0\|I3\|Bi I0\|I3\|net32 0) nmos1 w=8e-07 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I0\|I3\|MN5 (\4\:I0\|I3\|Bi \3\:net31 \190\:gnd! 0) nmos1 w=8e-07 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I3\|I2\|MN0 (\7\:I3\|net6 \16\:I3\|net3 I3\|I2\|net9 0) nmos1 w=8e-07 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I3\|I0\|MN0 (I3\|I0\|net9 \13\:net087 I3\|net1 0) nmos1 w=8e-07 l=1.8e-07 \
+        as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I0\|I3\|MN4 (\3\:I0\|I3\|Ai \12\:I0\|net3 \208\:gnd! 0) nmos1 w=8e-07 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I0\|I1\|MN0 (I0\|I1\|net9 \5\:I0\|net1 \22\:net55 0) nmos1 w=8e-07 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I3\|I0\|MN1 (\215\:gnd! \16\:net54 I3\|I0\|net9 0) nmos1 w=8e-07 l=1.8e-07 \
+        as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I0\|I1\|MN1 (\179\:gnd! \4\:I0\|net6 I0\|I1\|net9 0) nmos1 w=8e-07 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I0\|I3\|MN3 (I0\|I3\|net17 \8\:net31 \221\:gnd! 0) nmos1 w=8e-07 l=1.8e-07 \
+        as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I3\|I1\|MN0 (I3\|I1\|net9 \5\:I3\|net1 \11\:net21 0) nmos1 w=8e-07 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I0\|I3\|MN2 (\4\:net29 \20\:I0\|net3 I0\|I3\|net17 0) nmos1 w=8e-07 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I0\|I4\|MN0 (I0\|I4\|net32 \4\:I0\|I4\|Ai \5\:I0\|net3 0) nmos1 w=8e-07 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I21\|MN2 (net087 \5\:I21\|net013 \183\:gnd! 0) nmos1 w=8e-07 l=1.8e-07 \
+        as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I0\|I4\|MN4 (\2\:I0\|I4\|Ai \19\:net38 \165\:gnd! 0) nmos1 w=8e-07 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I0\|I4\|MN1 (\188\:gnd! \3\:I0\|I4\|Bi I0\|I4\|net32 0) nmos1 w=8e-07 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I0\|I0\|MN0 (I0\|I0\|net9 \13\:net38 I0\|net1 0) nmos1 w=8e-07 l=1.8e-07 \
+        as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I3\|I4\|MN4 (\2\:I3\|I4\|Ai \19\:net087 \194\:gnd! 0) nmos1 w=8e-07 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I0\|I4\|MN5 (\201\:gnd! \12\:net39 \5\:I0\|I4\|Bi 0) nmos1 w=8e-07 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I0\|I0\|MN1 (\172\:gnd! \10\:net39 I0\|I0\|net9 0) nmos1 w=8e-07 l=1.8e-07 \
+        as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I18\|MN1 (\151\:gnd! \4\:X2 I18\|net9 0) nmos1 w=8e-07 l=1.8e-07 \
+        as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I0\|I4\|MN3 (I0\|I4\|net17 \9\:net39 \169\:gnd! 0) nmos1 w=8e-07 l=1.8e-07 \
+        as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I21\|MN0 (I21\|net9 \8\:Y2 \3\:I21\|net013 0) nmos1 w=8e-07 l=1.8e-07 \
+        as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I0\|I4\|MN2 (\7\:I0\|net3 \8\:net38 I0\|I4\|net17 0) nmos1 w=8e-07 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I21\|MN1 (\176\:gnd! \18\:X2 I21\|net9 0) nmos1 w=8e-07 l=1.8e-07 \
+        as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I18\|MN2 (\3\:net38 \5\:I18\|net013 \159\:gnd! 0) nmos1 w=8e-07 l=1.8e-07 \
+        as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I10\|I3\|MN3 (I10\|I3\|net17 \8\:net1 \191\:gnd! 0) nmos1 w=8e-07 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I3\|I3\|MN3 (I3\|I3\|net17 \8\:net26 \55\:gnd! 0) nmos1 w=8e-07 l=1.8e-07 \
+        as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I10\|I3\|MN2 (\4\:Z5 \20\:I10\|net3 I10\|I3\|net17 0) nmos1 w=8e-07 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I10\|I2\|MN1 (I10\|I2\|net9 \4\:net1 \48\:gnd! 0) nmos1 w=8e-07 l=1.8e-07 \
+        as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I3\|I3\|MN2 (\4\:net0100 \20\:I3\|net3 I3\|I3\|net17 0) nmos1 w=8e-07 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I10\|I2\|MN0 (\7\:I10\|net6 \16\:I10\|net3 I10\|I2\|net9 0) nmos1 w=8e-07 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I10\|I3\|MN0 (I10\|I3\|net32 \5\:I10\|I3\|Ai \1\:Z5 0) nmos1 w=8e-07 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I3\|I3\|MN0 (I3\|I3\|net32 \5\:I3\|I3\|Ai net0100 0) nmos1 w=8e-07 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I10\|I4\|MN5 (\167\:gnd! \18\:net17 \5\:I10\|I4\|Bi 0) nmos1 w=8e-07 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I3\|I4\|MN5 (\61\:gnd! \18\:net54 \5\:I3\|I4\|Bi 0) nmos1 w=8e-07 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I10\|I0\|MN1 (\54\:gnd! \16\:net17 I10\|I0\|net9 0) nmos1 w=8e-07 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I10\|I3\|MN4 (\3\:I10\|I3\|Ai \12\:I10\|net3 \181\:gnd! 0) nmos1 w=8e-07 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I3\|I3\|MN4 (\3\:I3\|I3\|Ai \12\:I3\|net3 \56\:gnd! 0) nmos1 w=8e-07 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I10\|I1\|MN0 (I10\|I1\|net9 \5\:I10\|net1 \13\:net15 0) nmos1 w=8e-07 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I10\|I1\|MN1 (\50\:gnd! \4\:I10\|net6 I10\|I1\|net9 0) nmos1 w=8e-07 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I10\|I4\|MN0 (I10\|I4\|net32 I10\|I4\|Ai \5\:I10\|net3 0) nmos1 w=8e-07 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I3\|I4\|MN0 (I3\|I4\|net32 \4\:I3\|I4\|Ai \5\:I3\|net3 0) nmos1 w=8e-07 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I10\|I4\|MN4 (\5\:I10\|I4\|Ai \19\:net8 \60\:gnd! 0) nmos1 w=8e-07 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I10\|I4\|MN1 (\161\:gnd! \3\:I10\|I4\|Bi I10\|I4\|net32 0) nmos1 w=8e-07 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I3\|I4\|MN1 (\62\:gnd! \3\:I3\|I4\|Bi I3\|I4\|net32 0) nmos1 w=8e-07 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I10\|I0\|MN0 (I10\|I0\|net9 \13\:net8 I10\|net1 0) nmos1 w=8e-07 l=1.8e-07 \
+        as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I26\|MN0 (I26\|net9 \8\:Y3 \3\:I26\|net013 0) nmos1 w=8e-07 l=1.8e-07 \
+        as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I26\|MN1 (\67\:gnd! \10\:X2 I26\|net9 0) nmos1 w=8e-07 l=1.8e-07 \
+        as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I10\|I4\|MN3 (I10\|I4\|net17 \15\:net17 \146\:gnd! 0) nmos1 w=8e-07 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I3\|I4\|MN3 (I3\|I4\|net17 \15\:net54 \72\:gnd! 0) nmos1 w=8e-07 l=1.8e-07 \
+        as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I10\|I4\|MN2 (\7\:I10\|net3 \8\:net8 I10\|I4\|net17 0) nmos1 w=8e-07 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I3\|I4\|MN2 (\7\:I3\|net3 \8\:net087 I3\|I4\|net17 0) nmos1 w=8e-07 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I26\|MN2 (net8 \5\:I26\|net013 \65\:gnd! 0) nmos1 w=8e-07 l=1.8e-07 \
+        as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I4\|I2\|MN1 (I4\|I2\|net9 \5\:net21 \148\:gnd! 0) nmos1 w=8e-07 l=1.8e-07 \
+        as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I4\|I2\|MN0 (\7\:I4\|net6 \16\:I4\|net3 I4\|I2\|net9 0) nmos1 w=8e-07 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I5\|I1\|MN4 (\156\:gnd! \18\:net55 \6\:I5\|I1\|Ai 0) nmos1 w=8e-07 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I12\|MN2 (net39 \5\:I12\|net013 \144\:gnd! 0) nmos1 w=8e-07 l=1.8e-07 \
+        as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I4\|I3\|MN5 (\6\:I4\|I3\|Bi \4\:net21 \163\:gnd! 0) nmos1 w=8e-07 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I18\|MN0 (I18\|net9 \11\:Y1 \3\:I18\|net013 0) nmos1 w=8e-07 l=1.8e-07 \
+        as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I5\|I3\|MN0 (\5\:I5\|I3\|net013 \9\:net55 I5\|I3\|net9 0) nmos1 w=8e-07 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I5\|I1\|MN0 (\5\:net54 \3\:I5\|I1\|Ai I5\|I1\|net32 0) nmos1 w=8e-07 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I4\|I1\|MN0 (I4\|I1\|net9 \5\:I4\|net1 \14\:net16 0) nmos1 w=8e-07 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I5\|I1\|MN2 (I5\|I1\|net17 \10\:net55 \6\:net54 0) nmos1 w=8e-07 l=1.8e-07 \
+        as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I4\|I1\|MN1 (\142\:gnd! \4\:I4\|net6 I4\|I1\|net9 0) nmos1 w=8e-07 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I12\|MN1 (I12\|net9 \21\:X3 \3\:I12\|net013 0) nmos1 w=8e-07 l=1.8e-07 \
+        as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I5\|I1\|MN3 (\154\:gnd! \6\:net093 I5\|I1\|net17 0) nmos1 w=8e-07 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I12\|MN0 (\139\:gnd! \20\:Y0 I12\|net9 0) nmos1 w=8e-07 l=1.8e-07 \
+        as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I4\|I4\|MN4 (\2\:I4\|I4\|Ai \17\:net090 \119\:gnd! 0) nmos1 w=8e-07 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I5\|I1\|MN5 (\3\:I5\|I1\|Bi \10\:net093 \125\:gnd! 0) nmos1 w=8e-07 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I5\|I3\|MN2 (\122\:gnd! \4\:I5\|I3\|net013 \3\:net19 0) nmos1 w=8e-07 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I4\|I0\|MN0 (I4\|I0\|net9 \9\:net090 I4\|net1 0) nmos1 w=8e-07 l=1.8e-07 \
+        as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I5\|I3\|MN1 (I5\|I3\|net9 \13\:net093 \130\:gnd! 0) nmos1 w=8e-07 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I5\|I1\|MN1 (I5\|I1\|net32 \7\:I5\|I1\|Bi \128\:gnd! 0) nmos1 w=8e-07 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I4\|I0\|MN1 (\136\:gnd! \14\:net19 I4\|I0\|net9 0) nmos1 w=8e-07 l=1.8e-07 \
+        as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I20\|MN1 (I20\|net9 \10\:X3 \3\:I20\|net013 0) nmos1 w=8e-07 l=1.8e-07 \
+        as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I15\|MN0 (I15\|net9 \23\:Y0 \3\:I15\|net013 0) nmos1 w=8e-07 l=1.8e-07 \
+        as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I19\|MN1 (I19\|net9 \13\:X3 \3\:I19\|net013 0) nmos1 w=8e-07 l=1.8e-07 \
+        as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I20\|MN0 (\104\:gnd! \4\:Y2 I20\|net9 0) nmos1 w=8e-07 l=1.8e-07 \
+        as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I15\|MN1 (\110\:gnd! \3\:X0 I15\|net9 0) nmos1 w=8e-07 l=1.8e-07 \
+        as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I19\|MN0 (\107\:gnd! \4\:Y1 I19\|net9 0) nmos1 w=8e-07 l=1.8e-07 \
+        as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I20\|MN2 (\3\:net090 \5\:I20\|net013 \112\:gnd! 0) nmos1 w=8e-07 l=1.8e-07 \
+        as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I15\|MN2 (\3\:Z0 \7\:I15\|net013 \117\:gnd! 0) nmos1 w=8e-07 l=1.8e-07 \
+        as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I19\|MN2 (net093 \5\:I19\|net013 \114\:gnd! 0) nmos1 w=8e-07 l=1.8e-07 \
+        as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I4\|I3\|MN2 (\6\:net17 \20\:I4\|net3 I4\|I3\|net17 0) nmos1 w=8e-07 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I9\|I3\|MN2 (\4\:Z6 \20\:I9\|net3 I9\|I3\|net17 0) nmos1 w=8e-07 l=1.8e-07 \
+        as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I9\|I2\|MN1 (I9\|I2\|net9 \5\:net15 \75\:gnd! 0) nmos1 w=8e-07 l=1.8e-07 \
+        as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I9\|I2\|MN0 (\7\:I9\|net6 \16\:I9\|net3 I9\|I2\|net9 0) nmos1 w=8e-07 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I4\|I3\|MN0 (I4\|I3\|net32 \5\:I4\|I3\|Ai \3\:net17 0) nmos1 w=8e-07 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I9\|I3\|MN0 (I9\|I3\|net32 \5\:I9\|I3\|Ai \2\:Z6 0) nmos1 w=8e-07 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I4\|I3\|MN1 (\73\:gnd! \3\:I4\|I3\|Bi I4\|I3\|net32 0) nmos1 w=8e-07 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I9\|I3\|MN1 (\134\:gnd! \3\:I9\|I3\|Bi I9\|I3\|net32 0) nmos1 w=8e-07 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I9\|I3\|MN5 (\6\:I9\|I3\|Bi \4\:net15 \71\:gnd! 0) nmos1 w=8e-07 l=1.8e-07 \
+        as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I9\|I0\|MN1 (\79\:gnd! \9\:net16 I9\|I0\|net9 0) nmos1 w=8e-07 l=1.8e-07 \
+        as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I4\|I3\|MN4 (\3\:I4\|I3\|Ai \12\:I4\|net3 \83\:gnd! 0) nmos1 w=8e-07 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I9\|I3\|MN4 (\3\:I9\|I3\|Ai \12\:I9\|net3 \116\:gnd! 0) nmos1 w=8e-07 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I9\|I1\|MN0 (I9\|I1\|net9 \5\:I9\|net1 \2\:Z7 0) nmos1 w=8e-07 l=1.8e-07 \
+        as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I9\|I1\|MN1 (\77\:gnd! \4\:I9\|net6 I9\|I1\|net9 0) nmos1 w=8e-07 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I4\|I3\|MN3 (I4\|I3\|net17 \9\:net21 \80\:gnd! 0) nmos1 w=8e-07 l=1.8e-07 \
+        as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I9\|I3\|MN3 (I9\|I3\|net17 \9\:net15 \124\:gnd! 0) nmos1 w=8e-07 l=1.8e-07 \
+        as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I4\|I4\|MN0 (I4\|I4\|net32 \4\:I4\|I4\|Ai \5\:I4\|net3 0) nmos1 w=8e-07 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I9\|I4\|MN0 (I9\|I4\|net32 \4\:I9\|I4\|Ai \5\:I9\|net3 0) nmos1 w=8e-07 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I9\|I4\|MN4 (\2\:I9\|I4\|Ai \17\:net13 \86\:gnd! 0) nmos1 w=8e-07 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I4\|I4\|MN1 (\87\:gnd! \3\:I4\|I4\|Bi I4\|I4\|net32 0) nmos1 w=8e-07 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I9\|I4\|MN1 (\101\:gnd! \3\:I9\|I4\|Bi I9\|I4\|net32 0) nmos1 w=8e-07 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I9\|I0\|MN0 (I9\|I0\|net9 \9\:net13 I9\|net1 0) nmos1 w=8e-07 l=1.8e-07 \
+        as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I4\|I4\|MN5 (\84\:gnd! \16\:net19 \5\:I4\|I4\|Bi 0) nmos1 w=8e-07 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I9\|I4\|MN5 (\109\:gnd! \11\:net16 \5\:I9\|I4\|Bi 0) nmos1 w=8e-07 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I27\|MN1 (I27\|net9 \7\:X3 \3\:I27\|net013 0) nmos1 w=8e-07 l=1.8e-07 \
+        as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I27\|MN0 (\92\:gnd! \4\:Y3 I27\|net9 0) nmos1 w=8e-07 l=1.8e-07 as=1.2e-12 \
+        ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I4\|I4\|MN3 (I4\|I4\|net17 \13\:net19 \96\:gnd! 0) nmos1 w=8e-07 l=1.8e-07 \
+        as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I9\|I4\|MN3 (I9\|I4\|net17 \8\:net16 \95\:gnd! 0) nmos1 w=8e-07 l=1.8e-07 \
+        as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I4\|I4\|MN2 (\7\:I4\|net3 \8\:net090 I4\|I4\|net17 0) nmos1 w=8e-07 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I9\|I4\|MN2 (\7\:I9\|net3 \8\:net13 I9\|I4\|net17 0) nmos1 w=8e-07 \
+        l=1.8e-07 as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+I27\|MN2 (\3\:net13 \5\:I27\|net013 \90\:gnd! 0) nmos1 w=8e-07 l=1.8e-07 \
+        as=1.2e-12 ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+simulatorOptions options reltol=1e-3 vabstol=1e-6 iabstol=1e-12 temp=27 \
+    tnom=27 scalem=1.0 scale=1.0 gmin=1e-12 rforce=1 maxnotes=5 maxwarns=5 \
+    digits=5 cols=80 pivrel=1e-3 sensfile="../psf/sens.output" \
+    checklimitdest=psf 
+tran tran stop=30n write="spectre.ic" writefinal="spectre.fc" \
+    annotate=status maxiters=5 
+finalTimeOP info what=oppoint where=rawfile
+modelParameter info what=models where=rawfile
+element info what=inst where=rawfile
+outputParameter info what=output where=rawfile
+designParamVals info what=parameters where=rawfile
+primitives info what=primitives where=rawfile
+subckts info what=subckts  where=rawfile
+saveOptions options save=allpub

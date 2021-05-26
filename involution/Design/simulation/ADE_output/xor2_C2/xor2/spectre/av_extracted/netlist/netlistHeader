@@ -1,0 +1,7 @@
+// Generated for: spectre
+// Generated on: May 27 03:28:00 2021
+// Design library name: multiplier_low
+// Design cell name: xor2
+// Design view name: av_extracted
+simulator lang=spectre
+global 0 vdd!

@@ -1,0 +1,26 @@
+( ( nil
+  version "2.1"
+  mapType "incremental"
+  blockName "inv"
+  repList "spectre cmos_sch cmos.sch schematic veriloga"
+  stopList "spectre"
+  globalList "gnd! vdd!"
+  hierDelim "."
+  netlistDir "/home/SME_VLSI/VLSI_57/simulation/delay2/inv_C1/inv/spectre/av_extracted/netlist"
+ )
+( instViewTable
+ )
+( net
+( "gnd!" "0" )
+ )
+( inst
+ )
+( model
+( "multiplier_low/inv/av_extracted" "inv" )
+ )
+( term
+ )
+( param
+ )
+( "inv" "ihnl/cds0/map" )
+ )

@@ -1,0 +1,446 @@
+PWD /Users/tongyuan/Documents/Study/S6_Spring_2021/CMOS Design/Project/ee306-digital-cmos-design-project/standard/Report/IEEE_report
+INPUT /usr/local/texlive/2021/texmf.cnf
+INPUT /usr/local/texlive/2021/texmf-dist/web2c/texmf.cnf
+INPUT /usr/local/texlive/2021/texmf-var/web2c/xetex/xelatex.fmt
+INPUT /Users/tongyuan/Documents/Study/S6_Spring_2021/CMOS Design/Project/ee306-digital-cmos-design-project/standard/Report/IEEE_report/4x4_multiplier_design.tex
+OUTPUT /Users/tongyuan/Documents/Study/S6_Spring_2021/CMOS Design/Project/ee306-digital-cmos-design-project/standard/Report/IEEE_report/4x4_multiplier_design.log
+INPUT /Users/tongyuan/Documents/Study/S6_Spring_2021/CMOS Design/Project/ee306-digital-cmos-design-project/standard/Report/IEEE_report/IEEEtran.cls
+INPUT /Users/tongyuan/Documents/Study/S6_Spring_2021/CMOS Design/Project/ee306-digital-cmos-design-project/standard/Report/IEEE_report/IEEEtran.cls
+INPUT /Users/tongyuan/Documents/Study/S6_Spring_2021/CMOS Design/Project/ee306-digital-cmos-design-project/standard/Report/IEEE_report/IEEEtran.cls
+INPUT /Users/tongyuan/Documents/Study/S6_Spring_2021/CMOS Design/Project/ee306-digital-cmos-design-project/standard/Report/IEEE_report/IEEEtran.cls
+INPUT /Users/tongyuan/Documents/Study/S6_Spring_2021/CMOS Design/Project/ee306-digital-cmos-design-project/standard/Report/IEEE_report/IEEEtran.cls
+INPUT /Users/tongyuan/Documents/Study/S6_Spring_2021/CMOS Design/Project/ee306-digital-cmos-design-project/standard/Report/IEEE_report/IEEEtran.cls
+INPUT /Users/tongyuan/Documents/Study/S6_Spring_2021/CMOS Design/Project/ee306-digital-cmos-design-project/standard/Report/IEEE_report/IEEEtran.cls
+INPUT /Users/tongyuan/Documents/Study/S6_Spring_2021/CMOS Design/Project/ee306-digital-cmos-design-project/standard/Report/IEEE_report/IEEEtran.cls
+INPUT /Users/tongyuan/Documents/Study/S6_Spring_2021/CMOS Design/Project/ee306-digital-cmos-design-project/standard/Report/IEEE_report/IEEEtran.cls
+INPUT /Users/tongyuan/Documents/Study/S6_Spring_2021/CMOS Design/Project/ee306-digital-cmos-design-project/standard/Report/IEEE_report/IEEEtran.cls
+INPUT /Users/tongyuan/Documents/Study/S6_Spring_2021/CMOS Design/Project/ee306-digital-cmos-design-project/standard/Report/IEEE_report/IEEEtran.cls
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/cite/cite.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/cite/cite.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/cite/cite.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/cite/cite.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/cite/cite.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/cite/cite.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/cite/cite.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/cite/cite.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/cite/cite.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/cite/cite.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/cite/cite.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amsmath.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amsmath.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amsmath.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amsmath.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amsmath.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amsmath.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amsmath.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amsmath.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amsmath.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amsmath.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amsmath.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amsopn.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amsopn.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amstext.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amstext.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amstext.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amstext.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amstext.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amstext.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amstext.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amstext.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amstext.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amstext.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amstext.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amsgen.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amsgen.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amsgen.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amsgen.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amsgen.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amsgen.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amsgen.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amsgen.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amsgen.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amsgen.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amsgen.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amsbsy.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amsbsy.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amsbsy.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amsbsy.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amsbsy.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amsbsy.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amsbsy.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amsbsy.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amsbsy.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amsbsy.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amsbsy.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amsgen.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amsopn.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amsopn.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amsopn.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amsopn.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amsopn.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amsopn.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amsopn.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amsopn.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amsopn.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amsopn.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amsopn.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amsgen.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsfonts/amssymb.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsfonts/amssymb.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsfonts/amssymb.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsfonts/amssymb.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsfonts/amssymb.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsfonts/amssymb.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsfonts/amssymb.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsfonts/amssymb.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsfonts/amssymb.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsfonts/amssymb.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsfonts/amssymb.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/algorithms/algorithmic.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/algorithms/algorithmic.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/algorithms/algorithmic.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/algorithms/algorithmic.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/algorithms/algorithmic.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/algorithms/algorithmic.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/algorithms/algorithmic.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/algorithms/algorithmic.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/algorithms/algorithmic.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/algorithms/algorithmic.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/algorithms/algorithmic.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/base/ifthen.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/base/ifthen.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/base/ifthen.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/base/ifthen.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/base/ifthen.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/base/ifthen.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/base/ifthen.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/base/ifthen.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/base/ifthen.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/base/ifthen.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/base/ifthen.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/graphics/keyval.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/graphics/keyval.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/graphics/keyval.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/graphics/keyval.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/graphics/keyval.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/graphics/keyval.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/graphics/keyval.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/graphics/keyval.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/graphics/keyval.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/graphics/keyval.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/graphics/keyval.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/graphics/graphicx.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/graphics/graphicx.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/graphics/graphicx.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/graphics/graphicx.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/graphics/graphicx.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/graphics/graphicx.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/graphics/graphicx.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/graphics/graphicx.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/graphics/graphicx.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/graphics/graphicx.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/graphics/graphicx.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/graphics/keyval.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/graphics/graphics.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/graphics/graphics.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/graphics/graphics.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/graphics/graphics.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/graphics/graphics.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/graphics/graphics.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/graphics/graphics.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/graphics/graphics.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/graphics/graphics.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/graphics/graphics.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/graphics/graphics.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/graphics/trig.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/graphics/trig.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/graphics/trig.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/graphics/trig.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/graphics/trig.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/graphics/trig.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/graphics/trig.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/graphics/trig.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/graphics/trig.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/graphics/trig.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/graphics/trig.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/graphics-def/xetex.def
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/graphics-def/xetex.def
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/graphics-def/xetex.def
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/graphics-def/xetex.def
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/base/textcomp.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/base/textcomp.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/base/textcomp.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/base/textcomp.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/base/textcomp.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/base/textcomp.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/base/textcomp.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/base/textcomp.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/base/textcomp.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/base/textcomp.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/base/textcomp.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/xcolor/xcolor.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/xcolor/xcolor.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/xcolor/xcolor.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/xcolor/xcolor.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/xcolor/xcolor.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/xcolor/xcolor.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/xcolor/xcolor.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/xcolor/xcolor.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/xcolor/xcolor.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/xcolor/xcolor.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/xcolor/xcolor.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/graphics-cfg/color.cfg
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/graphics-cfg/color.cfg
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/graphics-cfg/color.cfg
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/graphics-cfg/color.cfg
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/float/float.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/float/float.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/float/float.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/float/float.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/float/float.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/float/float.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/float/float.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/float/float.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/float/float.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/float/float.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/float/float.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/subfigure/subfigure.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/subfigure/subfigure.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/subfigure/subfigure.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/subfigure/subfigure.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/subfigure/subfigure.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/subfigure/subfigure.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/subfigure/subfigure.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/subfigure/subfigure.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/subfigure/subfigure.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/subfigure/subfigure.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/subfigure/subfigure.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/subfigure/subfigure.cfg
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/subfigure/subfigure.cfg
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/subfigure/subfigure.cfg
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/subfigure/subfigure.cfg
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/subfig/subfig.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/subfig/subfig.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/subfig/subfig.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/subfig/subfig.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/subfig/subfig.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/subfig/subfig.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/subfig/subfig.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/subfig/subfig.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/subfig/subfig.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/subfig/subfig.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/subfig/subfig.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/graphics/keyval.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/caption/caption.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/caption/caption.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/caption/caption.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/caption/caption.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/caption/caption.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/caption/caption.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/caption/caption.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/caption/caption.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/caption/caption.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/caption/caption.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/caption/caption.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/caption/caption3.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/caption/caption3.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/caption/caption3.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/caption/caption3.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/caption/caption3.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/caption/caption3.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/caption/caption3.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/caption/caption3.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/caption/caption3.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/caption/caption3.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/caption/caption3.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/graphics/keyval.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/l3backend/l3backend-xetex.def
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/l3backend/l3backend-xetex.def
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/l3backend/l3backend-xetex.def
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/l3backend/l3backend-xetex.def
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/l3backend/l3backend-xetex.def
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/l3backend/l3backend-xetex.def
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/l3backend/l3backend-xetex.def
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/l3backend/l3backend-xetex.def
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/l3backend/l3backend-xetex.def
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/l3backend/l3backend-xetex.def
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/l3backend/l3backend-xetex.def
+INPUT extractbb --version
+INPUT /Users/tongyuan/Documents/Study/S6_Spring_2021/CMOS Design/Project/ee306-digital-cmos-design-project/standard/Report/IEEE_report/4x4_multiplier_design.aux
+INPUT /Users/tongyuan/Documents/Study/S6_Spring_2021/CMOS Design/Project/ee306-digital-cmos-design-project/standard/Report/IEEE_report/4x4_multiplier_design.aux
+INPUT /Users/tongyuan/Documents/Study/S6_Spring_2021/CMOS Design/Project/ee306-digital-cmos-design-project/standard/Report/IEEE_report/4x4_multiplier_design.aux
+OUTPUT /Users/tongyuan/Documents/Study/S6_Spring_2021/CMOS Design/Project/ee306-digital-cmos-design-project/standard/Report/IEEE_report/4x4_multiplier_design.aux
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/base/ts1cmr.fd
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/base/ts1cmr.fd
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/base/ts1cmr.fd
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/base/ts1cmr.fd
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/map/fontname/texfonts.map
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmr17.tfm
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmr17.tfm
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmr12.tfm
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmmi12.tfm
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmmi12.tfm
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmmi12.tfm
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmex10.tfm
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmex10.tfm
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmex10.tfm
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsfonts/umsa.fd
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsfonts/umsa.fd
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsfonts/umsa.fd
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsfonts/umsa.fd
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsfonts/umsb.fd
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsfonts/umsb.fd
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsfonts/umsb.fd
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsfonts/umsb.fd
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmr10.tfm
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmr8.tfm
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmmi10.tfm
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmmi8.tfm
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmsy8.tfm
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmex10.tfm
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam7.tfm
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam5.tfm
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm5.tfm
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam7.tfm
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam5.tfm
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm5.tfm
+INPUT /Users/tongyuan/Documents/Study/S6_Spring_2021/CMOS Design/Project/ee306-digital-cmos-design-project/standard/Report/IEEE_report/../figures/4x4_multiplier.png
+INPUT /Users/tongyuan/Documents/Study/S6_Spring_2021/CMOS Design/Project/ee306-digital-cmos-design-project/standard/Report/IEEE_report/../figures/4x4_multiplier.png
+INPUT /Users/tongyuan/Documents/Study/S6_Spring_2021/CMOS Design/Project/ee306-digital-cmos-design-project/standard/Report/IEEE_report/../figures/4x4_multiplier.png
+INPUT /Users/tongyuan/Documents/Study/S6_Spring_2021/CMOS Design/Project/ee306-digital-cmos-design-project/standard/Report/IEEE_report/../figures/half_adder.png
+INPUT /Users/tongyuan/Documents/Study/S6_Spring_2021/CMOS Design/Project/ee306-digital-cmos-design-project/standard/Report/IEEE_report/../figures/half_adder.png
+INPUT /Users/tongyuan/Documents/Study/S6_Spring_2021/CMOS Design/Project/ee306-digital-cmos-design-project/standard/Report/IEEE_report/../figures/half_adder.png
+INPUT /Users/tongyuan/Documents/Study/S6_Spring_2021/CMOS Design/Project/ee306-digital-cmos-design-project/standard/Report/IEEE_report/../figures/full_adder.jpeg
+INPUT /Users/tongyuan/Documents/Study/S6_Spring_2021/CMOS Design/Project/ee306-digital-cmos-design-project/standard/Report/IEEE_report/../figures/full_adder.jpeg
+INPUT /Users/tongyuan/Documents/Study/S6_Spring_2021/CMOS Design/Project/ee306-digital-cmos-design-project/standard/Report/IEEE_report/../figures/full_adder.jpeg
+OUTPUT /Users/tongyuan/Documents/Study/S6_Spring_2021/CMOS Design/Project/ee306-digital-cmos-design-project/standard/Report/IEEE_report/4x4_multiplier_design.xdv
+INPUT /Users/tongyuan/Documents/Study/S6_Spring_2021/CMOS Design/Project/ee306-digital-cmos-design-project/standard/Report/IEEE_report/../../Design/Design_figures/inv_schematic.png
+INPUT /Users/tongyuan/Documents/Study/S6_Spring_2021/CMOS Design/Project/ee306-digital-cmos-design-project/standard/Report/IEEE_report/../../Design/Design_figures/inv_schematic.png
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmr6.tfm
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmmi6.tfm
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmsy6.tfm
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam7.tfm
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
+INPUT /Users/tongyuan/Documents/Study/S6_Spring_2021/CMOS Design/Project/ee306-digital-cmos-design-project/standard/Report/IEEE_report/../../Design/Design_figures/nand2_schematic.png
+INPUT /Users/tongyuan/Documents/Study/S6_Spring_2021/CMOS Design/Project/ee306-digital-cmos-design-project/standard/Report/IEEE_report/../../Design/Design_figures/nand2_schematic.png
+INPUT /Users/tongyuan/Documents/Study/S6_Spring_2021/CMOS Design/Project/ee306-digital-cmos-design-project/standard/Report/IEEE_report/../../Design/Design_figures/nand2_schematic.png
+INPUT /Users/tongyuan/Documents/Study/S6_Spring_2021/CMOS Design/Project/ee306-digital-cmos-design-project/standard/Report/IEEE_report/../../Design/Design_figures/and2_schematic.png
+INPUT /Users/tongyuan/Documents/Study/S6_Spring_2021/CMOS Design/Project/ee306-digital-cmos-design-project/standard/Report/IEEE_report/../../Design/Design_figures/and2_schematic.png
+INPUT /Users/tongyuan/Documents/Study/S6_Spring_2021/CMOS Design/Project/ee306-digital-cmos-design-project/standard/Report/IEEE_report/../../Design/Design_figures/and2_schematic.png
+INPUT /Users/tongyuan/Documents/Study/S6_Spring_2021/CMOS Design/Project/ee306-digital-cmos-design-project/standard/Report/IEEE_report/../../Design/Design_figures/xor2_schematic.png
+INPUT /Users/tongyuan/Documents/Study/S6_Spring_2021/CMOS Design/Project/ee306-digital-cmos-design-project/standard/Report/IEEE_report/../../Design/Design_figures/xor2_schematic.png
+INPUT /Users/tongyuan/Documents/Study/S6_Spring_2021/CMOS Design/Project/ee306-digital-cmos-design-project/standard/Report/IEEE_report/../../Design/Design_figures/xor2_schematic.png
+INPUT /Users/tongyuan/Documents/Study/S6_Spring_2021/CMOS Design/Project/ee306-digital-cmos-design-project/standard/Report/IEEE_report/../../Design/Design_figures/xor2_layout.png
+INPUT /Users/tongyuan/Documents/Study/S6_Spring_2021/CMOS Design/Project/ee306-digital-cmos-design-project/standard/Report/IEEE_report/../../Design/Design_figures/xor2_layout.png
+INPUT /Users/tongyuan/Documents/Study/S6_Spring_2021/CMOS Design/Project/ee306-digital-cmos-design-project/standard/Report/IEEE_report/../../Design/Design_figures/xor2_layout.png
+INPUT /Users/tongyuan/Documents/Study/S6_Spring_2021/CMOS Design/Project/ee306-digital-cmos-design-project/standard/Report/IEEE_report/../../Design/Design_figures/half_adder_schematic.png
+INPUT /Users/tongyuan/Documents/Study/S6_Spring_2021/CMOS Design/Project/ee306-digital-cmos-design-project/standard/Report/IEEE_report/../../Design/Design_figures/half_adder_schematic.png
+INPUT /Users/tongyuan/Documents/Study/S6_Spring_2021/CMOS Design/Project/ee306-digital-cmos-design-project/standard/Report/IEEE_report/../../Design/Design_figures/half_adder_schematic.png
+INPUT /Users/tongyuan/Documents/Study/S6_Spring_2021/CMOS Design/Project/ee306-digital-cmos-design-project/standard/Report/IEEE_report/../../Design/Design_figures/half_adder_layout.png
+INPUT /Users/tongyuan/Documents/Study/S6_Spring_2021/CMOS Design/Project/ee306-digital-cmos-design-project/standard/Report/IEEE_report/../../Design/Design_figures/half_adder_layout.png
+INPUT /Users/tongyuan/Documents/Study/S6_Spring_2021/CMOS Design/Project/ee306-digital-cmos-design-project/standard/Report/IEEE_report/../../Design/Design_figures/half_adder_layout.png
+INPUT /Users/tongyuan/Documents/Study/S6_Spring_2021/CMOS Design/Project/ee306-digital-cmos-design-project/standard/Report/IEEE_report/../../Design/Design_figures/full_adder_schematic.png
+INPUT /Users/tongyuan/Documents/Study/S6_Spring_2021/CMOS Design/Project/ee306-digital-cmos-design-project/standard/Report/IEEE_report/../../Design/Design_figures/full_adder_schematic.png
+INPUT /Users/tongyuan/Documents/Study/S6_Spring_2021/CMOS Design/Project/ee306-digital-cmos-design-project/standard/Report/IEEE_report/../../Design/Design_figures/full_adder_schematic.png
+INPUT /Users/tongyuan/Documents/Study/S6_Spring_2021/CMOS Design/Project/ee306-digital-cmos-design-project/standard/Report/IEEE_report/../../Design/Design_figures/full_adder_layout.png
+INPUT /Users/tongyuan/Documents/Study/S6_Spring_2021/CMOS Design/Project/ee306-digital-cmos-design-project/standard/Report/IEEE_report/../../Design/Design_figures/full_adder_layout.png
+INPUT /Users/tongyuan/Documents/Study/S6_Spring_2021/CMOS Design/Project/ee306-digital-cmos-design-project/standard/Report/IEEE_report/../../Design/Design_figures/full_adder_layout.png
+INPUT /Users/tongyuan/Documents/Study/S6_Spring_2021/CMOS Design/Project/ee306-digital-cmos-design-project/standard/Report/IEEE_report/../../Design/Design_figures/4X4_Multiplier_schematic.png
+INPUT /Users/tongyuan/Documents/Study/S6_Spring_2021/CMOS Design/Project/ee306-digital-cmos-design-project/standard/Report/IEEE_report/../../Design/Design_figures/4X4_Multiplier_schematic.png
+INPUT /Users/tongyuan/Documents/Study/S6_Spring_2021/CMOS Design/Project/ee306-digital-cmos-design-project/standard/Report/IEEE_report/../../Design/Design_figures/4X4_Multiplier_schematic.png
+INPUT /Users/tongyuan/Documents/Study/S6_Spring_2021/CMOS Design/Project/ee306-digital-cmos-design-project/standard/Report/IEEE_report/../../Design/Design_figures/4X4_Multiplier_layout.png
+INPUT /Users/tongyuan/Documents/Study/S6_Spring_2021/CMOS Design/Project/ee306-digital-cmos-design-project/standard/Report/IEEE_report/../../Design/Design_figures/4X4_Multiplier_layout.png
+INPUT /Users/tongyuan/Documents/Study/S6_Spring_2021/CMOS Design/Project/ee306-digital-cmos-design-project/standard/Report/IEEE_report/../../Design/Design_figures/4X4_Multiplier_layout.png
+INPUT /Users/tongyuan/Documents/Study/S6_Spring_2021/CMOS Design/Project/ee306-digital-cmos-design-project/standard/Report/IEEE_report/reference.tex
+INPUT /Users/tongyuan/Documents/Study/S6_Spring_2021/CMOS Design/Project/ee306-digital-cmos-design-project/standard/Report/IEEE_report/reference.tex
+INPUT /Users/tongyuan/Documents/Study/S6_Spring_2021/CMOS Design/Project/ee306-digital-cmos-design-project/standard/Report/IEEE_report/reference.tex
+INPUT /Users/tongyuan/Documents/Study/S6_Spring_2021/CMOS Design/Project/ee306-digital-cmos-design-project/standard/Report/IEEE_report/reference.tex
+INPUT /Users/tongyuan/Documents/Study/S6_Spring_2021/CMOS Design/Project/ee306-digital-cmos-design-project/standard/Report/IEEE_report/../../Design/simulation/trans_result/inv_C1.png
+INPUT /Users/tongyuan/Documents/Study/S6_Spring_2021/CMOS Design/Project/ee306-digital-cmos-design-project/standard/Report/IEEE_report/../../Design/simulation/trans_result/inv_C1.png
+INPUT /Users/tongyuan/Documents/Study/S6_Spring_2021/CMOS Design/Project/ee306-digital-cmos-design-project/standard/Report/IEEE_report/../../Design/simulation/trans_result/inv_C1.png
+INPUT /Users/tongyuan/Documents/Study/S6_Spring_2021/CMOS Design/Project/ee306-digital-cmos-design-project/standard/Report/IEEE_report/../../Design/simulation/trans_result/inv_C2.png
+INPUT /Users/tongyuan/Documents/Study/S6_Spring_2021/CMOS Design/Project/ee306-digital-cmos-design-project/standard/Report/IEEE_report/../../Design/simulation/trans_result/inv_C2.png
+INPUT /Users/tongyuan/Documents/Study/S6_Spring_2021/CMOS Design/Project/ee306-digital-cmos-design-project/standard/Report/IEEE_report/../../Design/simulation/trans_result/inv_C2.png
+INPUT /Users/tongyuan/Documents/Study/S6_Spring_2021/CMOS Design/Project/ee306-digital-cmos-design-project/standard/Report/IEEE_report/../../Design/simulation/trans_result/inv_C3.png
+INPUT /Users/tongyuan/Documents/Study/S6_Spring_2021/CMOS Design/Project/ee306-digital-cmos-design-project/standard/Report/IEEE_report/../../Design/simulation/trans_result/inv_C3.png
+INPUT /Users/tongyuan/Documents/Study/S6_Spring_2021/CMOS Design/Project/ee306-digital-cmos-design-project/standard/Report/IEEE_report/../../Design/simulation/trans_result/inv_C3.png
+INPUT /Users/tongyuan/Documents/Study/S6_Spring_2021/CMOS Design/Project/ee306-digital-cmos-design-project/standard/Report/IEEE_report/../../Design/simulation/trans_result/nand2_C1.png
+INPUT /Users/tongyuan/Documents/Study/S6_Spring_2021/CMOS Design/Project/ee306-digital-cmos-design-project/standard/Report/IEEE_report/../../Design/simulation/trans_result/nand2_C1.png
+INPUT /Users/tongyuan/Documents/Study/S6_Spring_2021/CMOS Design/Project/ee306-digital-cmos-design-project/standard/Report/IEEE_report/../../Design/simulation/trans_result/nand2_C1.png
+INPUT /Users/tongyuan/Documents/Study/S6_Spring_2021/CMOS Design/Project/ee306-digital-cmos-design-project/standard/Report/IEEE_report/../../Design/simulation/trans_result/nand2_C2.png
+INPUT /Users/tongyuan/Documents/Study/S6_Spring_2021/CMOS Design/Project/ee306-digital-cmos-design-project/standard/Report/IEEE_report/../../Design/simulation/trans_result/nand2_C2.png
+INPUT /Users/tongyuan/Documents/Study/S6_Spring_2021/CMOS Design/Project/ee306-digital-cmos-design-project/standard/Report/IEEE_report/../../Design/simulation/trans_result/nand2_C2.png
+INPUT /Users/tongyuan/Documents/Study/S6_Spring_2021/CMOS Design/Project/ee306-digital-cmos-design-project/standard/Report/IEEE_report/../../Design/simulation/trans_result/nand2_C3.png
+INPUT /Users/tongyuan/Documents/Study/S6_Spring_2021/CMOS Design/Project/ee306-digital-cmos-design-project/standard/Report/IEEE_report/../../Design/simulation/trans_result/nand2_C3.png
+INPUT /Users/tongyuan/Documents/Study/S6_Spring_2021/CMOS Design/Project/ee306-digital-cmos-design-project/standard/Report/IEEE_report/../../Design/simulation/trans_result/nand2_C3.png
+INPUT /Users/tongyuan/Documents/Study/S6_Spring_2021/CMOS Design/Project/ee306-digital-cmos-design-project/standard/Report/IEEE_report/../../Design/simulation/trans_result/and2_C1.png
+INPUT /Users/tongyuan/Documents/Study/S6_Spring_2021/CMOS Design/Project/ee306-digital-cmos-design-project/standard/Report/IEEE_report/../../Design/simulation/trans_result/and2_C1.png
+INPUT /Users/tongyuan/Documents/Study/S6_Spring_2021/CMOS Design/Project/ee306-digital-cmos-design-project/standard/Report/IEEE_report/../../Design/simulation/trans_result/and2_C1.png
+INPUT /Users/tongyuan/Documents/Study/S6_Spring_2021/CMOS Design/Project/ee306-digital-cmos-design-project/standard/Report/IEEE_report/../../Design/simulation/trans_result/and2_C2.png
+INPUT /Users/tongyuan/Documents/Study/S6_Spring_2021/CMOS Design/Project/ee306-digital-cmos-design-project/standard/Report/IEEE_report/../../Design/simulation/trans_result/and2_C2.png
+INPUT /Users/tongyuan/Documents/Study/S6_Spring_2021/CMOS Design/Project/ee306-digital-cmos-design-project/standard/Report/IEEE_report/../../Design/simulation/trans_result/and2_C2.png
+INPUT /Users/tongyuan/Documents/Study/S6_Spring_2021/CMOS Design/Project/ee306-digital-cmos-design-project/standard/Report/IEEE_report/../../Design/simulation/trans_result/and2_C3.png
+INPUT /Users/tongyuan/Documents/Study/S6_Spring_2021/CMOS Design/Project/ee306-digital-cmos-design-project/standard/Report/IEEE_report/../../Design/simulation/trans_result/and2_C3.png
+INPUT /Users/tongyuan/Documents/Study/S6_Spring_2021/CMOS Design/Project/ee306-digital-cmos-design-project/standard/Report/IEEE_report/../../Design/simulation/trans_result/and2_C3.png
+INPUT /Users/tongyuan/Documents/Study/S6_Spring_2021/CMOS Design/Project/ee306-digital-cmos-design-project/standard/Report/IEEE_report/../../Design/simulation/trans_result/xor2_C1.png
+INPUT /Users/tongyuan/Documents/Study/S6_Spring_2021/CMOS Design/Project/ee306-digital-cmos-design-project/standard/Report/IEEE_report/../../Design/simulation/trans_result/xor2_C1.png
+INPUT /Users/tongyuan/Documents/Study/S6_Spring_2021/CMOS Design/Project/ee306-digital-cmos-design-project/standard/Report/IEEE_report/../../Design/simulation/trans_result/xor2_C1.png
+INPUT /Users/tongyuan/Documents/Study/S6_Spring_2021/CMOS Design/Project/ee306-digital-cmos-design-project/standard/Report/IEEE_report/../../Design/simulation/trans_result/xor2_C2.png
+INPUT /Users/tongyuan/Documents/Study/S6_Spring_2021/CMOS Design/Project/ee306-digital-cmos-design-project/standard/Report/IEEE_report/../../Design/simulation/trans_result/xor2_C2.png
+INPUT /Users/tongyuan/Documents/Study/S6_Spring_2021/CMOS Design/Project/ee306-digital-cmos-design-project/standard/Report/IEEE_report/../../Design/simulation/trans_result/xor2_C2.png
+INPUT /Users/tongyuan/Documents/Study/S6_Spring_2021/CMOS Design/Project/ee306-digital-cmos-design-project/standard/Report/IEEE_report/../../Design/simulation/trans_result/xor2_C3.png
+INPUT /Users/tongyuan/Documents/Study/S6_Spring_2021/CMOS Design/Project/ee306-digital-cmos-design-project/standard/Report/IEEE_report/../../Design/simulation/trans_result/xor2_C3.png
+INPUT /Users/tongyuan/Documents/Study/S6_Spring_2021/CMOS Design/Project/ee306-digital-cmos-design-project/standard/Report/IEEE_report/../../Design/simulation/trans_result/xor2_C3.png
+INPUT /Users/tongyuan/Documents/Study/S6_Spring_2021/CMOS Design/Project/ee306-digital-cmos-design-project/standard/Report/IEEE_report/../../Design/simulation/trans_result/mul_11100001_up_all.png
+INPUT /Users/tongyuan/Documents/Study/S6_Spring_2021/CMOS Design/Project/ee306-digital-cmos-design-project/standard/Report/IEEE_report/../../Design/simulation/trans_result/mul_11100001_up_all.png
+INPUT /Users/tongyuan/Documents/Study/S6_Spring_2021/CMOS Design/Project/ee306-digital-cmos-design-project/standard/Report/IEEE_report/../../Design/simulation/trans_result/mul_11100001_up_all.png
+INPUT /Users/tongyuan/Documents/Study/S6_Spring_2021/CMOS Design/Project/ee306-digital-cmos-design-project/standard/Report/IEEE_report/../../Design/simulation/trans_result/mul_11100001_down_all.png
+INPUT /Users/tongyuan/Documents/Study/S6_Spring_2021/CMOS Design/Project/ee306-digital-cmos-design-project/standard/Report/IEEE_report/../../Design/simulation/trans_result/mul_11100001_down_all.png
+INPUT /Users/tongyuan/Documents/Study/S6_Spring_2021/CMOS Design/Project/ee306-digital-cmos-design-project/standard/Report/IEEE_report/../../Design/simulation/trans_result/mul_11100001_down_all.png
+INPUT /Users/tongyuan/Documents/Study/S6_Spring_2021/CMOS Design/Project/ee306-digital-cmos-design-project/standard/Report/IEEE_report/../../Design/simulation/trans_result/mul_00011110_up_all.png
+INPUT /Users/tongyuan/Documents/Study/S6_Spring_2021/CMOS Design/Project/ee306-digital-cmos-design-project/standard/Report/IEEE_report/../../Design/simulation/trans_result/mul_00011110_up_all.png
+INPUT /Users/tongyuan/Documents/Study/S6_Spring_2021/CMOS Design/Project/ee306-digital-cmos-design-project/standard/Report/IEEE_report/../../Design/simulation/trans_result/mul_00011110_up_all.png
+INPUT /Users/tongyuan/Documents/Study/S6_Spring_2021/CMOS Design/Project/ee306-digital-cmos-design-project/standard/Report/IEEE_report/../../Design/simulation/trans_result/mul_00011110_down_all.png
+INPUT /Users/tongyuan/Documents/Study/S6_Spring_2021/CMOS Design/Project/ee306-digital-cmos-design-project/standard/Report/IEEE_report/../../Design/simulation/trans_result/mul_00011110_down_all.png
+INPUT /Users/tongyuan/Documents/Study/S6_Spring_2021/CMOS Design/Project/ee306-digital-cmos-design-project/standard/Report/IEEE_report/../../Design/simulation/trans_result/mul_00011110_down_all.png
+INPUT /Users/tongyuan/Documents/Study/S6_Spring_2021/CMOS Design/Project/ee306-digital-cmos-design-project/standard/Report/IEEE_report/4x4_multiplier_design.aux

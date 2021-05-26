@@ -1,0 +1,26 @@
+( ( nil
+  version "2.1"
+  mapType "incremental"
+  blockName "4X4_multiplier"
+  repList "spectre cmos_sch cmos.sch schematic veriloga"
+  stopList "spectre"
+  globalList "vdd! gnd!"
+  hierDelim "."
+  netlistDir "/home/SME_VLSI/VLSI_57/simulation/delay2/4x4_multiplier_11100001/4X4_multiplier/spectre/av_extracted/netlist"
+ )
+( instViewTable
+ )
+( net
+( "gnd!" "0" )
+ )
+( inst
+ )
+( model
+( "multiplier_low/4X4_multiplier/av_extracted" "multiplier_low_4X4_multiplier_av_extracted" )
+ )
+( term
+ )
+( param
+ )
+( "multiplier_low_4X4_multiplier_av_extracted" "ihnl/cds0/map" )
+ )

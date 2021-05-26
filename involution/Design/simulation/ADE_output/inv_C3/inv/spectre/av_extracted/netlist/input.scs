@@ -1,0 +1,43 @@
+// Generated for: spectre
+// Generated on: May 27 02:42:23 2021
+// Design library name: multiplier_low
+// Design cell name: inv
+// Design view name: av_extracted
+simulator lang=spectre
+global 0 vdd!
+include "/home/SME_VLSI/VLSI_57/306cadence/test_files/1_input_C3.input"
+include "/home/SME_VLSI/306cadence/assuraTech/oa_2014/gpdk/../models/gpdk.scs" section=NN
+
+// Library name: multiplier_low
+// Cell name: inv
+// View name: av_extracted
+re2 (Out \4\:Out) resistor r=0.0012 c=0
+re3 (\2\:Out \4\:Out) resistor r=2 c=0
+rf1 (\1\:A A) resistor r=2.1068 c=0
+rf2 (\1\:Out \2\:Out) resistor r=0.3226 c=0
+rf3 (\2\:Out \3\:Out) resistor r=0.2965 c=0
+rf4 (vdd! \1\:vdd!) resistor r=0.02503 c=0
+rf5 (\1\:vdd! \2\:vdd!) resistor r=0.4451 c=0
+rf6 (0 \1\:gnd!) resistor r=0.02703 c=0
+rf7 (\1\:gnd! \2\:gnd!) resistor r=0.524 c=0
+rg1 (\3\:A \4\:A) resistor r=62.7984 c=0
+rg2 (\4\:A \1\:A) resistor r=3.5583 c=0
+rg3 (\4\:A \5\:A) resistor r=58.4234 c=0
+MP0 (\1\:Out \3\:A \2\:vdd! vdd!) pmos1 w=1e-06 l=1.8e-07 as=1.2e-12 \
+        ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+MN0 (\3\:Out \5\:A \2\:gnd! 0) nmos1 w=8e-07 l=1.8e-07 as=1.2e-12 \
+        ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+simulatorOptions options reltol=1e-3 vabstol=1e-6 iabstol=1e-12 temp=27 \
+    tnom=27 scalem=1.0 scale=1.0 gmin=1e-12 rforce=1 maxnotes=5 maxwarns=5 \
+    digits=5 cols=80 pivrel=1e-3 sensfile="../psf/sens.output" \
+    checklimitdest=psf 
+tran tran stop=30n write="spectre.ic" writefinal="spectre.fc" \
+    annotate=status maxiters=5 
+finalTimeOP info what=oppoint where=rawfile
+modelParameter info what=models where=rawfile
+element info what=inst where=rawfile
+outputParameter info what=output where=rawfile
+designParamVals info what=parameters where=rawfile
+primitives info what=primitives where=rawfile
+subckts info what=subckts  where=rawfile
+saveOptions options save=allpub

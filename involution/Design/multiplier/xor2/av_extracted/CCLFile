@@ -1,0 +1,43 @@
+#
+# OPTION COMMAND FILE created by Cadence Quantus QRC Extraction Version 14.1.5-s182 from CCL
+#
+device_reduction \
+	 -m_factor infinite
+extract \
+	 -selection "all" \
+	 -type "r_only"
+extraction_setup \
+	 -array_vias_spacing auto \
+	 -max_fracture_length infinite \
+	 -max_fracture_length_unit "MICRONS" \
+	 -max_via_array_size \
+		"auto" \
+	 -net_name_space "LAYOUT"
+filter_res \
+	 -min_res 0.001
+input_db -type assura \
+	 -design_cell_name "xor2 layout multiplier_low" \
+	 -directory_name "/home/SME_VLSI/VLSI_57/306cadence/LVS" \
+	 -format "DFII" \
+	 -run_name "xor2"
+log_file \
+	 -file_name "/home/SME_VLSI/VLSI_57/306cadence/LVS/qrc.xor2.log"
+output_db -type extracted_view \
+	 -enable_cellview_check false \
+	 -include_cap_model "false" \
+	 -include_parasitic_cap_model "true" \
+	 -include_parasitic_res_model "comment" \
+	 -include_res_model "false" \
+	 -res_component "presistor" \
+	 -res_property_name "r" \
+	 -view_name "av_extracted"
+output_setup \
+	 -directory_name "/home/SME_VLSI/VLSI_57/306cadence/LVS" \
+	 -temporary_directory_name "xor2"
+process_technology \
+	 -technology_library_file "/home/SME_VLSI/306cadence/assuraTech/oa_2014/assura_tech.lib" \
+	 -technology_name "assura_gpdk_tech" \
+	 -temperature \
+		25.0
+
+

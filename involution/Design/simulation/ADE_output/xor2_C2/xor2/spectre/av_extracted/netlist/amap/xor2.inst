@@ -1,0 +1,5 @@
+HEADER
+"PSFversion" "1.00"
+"re1n re2n re3n rf1n rf2n rf3n rf4n rf5n rf6n rf7n rf8n rf9n rf10n rf11n rf12n rf13n rf14n rf15n rf16n rf17n rf18n rf19n rf20n rf21n rf22n rf23n rf24n rf25n rf27n rf29n rf30n rf31n rf32n rf33n rf34n rf35n rf36n rf37n rg1n rg2n rg3n rg4n rg5n rg6n rg7n rg8n rg9n rg10n rg11n rg12n rg13n rg14n rg15n rg16n" "analogLib_presistor_spectre"
+"MP5n MP4n MP0n MP1n MP3n MP2n" "gpdk_pmos_spectre"
+"MN5n MN4n MN3n MN2n MN0n MN1n" "gpdk_nmos_spectre"

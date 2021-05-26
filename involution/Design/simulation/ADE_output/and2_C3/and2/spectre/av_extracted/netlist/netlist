@@ -1,0 +1,43 @@
+
+// Library name: multiplier_low
+// Cell name: and2
+// View name: av_extracted
+re3 (\1\:Out Out) resistor r=0.001222 c=0
+rf1 (\1\:A A) resistor r=2.1 c=0
+rf2 (net013 \2\:net013) resistor r=0.2434 c=0
+rf3 (\2\:net013 \3\:net013) resistor r=0.3205 c=0
+rf4 (\2\:net013 \4\:net013) resistor r=0.5422 c=0
+rf5 (\1\:B B) resistor r=2.1 c=0
+rf6 (\1\:Out \2\:Out) resistor r=2.0484 c=0
+rf7 (\2\:Out \3\:Out) resistor r=0.6094 c=0
+rf8 (\2\:Out \4\:Out) resistor r=0.2028 c=0
+rf9 (\1\:gnd! \2\:gnd!) resistor r=0.3584 c=0
+rf10 (\2\:gnd! \3\:gnd!) resistor r=0.07396 c=0
+rf11 (\3\:gnd! 0) resistor r=0.05022 c=0
+rf13 (\3\:gnd! \5\:gnd!) resistor r=0.3017 c=0
+rf14 (\1\:vdd! \2\:vdd!) resistor r=0.4519 c=0
+rf15 (\2\:vdd! vdd!) resistor r=0.07163 c=0
+rf16 (vdd! \3\:vdd!) resistor r=0.1107 c=0
+rf17 (\3\:vdd! \4\:vdd!) resistor r=0.4419 c=0
+rf18 (vdd! \5\:vdd!) resistor r=0.5193 c=0
+rg1 (\3\:A \4\:A) resistor r=91.5933 c=0
+rg2 (\4\:A \1\:A) resistor r=3.7604 c=0
+rg3 (\4\:A \5\:A) resistor r=62.0099 c=0
+rg4 (\1\:B \2\:B) resistor r=3.7604 c=0
+rg5 (\2\:B \3\:B) resistor r=62.0099 c=0
+rg6 (\2\:B \4\:B) resistor r=91.5933 c=0
+rg7 (\5\:net013 \6\:net013) resistor r=37.6755 c=0
+rg8 (\6\:net013 net013) resistor r=19.7812 c=0
+rg9 (\6\:net013 \7\:net013) resistor r=115.592 c=0
+MP2 (\3\:Out \7\:net013 \1\:vdd! vdd!) pmos1 w=1e-06 l=1.8e-07 as=1.2e-12 \
+        ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+MP1 (\5\:vdd! \3\:B \4\:net013 vdd!) pmos1 w=1e-06 l=1.8e-07 as=1.2e-12 \
+        ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+MP0 (\4\:net013 \5\:A \4\:vdd! vdd!) pmos1 w=1e-06 l=1.8e-07 as=1.2e-12 \
+        ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+MN2 (\4\:Out \5\:net013 \1\:gnd! 0) nmos1 w=8e-07 l=1.8e-07 as=1.2e-12 \
+        ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)
+MN1 (\5\:gnd! \4\:B net9 0) nmos1 w=8e-07 l=1.8e-07 as=1.2e-12 ad=1.2e-12 \
+        ps=5.2u pd=5.2u m=(1)*(1)
+MN0 (net9 \3\:A \3\:net013 0) nmos1 w=8e-07 l=1.8e-07 as=1.2e-12 \
+        ad=1.2e-12 ps=5.2u pd=5.2u m=(1)*(1)

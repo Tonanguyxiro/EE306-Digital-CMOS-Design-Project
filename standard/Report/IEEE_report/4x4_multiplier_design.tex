@@ -1,0 +1,425 @@
+\documentclass[conference]{IEEEtran}
+\IEEEoverridecommandlockouts
+% The preceding line is only needed to identify funding in the first footnote. If that is unneeded, please comment it out.
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{float}
+\usepackage{subfigure}
+\usepackage{subfig}
+% \graphicspath{{../figures/}{../../Design/Design_figures}}
+\graphicspath{{../figures}{../../Design/Design_figures}{../../Design/simulation/trans_result}}
+ 
+ 
+\def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
+    T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
+\begin{document}
+
+
+\title{Design of $4\times 4$ multiplier from schematic to layout
+\thanks{Identify applicable funding agency here. If none, delete this.}
+}
+
+\author{\IEEEauthorblockN{1\textsuperscript{st} YUAN Tong}
+\IEEEauthorblockA{\textit{School of Microelectronic} \\
+\textit{Southern University of Science and Technology}\\
+Shenzhen, China \\
+yuant2018@mail.sustech.edu.cn}
+\and
+\IEEEauthorblockN{2\textsuperscript{nd} FAN Qinyuan}
+\IEEEauthorblockA{\textit{School of Microelectronic} \\
+\textit{Southern University of Science and Technology}\\
+Shenzhen, China \\
+fanqy2018@mail.sustech.edu.cn}
+}
+
+\maketitle
+
+\begin{abstract}
+    In this paper a low power and high speed 4X4 multiplier is designed using TSMC 0.18nm CMOS Technology. The important factors in VLSI Design are power, area, speed and design time. Now-a-days, power and speed has become a crucial factor in Digital Signal Processor (DSP) Applications. However, different optimization techniques are available in the digital electronic world. The proposed approach a Low power and high speed Multiplier Design based on Modified Column bypassing technique mainly used to reduce the switching power activity. While this technique offers great dynamic power savings, due to their interconnection. In this work, a low power and high speed multiplier with Hybridization scheme is presented. This scheme is combination of booth encoder algorithm and column bypass technique is called modified column bypassing scheme. The simulations are performed in 0.18µm CMOS Technology in Cadence Virtuoso tools with operating voltage ±1.8v.
+\end{abstract}
+
+\begin{IEEEkeywords}
+    Multiplier, CMOS, Column Bypassing, Digital Signal Applications (DSP), Row Bypassing, Booth encoder
+\end{IEEEkeywords}
+
+\section{Introduction}
+
+% In the introduction, students are asked to give a short introduction on the subject. This would include: A brief background study related to the topic; Motivation of the project; Possible application of the design.
+
+As one of the key components of modern CPU, multiplier is a widely studied computer architecture which take the responsbility of most of the calculation operation in computer. Currently widely used multiplier inculding Booth multiplier, Sequential multiplier, combinational multiplier, Wallace tree multiplier \cite{a1}. The performance of the multiplier is a key fact that will greatly affect the performance of processors, so the design of a small, fast and energy efficiency multiplier is a prior problem we need to pay attention to today.
+
+In this report, we will demostrate the design procedure of the $4 \times 4$ multiplier. In secition \ref{basic}, we will introduce the design of basic components including NAND gate, AND gate, XOR gate and invertor then we assemble them into main componet of a multiplier, half adder and full adder. In section \ref{Assemble} we will build the multiplier and the performance of the multiplier will be tested in section \ref{test}.
+
+\section{Our Problem and design idea}
+
+% Explain briefly the objectives of the project. For example the design of low power array multiplier, with minimum delay and minimum silicon area. Explain how you achieve these objectives.
+
+In this project we are assigned to design a classcial $ 4 \times 4 $ bit multiplier as small and fast as possible, and we also wish we could use high level design to increase the design speed. To achieve our goal, we will focus on the following design principles. Firstly, we will minimize the width of each components and the space between them under the constrain of design rule, that will help us achiveve the minimum space. Secondly, we need to aviod using high layer of metal which is the main cause of delay. Finally we can find the minimun kinds of components we need by apply top-to-down design. 
+
+To design the multiplier start from the high level structure of the multiplier, as shown in Figure \ref{High level structure of 4x4 multiplier}, a multiplier consists of half adder, full adder, and AND Gate, and a step futher, we can move our attention to the structure of full adder and half adder. In Fig \ref{Half adder} and \ref{Full adder}, we can see the two differnt kinds of adders are consist of NAND Gate, XOR Gete, and AND Gate, while and gate can be divided into NAND Gate and invertor, so what we need is NAND Gate, Inverter and XOR Gate, though XOR Gate can be divided into more simple gates, but to reduce the space, we will design the XOR Gate as a single component.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.9\linewidth]{4x4_multiplier.png}
+    \caption{High level structure of 4x4 multiplier}
+    \label{High level structure of 4x4 multiplier}
+\end{figure} 
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.45\linewidth]{half_adder.png}
+    \caption{Half adder}
+    \label{Half adder}
+\end{figure}
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.6\linewidth]{full_adder.jpeg}
+    \caption{Full adder}
+    \label{Full adder}
+\end{figure}
+
+% In this section students should first start by describing the global architecture with clear drawing(s). A top - down description is encouraged. In this section students are encouraged to go through the different circuit diagrams as well as the sizing of the transistors, simulation layout and post-layout simulation. Students are encouraged to put more emphasis on how they are taking care of the objectives set. This section should also include the analysis of the critical delay, study of the floor-planning for the different blocks, and the final circuit together with the physical layout and its verification. The details that should be covered in this section include the following parts with tables and descriptions.
+
+\section{Design and verication of basic components}
+
+% You need to develop a library of basic (standard) cells that are used for the multiplier design. All the components in the library (inverters and more complex gates that are needed for the final multiplier design) must be briefly introduced. Prepare a Table with the transistors sizes (both width and length in micrometers), output low-to-high propagation delay, and output high-to-low propagation delay of each basic cell that is used in the multiplier design. If you have different sizes of the same type of logic gate, you need to report the size and delay of each different sized gate in your library. Produce the delay data using post-layout simulation for each type of gate. Add the Table in your report. Apply an input signal with rise and fall times of 0.2 ns (10% to 90% signal transition time) for measuring the delays. For each basic gate, report three different delays with three different extrinsic load capacitors: C1 = 15 fF, C2 = 8*C1, and C3 = 64*C1. Discuss the relationship between delay and extrinsic load capacitance in the report. How does this relationship change as you go from a CMOS inverter to more complex gates with more than one input? Provide your answers in the report.
+
+\label{basic}
+
+\subsection{Inverter}
+
+The simpliest structure is Inverter consists of a pmos and a nmos as shown in Fig \ref{Schematic of Inverter}, they all have 0.18um in length, which is the minimun length of gate under 0.18 um TSMC technology, and after a balence between space and speed, we choose 4um as the width of pmos and 1.6um as the width of the nmos, to make sure all the gates perform well, the size of other gates will equivlent the inverter.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width = 0.6\linewidth]{inv_schematic}
+    \caption{Schematic of Inverter}
+    \label{Schematic of Inverter}
+\end{figure}
+
+Then we will test the performance of the inverter, we add three different extrinsic load capacitors: C1 = 15 fF, C2 = 8*C1, and C3 = 64*C1 to the output of the inverter and test its delay, the result is listed in Table \ref{The delay of inverter}. To measure the propagation delay, we will 
+
+\begin{table}[h]
+    \caption{The delay of inverter}
+    \begin{center}
+        \begin{tabular}{|c|c|c|c|c|c|c|}
+            \hline
+            \textbf{Cap} & \multicolumn{2}{|c|}{15f F} & \multicolumn{2}{|c|}{120f F} & \multicolumn{2}{|c|}{960f F} \\
+            \hline
+            \textbf{State} & Up & Down & Up & Down & Up & Down \\
+            \hline
+            \textbf{Delay(ns)} & 0.080 & 0.071 & 0.194 & 0.179 & 1.080 & 0.988 \\
+            \hline
+        \end{tabular}
+    \end{center}
+    \label{The delay of inverter}
+\end{table}
+
+\subsection{NAND Gate}
+
+NAND Gate is one of the most important basic gates, to make the gate equivlent to inverter we choose 4um as the width of the PMOS, and 3.2um as the width of NMOS.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width = 0.7\linewidth]{nand2_schematic.png}
+    \caption{Schematic of NAND Gate}
+    \label{Schematic of NAND Gate}
+\end{figure}
+
+The performance of NAND Gate will be tested under the same method as Inverter.
+
+\begin{table}[h]
+    \caption{The delay of NAND Gate}
+    \begin{center}
+        \begin{tabular}{|c|c|c|c|c|c|c|}
+            \hline
+            \textbf{Cap} & \multicolumn{2}{|c|}{15f F} & \multicolumn{2}{|c|}{120f F} & \multicolumn{2}{|c|}{960f F} \\
+            \hline
+            \textbf{State} & Up & Down & Up & Down & Up & Down \\
+            \hline
+            \textbf{Delay(ns)} & 0.086 & 0.059 & 0.197 & 0.147 & 1.076 & 0.785 \\
+            \hline
+        \end{tabular}
+    \end{center}
+    \label{The delay of NAND}
+\end{table}
+
+\subsection{AND Gate}
+
+To make things more simplfied, we use a inverter and a NAND Gate to assemble an AND Gate, so the size of MOS transistors in AND Gate can be refered from the size of NAND Gate and Inverter.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width = 0.9\linewidth]{and2_schematic.png}
+    \caption{Schematic of AND Gate}
+    \label{Schematic of AND Gate}
+\end{figure}
+
+The performance of AND Gate will be tested under the same method as Inverter.
+
+\begin{table}[h]
+    \caption{The delay of AND Gate}
+    \begin{center}
+        \begin{tabular}{|c|c|c|c|c|c|c|}
+            \hline
+            \textbf{Cap} & \multicolumn{2}{|c|}{15f F} & \multicolumn{2}{|c|}{120f F} & \multicolumn{2}{|c|}{960f F} \\
+            \hline
+            \textbf{State} & Up & Down & Up & Down & Up & Down \\
+            \hline
+            \textbf{Delay(ns)} & 0.124  & 0.152 & 0.238 & 0.261 & 1.003 & 1.068 \\
+            \hline
+        \end{tabular}
+    \end{center}
+    \label{The delay of AND}
+\end{table}
+
+\subsection{XOR Gate}
+
+For XOR Gate, we have same MOS size as Inverter, as all the PMOSs have width 4um and NMOSs have width 1.6nm.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width = 0.9\linewidth]{xor2_schematic.png}
+    \caption{Schematic of XOR Gate}
+    \label{Schematic of XOR Gate}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width = 0.6\linewidth]{xor2_layout.png}
+    \caption{Layout of XOR Gate}
+    \label{Layout of XOR Gate}
+\end{figure}
+
+The performance of XOR Gate is shown in Table \ref{The delay of XOR}.
+
+\begin{table}[h]
+    \caption{The delay of XOR Gate}
+    \begin{center}
+        \begin{tabular}{|c|c|c|c|c|c|c|}
+            \hline
+            \textbf{Cap} & \multicolumn{2}{|c|}{15f F} & \multicolumn{2}{|c|}{120f F} & \multicolumn{2}{|c|}{960f F} \\
+            \hline
+            \textbf{State} & Up & Down & Up & Down & Up & Down \\
+            \hline
+            \textbf{Delay(ns)} & 0.141 & 0.113 & 0.359 & 0.270 & 2.076 & 1.493 \\
+            \hline
+        \end{tabular}
+    \end{center}
+    \label{The delay of XOR}
+\end{table}
+
+\section{Adder}
+
+For adder, more horizontal wire are required, it is hard to avoid using high level metal wire and the area will be big if we put all the MOS pairs in a line. To solve this problem, we put all the pairs in to two layers, and we also use poly and metal1 as wire as many as possible so we can reduce the area and delay. More importantly we put the pairs in two row, so wiring vertally is possible, which greatly shorten the length of wire. 
+
+\subsection{Half Adder}
+
+% Explain the circuit structure and operation of the half adder that is used in multiplier design. Provide the circuit schematic in the report. Provide the sizes (both width and length in micrometers) of all the transistors.
+
+A half adder is a conbination of a AND Gate and a XOR Gate, each of their input A and B are connected together and the outout of XOR Gate is defined as Sum, the outpt of AND is defined as Carry. The size of the transistors can be refered from XOR Gate and AND Gate introduced before.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width = 0.9\linewidth]{half_adder_schematic.png}
+    \caption{Schematic of Half Adder}
+    \label{Schematic of Half Adder}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width = 0.3\linewidth]{half_adder_layout.png}
+    \caption{Layout of Half Adder}
+    \label{Layout of Half Adder}
+\end{figure}
+  
+\subsection{Full Adder}
+
+% Explain the circuit structure and operation of the full adder that is used in multiplier design. Provide the circuit schematic in the report. Provide the sizes (both width and length in micrometers) of all the transistors.
+
+As shown in Fig \ref{Schematic of Full Adder}, a full adder is a combination of XOR Gates and NAND gates, the structure here is simplified from the classical design in which a full adder contains two half adder and AND Gate, so we can save a lot of area.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width = 0.9\linewidth]{full_adder_schematic.png}
+    \caption{Schematic of Full Adder}
+    \label{Schematic of Full Adder}
+\end{figure}
+ 
+\begin{figure}[H]
+    \centering
+    \includegraphics[width = 0.5\linewidth]{full_adder_layout.png}
+    \caption{Layout of Full Adder}
+    \label{Layout of Full Adder}
+\end{figure}
+
+
+\section{Assemble of the multiplier}
+\label{Assemble}
+
+% Explain the structure and operation of the array multiplier. Provide the circuit structure in the report. Clearly label all the inputs and outputs. Clearly show all the connections among various components. Determine the number of critical (longest) delay paths in the 4x4-bit array multiplier. Identify and report the input vectors that excite these critical propagation delay paths. Show one of these critical delay paths on the figure. Measure the propagation delay of the multiplier with schematic level simulation. Assume each product output drives 50 fF extrinsic load capacitor. Report the delays.
+
+\subsection{Schemetic}
+
+The schematic of the multiplier is shown in Fig \ref{4X4_Multiplier_schematic}, it has contians many full adders half adders and and gates. we connect them together as the design shown before.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.9\linewidth]{4X4_Multiplier_schematic.png}
+    \caption{Schematic of $4 \times 4$ bit multiplier}
+    \label{4X4_Multiplier_schematic}
+\end{figure}
+
+\subsection{Layout}
+
+In the layout, we use the low level layer as wire to reduce the delay time. We use poly, metal1, metal2, and some metal3 as the connection wire between each components.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.9\linewidth]{4X4_Multiplier_layout.png}
+    \caption{Layout of $4 \times 4$ bit multiplier}
+    \label{4X4_Multiplier_layout}
+\end{figure}
+
+\section{Varication and benckmark of the multiplier}
+\label{test}
+
+% Show the layout of your array multiplier in the report. Report the area of your layout. Measure the post-layout propagation delay and report it in your report. Assume each product output drives 50 fF extrinsic load capacitor. Compare the post-layout delay measurements with the schematic level delay measurement. Explain the differences. Discuss the limitations of the schematic level circuit simulation tool. Discuss the importance of accurate resistance and capacitance extraction for correct delay estimation with CADENCE tools.
+
+After we finish the design of the multiplier we need to test the performance of the multiplier.
+
+\subsection{Area of the Layout}
+
+As we tested, the area of the layout is \textbf{((-11.2, -95)(53.2, 2)), 6246.8$\mu m^2$}
+
+\subsection{propagation delay}
+
+Here we will compare the post-layout delay measurements with the schematic level delay measurement 50f F cap is attached to the output. We apply two set of input to the multiplier so we can get the transfer data of all output. The first set is $0000 \times 1111 = 11100001$ and the second set is $0010 \times 1111 = 00011110$. As we measure, the maxmun down-to-up delay is \textbf{1ns} and uo-to-down delay is \textbf{0.75ns}, the plots are shown in Appendix.
+
+\section{Conclusion}
+
+In this project, we experience the procedure of Top to Down design and Down to Top Develop, we first design the multiplier in hignest level, then we gradually split each of the component so we can get the basic logic gate we need. The development procedure start form the bisic logic gate, we design half adder and full adder based on these logic gates, finally the multiplier will be constructed by adders. In each level a serises of test were done to make sure the design functions well. During the layout procedure, we change the way transistors were put, so the size and delay is reduced.
+
+
+% \input{tutorial.tex}
+
+\input{reference.tex}
+
+
+\newpage
+\section{Appendix}
+
+\subsection{Delay of basic Gates}
+
+% -------------------------------------------------------------
+\subsubsection{Inverter}
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.9\linewidth]{inv_C1.png}
+    \caption{Delay of Inverter with output capacitance 15f F}
+\end{figure}
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.9\linewidth]{inv_C2.png}
+    \caption{Delay of Inverter with output capacitance 120f F}
+\end{figure}
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.9\linewidth]{inv_C3.png}
+    \caption{Delay of Inverter with output capacitance 960f F}
+\end{figure}
+% -------------------------------------------------------------
+\subsubsection{NAND Gate}
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.9\linewidth]{nand2_C1.png}
+    \caption{Delay of NAND Gate with output capacitance 15f F}
+\end{figure}
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.9\linewidth]{nand2_C2.png}
+    \caption{Delay of NAND Gate with output capacitance 120f F}
+\end{figure}
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.9\linewidth]{nand2_C3.png}
+    \caption{Delay of NAND Gate with output capacitance 960f F}
+\end{figure}
+% -------------------------------------------------------------
+\subsubsection{AND Gate}
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.9\linewidth]{and2_C1.png}
+    \caption{Delay of AND Gate with output capacitance 15f F}
+\end{figure}
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.9\linewidth]{and2_C2.png}
+    \caption{Delay of AND Gate with output capacitance 120f F}
+\end{figure}
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.9\linewidth]{and2_C3.png}
+    \caption{Delay of AND Gate with output capacitance 960f F}
+\end{figure}
+% -------------------------------------------------------------
+\subsubsection{XOR Gate}
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.9\linewidth]{xor2_C1.png}
+    \caption{Delay of XOR Gate with output capacitance 15f F}
+\end{figure}
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.9\linewidth]{xor2_C2.png}
+    \caption{Delay of XOR Gate with output capacitance 120f F}
+\end{figure}
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.9\linewidth]{xor2_C3.png}
+    \caption{Delay of XOR Gate with output capacitance 960f F}
+\end{figure}
+% -------------------------------------------------------------
+
+\subsection{Delay of the multiplier}
+
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.9\linewidth]{mul_11100001_up_all.png}
+    \caption{Low to high delay of 11100001}
+\end{figure}
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.9\linewidth]{mul_11100001_down_all.png}
+    \caption{High to low delay of 11100001}
+\end{figure}
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.9\linewidth]{mul_00011110_up_all.png}
+    \caption{Low to high delay of 00011110}
+\end{figure}
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.9\linewidth]{mul_00011110_down_all.png}
+    \caption{High to low delay of 00011110}
+\end{figure}
+
+
+\end{document}

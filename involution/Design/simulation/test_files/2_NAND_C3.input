@@ -1,0 +1,8 @@
+simulator lang=spectre 
+v0 (vdd! 0) vsource type=dc dc=1.8 
+v1 (A 0) vsource type=pwl wave=[0n 1.8 2n 1.8 2.2n 0 14.2n 0 14.4n 1.8 16.4n 1.8] 
+v3 (B 0) vsource type=pwl wave=[0n 1.8 2n 1.8 2.2n 1.8 14.2n 1.8 14.4n 1.8 16.4n 1.8] 
+v2 (gnd! 0) vsource type=dc dc=0 
+ca (Out 0) capacitor c=960f 
+save ca:current 
+save :pwr 
