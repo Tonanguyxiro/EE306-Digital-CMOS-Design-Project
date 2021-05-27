@@ -123,7 +123,7 @@ Then we will test the performance of the inverter, we add three different extrin
 
 \subsection{NAND Gate}
 
-NAND Gate is one of the most important basic gates, to make the gate equivlent to inverter we choose 4um as the width of the PMOS, and 3.2um as the width of NMOS.
+NAND Gate is one of the most important basic gates, to make the gate equivlent to inverter we choose 1um as the width of the PMOS, and 0.8um as the width of NMOS.
 
 \begin{figure}[H]
     \centering
@@ -183,7 +183,7 @@ The performance of AND Gate will be tested under the same method as Inverter.
 
 \subsection{XOR Gate}
 
-For XOR Gate, we have same MOS size as Inverter, as all the PMOSs have width 4um and NMOSs have width 1.6nm.
+For XOR Gate, we have same MOS size as Inverter, as all the PMOSs have width 1um and NMOSs have width 0.8nm.
 
 \begin{figure}[H]
     \centering
@@ -307,6 +307,12 @@ Here we will compare the post-layout delay measurements with the schematic level
 \section{Conclusion}
 
 In this project, we experience the procedure of Top to Down design and Down to Top Develop, we first design the multiplier in hignest level, then we gradually split each of the component so we can get the basic logic gate we need. The development procedure start form the bisic logic gate, we design half adder and full adder based on these logic gates, finally the multiplier will be constructed by adders. In each level a serises of test were done to make sure the design functions well. During the layout procedure, we change the way transistors were put, so the size and delay is reduced.
+
+\section*{Distribution of work}
+
+\textbf{YUAN Tong}: adders, and multipliter layout drawing and verification of the multiplier.
+
+\textbf{FAN Qinyuan}: Design of the schematic and test of the components
 
 
 % \input{tutorial.tex}

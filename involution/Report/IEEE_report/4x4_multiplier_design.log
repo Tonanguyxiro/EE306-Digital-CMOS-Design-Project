@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2021.4.27)  27 MAY 2021 04:27
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2021.4.27)  27 MAY 2021 19:07
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -517,6 +517,14 @@ LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
 LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
 (Font)              using `TU/ptm/bx/n' instead on input line 305.
 
+
+LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
+(Font)              using `TU/ptm/bx/n' instead on input line 313.
+
+
+LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
+(Font)              using `TU/ptm/bx/n' instead on input line 315.
+
 (/Users/tongyuan/Documents/Study/S6_Spring_2021/CMOS Design/Project/ee306-digital-cmos-design-project/involution/Report/IEEE_report/reference.tex [4])
 File: ../../Design/simulation/trans_result/inv_C1.png Graphic file (type bmp)
 <../../Design/simulation/trans_result/inv_C1.png>
@@ -632,4 +640,4 @@ Here is how much of TeX's memory you used:
  1348 hyphenation exceptions out of 8191
  71i,11n,79p,1364b,295s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on /Users/tongyuan/Documents/Study/S6_Spring_2021/CMOS Design/Project/ee306-digital-cmos-design-project/involution/Report/IEEE_report/4x4_multiplier_design.xdv (7 pages, 124828 bytes).
+Output written on /Users/tongyuan/Documents/Study/S6_Spring_2021/CMOS Design/Project/ee306-digital-cmos-design-project/involution/Report/IEEE_report/4x4_multiplier_design.xdv (7 pages, 126556 bytes).
